@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="tbg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4338ca;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#tbg1)"/>
+  <!-- Person silhouette -->
+  <circle cx="400" cy="140" r="55" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+  <circle cx="400" cy="130" r="28" fill="rgba(255,255,255,0.25)"/>
+  <ellipse cx="400" cy="195" rx="35" ry="22" fill="rgba(255,255,255,0.2)"/>
+  <!-- Stars for leadership -->
+  <g fill="#fbbf24" opacity="0.7">
+    <polygon points="320,80 323,90 334,90 326,96 328,106 320,100 312,106 314,96 306,90 317,90" transform="scale(0.7)"/>
+    <polygon points="400,55 403,65 414,65 406,71 408,81 400,75 392,81 394,71 386,65 397,65" transform="scale(0.7) translate(250, -10)"/>
+  </g>
+  <text x="400" y="270" font-family="system-ui, -apple-system, sans-serif" font-size="30" font-weight="700" fill="white" text-anchor="middle">Alice Zhang</text>
+  <text x="400" y="305" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="rgba(255,255,255,0.7)" text-anchor="middle">Team Lead &amp; Senior Research Scientist</text>
+  <rect x="300" y="330" width="200" height="28" rx="14" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="400" y="349" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.8)" text-anchor="middle">Agent Architecture · LLM · RL</text>
+</svg>

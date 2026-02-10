@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0e7490;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg6)"/>
+  <!-- Data pipeline visualization -->
+  <g transform="translate(100, 80)">
+    <!-- Pipeline stages -->
+    <rect x="0" y="60" width="100" height="80" rx="10" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+    <text x="50" y="95" font-family="system-ui, sans-serif" font-size="11" fill="white" text-anchor="middle">Mining</text>
+    <text x="50" y="115" font-family="system-ui, sans-serif" font-size="9" fill="rgba(255,255,255,0.6)" text-anchor="middle">50K+ repos</text>
+
+    <rect x="150" y="60" width="100" height="80" rx="10" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+    <text x="200" y="95" font-family="system-ui, sans-serif" font-size="11" fill="white" text-anchor="middle">Linking</text>
+    <text x="200" y="115" font-family="system-ui, sans-serif" font-size="9" fill="rgba(255,255,255,0.6)" text-anchor="middle">Issue-PR</text>
+
+    <rect x="300" y="60" width="100" height="80" rx="10" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+    <text x="350" y="95" font-family="system-ui, sans-serif" font-size="11" fill="white" text-anchor="middle">Filtering</text>
+    <text x="350" y="115" font-family="system-ui, sans-serif" font-size="9" fill="rgba(255,255,255,0.6)" text-anchor="middle">Quality</text>
+
+    <rect x="450" y="60" width="100" height="80" rx="10" fill="rgba(255,255,255,0.25)" stroke="rgba(34,211,238,0.5)" stroke-width="2"/>
+    <text x="500" y="95" font-family="system-ui, sans-serif" font-size="11" fill="white" text-anchor="middle">Output</text>
+    <text x="500" y="115" font-family="system-ui, sans-serif" font-size="9" fill="rgba(255,255,255,0.6)" text-anchor="middle">500K+</text>
+
+    <!-- Arrows -->
+    <path d="M 100,100 L 150,100" stroke="rgba(34,211,238,0.6)" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M 250,100 L 300,100" stroke="rgba(34,211,238,0.6)" stroke-width="2"/>
+    <path d="M 400,100 L 450,100" stroke="rgba(34,211,238,0.6)" stroke-width="2"/>
+
+    <!-- Arrow markers as simple triangles -->
+    <polygon points="148,95 148,105 155,100" fill="rgba(34,211,238,0.6)"/>
+    <polygon points="298,95 298,105 305,100" fill="rgba(34,211,238,0.6)"/>
+    <polygon points="448,95 448,105 455,100" fill="rgba(34,211,238,0.6)"/>
+  </g>
+  <!-- Database cylinders -->
+  <g transform="translate(150, 230)" opacity="0.3">
+    <ellipse cx="30" cy="10" rx="30" ry="10" fill="#22d3ee"/>
+    <rect x="0" y="10" width="60" height="30" fill="#22d3ee"/>
+    <ellipse cx="30" cy="40" rx="30" ry="10" fill="#0891b2"/>
+  </g>
+  <g transform="translate(600, 230)" opacity="0.3">
+    <ellipse cx="30" cy="10" rx="30" ry="10" fill="#22d3ee"/>
+    <rect x="0" y="10" width="60" height="30" fill="#22d3ee"/>
+    <ellipse cx="30" cy="40" rx="30" ry="10" fill="#0891b2"/>
+  </g>
+  <!-- Title -->
+  <text x="400" y="350" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="700" fill="white" text-anchor="middle">SWE Data Engine</text>
+  <text x="400" y="385" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="rgba(255,255,255,0.7)" text-anchor="middle">Scalable Training Data Pipeline</text>
+</svg>

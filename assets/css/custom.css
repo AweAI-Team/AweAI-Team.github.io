@@ -1,0 +1,206 @@
+/* =============================================
+   Awe-AI Team — Custom Styles
+   Light blue theme aligned with blowfish.page
+   ============================================= */
+
+/* ------- Animated Background for Homepage ------- */
+/* Mimics the dynamic floating shapes from blowfish.page */
+
+#homepage-background {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated floating shapes overlay on homepage */
+.homepage-animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.homepage-animated-bg .shape {
+  position: absolute;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  opacity: 0.10;
+  animation: float-shape 20s ease-in-out infinite;
+}
+
+.dark .homepage-animated-bg .shape {
+  opacity: 0.06;
+}
+
+.homepage-animated-bg .shape:nth-child(1) {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  top: -5%;
+  left: -5%;
+  animation-duration: 25s;
+  animation-delay: 0s;
+}
+
+.homepage-animated-bg .shape:nth-child(2) {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(135deg, #2563eb, #06b6d4);
+  top: 20%;
+  right: -3%;
+  animation-duration: 20s;
+  animation-delay: -5s;
+  border-radius: 50% 20% 50% 20%;
+}
+
+.homepage-animated-bg .shape:nth-child(3) {
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(135deg, #60a5fa, #38bdf8);
+  bottom: -8%;
+  left: 20%;
+  animation-duration: 30s;
+  animation-delay: -10s;
+  border-radius: 20% 50% 20% 50%;
+}
+
+.homepage-animated-bg .shape:nth-child(4) {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, #06b6d4, #3b82f6);
+  top: 50%;
+  left: 60%;
+  animation-duration: 22s;
+  animation-delay: -8s;
+}
+
+.homepage-animated-bg .shape:nth-child(5) {
+  width: 180px;
+  height: 180px;
+  background: linear-gradient(135deg, #2563eb, #0ea5e9);
+  top: 10%;
+  left: 40%;
+  animation-duration: 18s;
+  animation-delay: -3s;
+  border-radius: 40% 60% 30% 70% / 50% 30% 70% 50%;
+}
+
+.homepage-animated-bg .shape:nth-child(6) {
+  width: 280px;
+  height: 280px;
+  background: linear-gradient(135deg, #93c5fd, #3b82f6);
+  bottom: 10%;
+  right: 10%;
+  animation-duration: 28s;
+  animation-delay: -15s;
+  border-radius: 60% 40% 60% 40% / 40% 60% 40% 60%;
+}
+
+@keyframes float-shape {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translate(30px, -40px) rotate(90deg) scale(1.05);
+  }
+  50% {
+    transform: translate(-20px, 20px) rotate(180deg) scale(0.95);
+  }
+  75% {
+    transform: translate(40px, 30px) rotate(270deg) scale(1.08);
+  }
+}
+
+
+/* ------- Dynamic Card Hover Effects ------- */
+/* Scoped to .article-link--card only — prevents flicker on article detail pages */
+
+.article-link--card {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+/* Card image zoom on hover */
+.article-link--card img {
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+.article-link--card:hover img {
+  transform: scale(1.05);
+}
+
+/* Card lift and shadow effect */
+.article-link--card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12) !important;
+}
+
+.dark .article-link--card:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
+}
+
+
+/* ------- Cleaner Card Typography ------- */
+/* Reduce visual noise in card view */
+
+/* Hide tags in card view on homepage */
+.homepage-content article .taxonomy-badges,
+.homepage-content article [class*="taxonomy"] {
+  display: none;
+}
+
+
+/* ------- Smooth Header Transitions ------- */
+header {
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease !important;
+}
+
+
+/* ------- Enhanced Link Styles ------- */
+article a:not([class]) {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.3s ease;
+}
+
+article a:not([class]):hover {
+  text-decoration-thickness: 2px;
+}
+
+
+/* ------- Refined Recent Section ------- */
+/* More spacious card grid */
+.recent-grid {
+  gap: 1.5rem !important;
+}
+
+
+/* ------- Page Transition ------- */
+/* Only animate article content, not the fixed background layer */
+main > article > section,
+main > article > header {
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* ------- Responsive Adjustments ------- */
+@media (max-width: 768px) {
+  .homepage-animated-bg .shape {
+    transform: scale(0.6);
+  }
+  
+  .article-link--card:hover {
+    transform: translateY(-3px);
+  }
+}

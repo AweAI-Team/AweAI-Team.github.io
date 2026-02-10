@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="tbg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#tbg6)"/>
+  <circle cx="400" cy="140" r="55" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+  <circle cx="400" cy="130" r="28" fill="rgba(255,255,255,0.25)"/>
+  <ellipse cx="400" cy="195" rx="35" ry="22" fill="rgba(255,255,255,0.2)"/>
+  <text x="400" y="270" font-family="system-ui, -apple-system, sans-serif" font-size="30" font-weight="700" fill="white" text-anchor="middle">Frank Wu</text>
+  <text x="400" y="305" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="rgba(255,255,255,0.7)" text-anchor="middle">Engineer  Evaluation &amp; Benchmarking</text>
+  <rect x="270" y="330" width="260" height="28" rx="14" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="400" y="349" font-family="system-ui, sans-serif" font-size="12" fill="rgba(255,255,255,0.8)" text-anchor="middle">Benchmark Design · Evaluation · Analytics</text>
+</svg>

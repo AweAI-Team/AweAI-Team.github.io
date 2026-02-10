@@ -1,0 +1,23 @@
+# -- Main Menu --
+
+[[main]]
+  name = "Projects"
+  pageRef = "projects"
+  weight = 10
+
+[[main]]
+  name = "Team"
+  pageRef = "team"
+  weight = 20
+
+# -- Footer Menu --
+
+[[footer]]
+  name = "Projects"
+  pageRef = "projects"
+  weight = 10
+
+[[footer]]
+  name = "Team"
+  pageRef = "team"
+  weight = 20

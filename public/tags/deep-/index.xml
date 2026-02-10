@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Deep on Awe-AI</title><link>//localhost:49521/tags/deep-/</link><description>Recent content in Deep on Awe-AI</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© {year} Awe-AI Team. All rights reserved.</copyright><lastBuildDate>Sat, 31 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:49521/tags/deep-/index.xml" rel="self" type="application/rss+xml"/><item><title>IterResearch: Rethinking Long-Horizon Agents with Interaction Scaling</title><link>//localhost:49521/projects/swalm-agent/</link><pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate><guid>//localhost:49521/projects/swalm-agent/</guid><description>&lt;h2 class="relative group"&gt;Overview
+ &lt;div id="overview" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#overview" aria-label="Anchor"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;SWALM Agent is our flagship project — an intelligent agent framework designed to autonomously solve complex software engineering tasks. Built on a modular architecture, it supports multiple agent paradigms and integrates seamlessly with containerized environments.&lt;/p&gt;
+
+&lt;h2 class="relative group"&gt;Key Features
+ &lt;div id="key-features" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#key-features" aria-label="Anchor"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Multiple Agent Architectures&lt;/strong&gt;: Supports CodeAct, SWE-Agent, Cline, ReAct, and custom agent implementations&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rich Tool Ecosystem&lt;/strong&gt;: File operations, shell execution, Jupyter notebooks, web browsing, and search capabilities&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Container-Based Execution&lt;/strong&gt;: Secure sandboxed environments via Portal service for safe code execution&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Comprehensive Benchmarking&lt;/strong&gt;: Built-in support for SWE-Bench, Terminal-Bench, math reasoning, and competitive programming tasks&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Flexible LLM Integration&lt;/strong&gt;: Compatible with OpenAI, Azure, and various LLM providers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 class="relative group"&gt;Architecture
+ &lt;div id="architecture" class="anchor"&gt;&lt;/div&gt;
+ 
+ &lt;span
+ class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
+ &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#architecture" aria-label="Anchor"&gt;#&lt;/a&gt;
+ &lt;/span&gt;
+ 
+&lt;/h2&gt;
+&lt;p&gt;The system follows a modular monorepo structure:&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:49521/projects/swalm-agent/feature.svg"/></item></channel></rss>

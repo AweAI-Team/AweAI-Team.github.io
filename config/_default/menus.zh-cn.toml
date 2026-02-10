@@ -1,0 +1,23 @@
+# -- 主菜单 --
+
+[[main]]
+  name = "项目"
+  pageRef = "projects"
+  weight = 10
+
+[[main]]
+  name = "团队"
+  pageRef = "team"
+  weight = 20
+
+# -- 页脚菜单 --
+
+[[footer]]
+  name = "项目"
+  pageRef = "projects"
+  weight = 10
+
+[[footer]]
+  name = "团队"
+  pageRef = "team"
+  weight = 20

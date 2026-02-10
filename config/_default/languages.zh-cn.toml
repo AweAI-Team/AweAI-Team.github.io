@@ -1,0 +1,24 @@
+disabled = true  # 临时关闭中文，恢复时删除此行即可
+languageCode = "zh-cn"
+languageName = "简体中文"
+weight = 2
+
+title = "Awe-AI"
+
+[params]
+  displayName = "中文"
+  isoCode = "zh-CN"
+  rtl = false
+  description = "Awe-AI 团队 — 推动人工智能研究与工程的前沿"
+  copyright = "© {year} Awe-AI Team. 保留所有权利。"
+  dateFormat = "2006年1月2日"
+
+[params.author]
+  name = "Awe-AI 团队"
+  image = "img/awe-ai-logo.png"
+  headline = "推动人工智能研究与工程的前沿"
+  bio = "我们是一支致力于推进人工智能前沿的研究与工程团队。我们的工作涵盖大语言模型、多模态AI和智能体系统。"
+  links = [
+    { github = "https://github.com/awe-ai" },
+    { email = "mailto:awe-ai@example.com" },
+  ]

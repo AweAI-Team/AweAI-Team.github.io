@@ -1,0 +1,23 @@
+languageCode = "en"
+languageName = "English"
+weight = 1
+
+title = "Awe-AI"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  description = "Awe-AI Team — Pushing the boundaries of AI research and engineering"
+  copyright = "© {year} Awe-AI Team. All rights reserved."
+  dateFormat = "2 January 2006"
+
+[params.author]
+  name = "Awe-AI Team"
+  image = "img/awe-ai-logo.png"
+  headline = "Pushing the Boundaries of AI Research & Engineering"
+  bio = "We are a team of researchers and engineers dedicated to advancing artificial intelligence. Our work spans large language models, multimodal AI, and intelligent agent systems."
+  links = [
+    { github = "https://github.com/awe-ai" },
+    { email = "mailto:awe-ai@example.com" },
+  ]
