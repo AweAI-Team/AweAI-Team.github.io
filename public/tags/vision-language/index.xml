@@ -1,1 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vision-Language on Awe-AI</title><link>//localhost:1313/tags/vision-language/</link><description>Recent content in Vision-Language on Awe-AI</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© {year} Awe-AI Team. All rights reserved.</copyright><lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/vision-language/index.xml" rel="self" type="application/rss+xml"/><item><title>Multimodal Reasoning: Bridging Vision and Language</title><link>//localhost:1313/projects/multimodal-reasoning/</link><pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate><guid>//localhost:1313/projects/multimodal-reasoning/</guid><description>Our multimodal reasoning research focuses on building AI systems that seamlessly integrate visual perception with language understanding. We explore novel architectures for cross-modal reasoning, enabling agents to understand documents, diagrams, UIs, and real-world scenes.</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/projects/multimodal-reasoning/feature.svg"/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vision-Language on Awe-AI</title>
+    <link>http://localhost:1313/tags/vision-language/</link>
+    <description>Recent content in Vision-Language on Awe-AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2026 Awe-AI Team. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/vision-language/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Multimodal Reasoning: Bridging Vision and Language</title>
+      <link>http://localhost:1313/projects/multimodal-reasoning/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/multimodal-reasoning/</guid>
+      <description>Our multimodal reasoning research focuses on building AI systems that seamlessly integrate visual perception with language understanding. We explore novel architectures for cross-modal reasoning, enabling agents to understand documents, diagrams, UIs, and real-world scenes.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/projects/multimodal-reasoning/feature.svg" />
+    </item>
+    
+  </channel>
+</rss>

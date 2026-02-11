@@ -1,1 +1,113 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Our Team on Awe-AI</title><link>//localhost:1313/team/</link><description>Recent content in Our Team on Awe-AI</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© {year} Awe-AI Team. All rights reserved.</copyright><lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/team/index.xml" rel="self" type="application/rss+xml"/><item><title>Alice Zhang</title><link>//localhost:1313/team/alice-zhang/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><guid>//localhost:1313/team/alice-zhang/</guid><description>Team Lead focusing on AI agent architectures and large language model research. Ph.D. from Tsinghua University.</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/team/alice-zhang/feature.png"/></item><item><title>Bob Li</title><link>//localhost:1313/team/bob-li/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><guid>//localhost:1313/team/bob-li/</guid><description>Senior Engineer specializing in distributed systems and AI infrastructure. Architect of the SWALM Portal and container orchestration platform.</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/team/bob-li/feature.png"/></item><item><title>Carol Wang</title><link>//localhost:1313/team/carol-wang/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><guid>//localhost:1313/team/carol-wang/</guid><description>Research Scientist working on multimodal reasoning and vision-language models. Published at CVPR, ECCV, and AAAI.</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/team/carol-wang/feature.png"/></item><item><title>David Chen</title><link>//localhost:1313/team/david-chen/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><guid>//localhost:1313/team/david-chen/</guid><description>Research Engineer focused on code intelligence, program synthesis, and AI-assisted software development tools.</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/team/david-chen/feature.png"/></item><item><title>Emma Liu</title><link>//localhost:1313/team/emma-liu/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><guid>//localhost:1313/team/emma-liu/</guid><description>Research Scientist specializing in training data curation, model fine-tuning, and alignment techniques for code LLMs.</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/team/emma-liu/feature.png"/></item><item><title>Frank Wu</title><link>//localhost:1313/team/frank-wu/</link><pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate><guid>//localhost:1313/team/frank-wu/</guid><description>Engineer specializing in evaluation systems, benchmark design, and performance analysis for AI agents.</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/team/frank-wu/feature.png"/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>🚀 Our Team on Awe-AI</title>
+    <link>http://localhost:1313/team/</link>
+    <description>Recent content in 🚀 Our Team on Awe-AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2026 Awe-AI Team. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/team/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Fanzhe Meng</title>
+      <link>http://localhost:1313/team/fanzhe-meng/</link>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/team/fanzhe-meng/</guid>
+      <description>M.S. from RUC</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/team/fanzhe-meng/feature.png" />
+    </item>
+    
+    <item>
+      <title>Jie Chen</title>
+      <link>http://localhost:1313/team/jie-chen/</link>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/team/jie-chen/</guid>
+      <description>M.S. from RUC</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/team/jie-chen/feature.png" />
+    </item>
+    
+    <item>
+      <title>Jiale Zhao</title>
+      <link>http://localhost:1313/team/jiale-zhao/</link>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/team/jiale-zhao/</guid>
+      <description>Ph.D. from ICT.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/team/jiale-zhao/feature.png" />
+    </item>
+    
+    <item>
+      <title>Guoxin Chen</title>
+      <link>http://localhost:1313/team/guoxin-chen/</link>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/team/guoxin-chen/</guid>
+      <description>Focusing on natural language processing and large language model research. Ph.D. from GSAI, RUC.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/team/guoxin-chen/feature.png" />
+    </item>
+    
+    <item>
+      <title>Alice Zhang</title>
+      <link>http://localhost:1313/team/alice-zhang/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/team/alice-zhang/</guid>
+      <description>Team Lead focusing on AI agent architectures and large language model research. Ph.D. from Tsinghua University.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/team/alice-zhang/feature.png" />
+    </item>
+    
+    <item>
+      <title>Bob Li</title>
+      <link>http://localhost:1313/team/bob-li/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/team/bob-li/</guid>
+      <description>Senior Engineer specializing in distributed systems and AI infrastructure. Architect of the SWALM Portal and container orchestration platform.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/team/bob-li/feature.png" />
+    </item>
+    
+    <item>
+      <title>Carol Wang</title>
+      <link>http://localhost:1313/team/carol-wang/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/team/carol-wang/</guid>
+      <description>Research Scientist working on multimodal reasoning and vision-language models. Published at CVPR, ECCV, and AAAI.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/team/carol-wang/feature.png" />
+    </item>
+    
+    <item>
+      <title>David Chen</title>
+      <link>http://localhost:1313/team/david-chen/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/team/david-chen/</guid>
+      <description>Research Engineer focused on code intelligence, program synthesis, and AI-assisted software development tools.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/team/david-chen/feature.png" />
+    </item>
+    
+    <item>
+      <title>Emma Liu</title>
+      <link>http://localhost:1313/team/emma-liu/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/team/emma-liu/</guid>
+      <description>Research Scientist specializing in training data curation, model fine-tuning, and alignment techniques for code LLMs.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/team/emma-liu/feature.png" />
+    </item>
+    
+    <item>
+      <title>Frank Wu</title>
+      <link>http://localhost:1313/team/frank-wu/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/team/frank-wu/</guid>
+      <description>Engineer specializing in evaluation systems, benchmark design, and performance analysis for AI agents.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/team/frank-wu/feature.png" />
+    </item>
+    
+  </channel>
+</rss>

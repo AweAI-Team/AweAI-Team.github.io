@@ -1,7 +1,7 @@
 ---
 title: "IterResearch: Rethinking Long-Horizon Agents with Interaction Scaling"
 date: 2026-01-31
-draft: false
+draft: true
 description: "We introduce IterResearch, a novel iterative deep-research paradigm that
 revisits long-horizon research through the lens of Interaction Scaling."
 tags: ["Agent", "Deep Research", "Agentic RL"]

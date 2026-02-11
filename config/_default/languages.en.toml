@@ -9,15 +9,17 @@ title = "Awe-AI"
   isoCode = "en"
   rtl = false
   description = "Awe-AI Team — Pushing the boundaries of AI research and engineering"
-  copyright = "© {year} Awe-AI Team. All rights reserved."
+  logo = "img/awe-ai-logo.png"
+  copyright = "© 2026 Awe-AI Team. All rights reserved."
   dateFormat = "2 January 2006"
 
 [params.author]
   name = "Awe-AI Team"
   image = "img/awe-ai-logo.png"
-  headline = "Pushing the Boundaries of AI Research & Engineering"
-  bio = "We are a team of researchers and engineers dedicated to advancing artificial intelligence. Our work spans large language models, multimodal AI, and intelligent agent systems."
+  headline = "Awe-Inspiring Research Team for General & Vertical AI Agents 🚀"
+  bio = "Building the future of Autonomous Intelligence. We are dedicated to developing advanced General AI Agents and specialized Vertical Domain solutions."
   links = [
-    { github = "https://github.com/awe-ai" },
-    { email = "mailto:awe-ai@example.com" },
+    { github = "https://github.com/AweAI-Team" },
+    { huggingface = "https://huggingface.co/AweAI-Team" },
+    { email = "mailto:awe.ai.chn@gmail.com" },
   ]

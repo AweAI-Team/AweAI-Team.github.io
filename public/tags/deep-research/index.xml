@@ -1,22 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Deep Research on Awe-AI</title><link>//localhost:1313/tags/deep-research/</link><description>Recent content in Deep Research on Awe-AI</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© {year} Awe-AI Team. All rights reserved.</copyright><lastBuildDate>Sat, 31 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/deep-research/index.xml" rel="self" type="application/rss+xml"/><item><title>IterResearch: Rethinking Long-Horizon Agents with Interaction Scaling</title><link>//localhost:1313/projects/iter-research/</link><pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate><guid>//localhost:1313/projects/iter-research/</guid><description>&lt;h2 class="relative group"&gt;Overview
- &lt;div id="overview" class="anchor"&gt;&lt;/div&gt;
- 
- &lt;span
- class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none"&gt;
- &lt;a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#overview" aria-label="Anchor"&gt;#&lt;/a&gt;
- &lt;/span&gt;
- 
-&lt;/h2&gt;
-&lt;p&gt;Recent advances in deep-research agents have shown promise for autonomous
-knowledge construction through dynamic reasoning over external sources. However, existing approaches rely on a mono-contextual paradigm that accumulates
-all information in a single, expanding context window, leading to context suffocation and noise contamination that limit their effectiveness on long-horizon
-tasks. We introduce IterResearch, a novel iterative deep-research paradigm that
-revisits long-horizon research through the lens of Interaction Scaling. Instead of
-relying on linear context accumulation, we adopt an MDP-inspired architecture
-with strategic workspace reconstruction. By maintaining an evolving report as
-memory and periodically synthesizing insights, our approach preserves consistent reasoning capacity across arbitrary exploration depths. To effectively train
-this paradigm, we employ Efficiency-Aware Policy Optimization (EAPO), a training strategy that adapts geometric reward discounting to incentivize efficient exploration and utilizes adaptive downsampling for stable distributed training. Extensive experiments demonstrate that IterResearch achieves substantial improvements over existing open-source agents with average +14.5pp across six benchmarks and narrows the gap with frontier proprietary systems. Remarkably, our
-paradigm exhibits unprecedented interaction scaling, extending to 2048 interactions with dramatic performance gains (from 3.5% to 42.5%), and serves as an effective prompting strategy, improving frontier models by up to 19.2pp over ReAct
-on long-horizon tasks. These findings position IterResearch as a versatile solution
-for long-horizon reasoning, effective both as a trained agent and as a prompting
-paradigm for frontier models.&lt;/p&gt;</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/projects/iter-research/feature.png"/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Research on Awe-AI</title>
+    <link>http://localhost:1313/tags/deep-research/</link>
+    <description>Recent content in Deep Research on Awe-AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2026 Awe-AI Team. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 31 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/deep-research/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>IterResearch: Rethinking Long-Horizon Agents with Interaction Scaling</title>
+      <link>http://localhost:1313/projects/iter-research/</link>
+      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/iter-research/</guid>
+      <description>&lt;h2 class=&#34;relative group&#34;&gt;Overview&#xA;    &lt;div id=&#34;overview&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#overview&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Recent advances in deep-research agents have shown promise for autonomous&#xA;knowledge construction through dynamic reasoning over external sources. However, existing approaches rely on a mono-contextual paradigm that accumulates&#xA;all information in a single, expanding context window, leading to context suffocation and noise contamination that limit their effectiveness on long-horizon&#xA;tasks. We introduce IterResearch, a novel iterative deep-research paradigm that&#xA;revisits long-horizon research through the lens of Interaction Scaling. Instead of&#xA;relying on linear context accumulation, we adopt an MDP-inspired architecture&#xA;with strategic workspace reconstruction. By maintaining an evolving report as&#xA;memory and periodically synthesizing insights, our approach preserves consistent reasoning capacity across arbitrary exploration depths. To effectively train&#xA;this paradigm, we employ Efficiency-Aware Policy Optimization (EAPO), a training strategy that adapts geometric reward discounting to incentivize efficient exploration and utilizes adaptive downsampling for stable distributed training. Extensive experiments demonstrate that IterResearch achieves substantial improvements over existing open-source agents with average +14.5pp across six benchmarks and narrows the gap with frontier proprietary systems. Remarkably, our&#xA;paradigm exhibits unprecedented interaction scaling, extending to 2048 interactions with dramatic performance gains (from 3.5% to 42.5%), and serves as an effective prompting strategy, improving frontier models by up to 19.2pp over ReAct&#xA;on long-horizon tasks. These findings position IterResearch as a versatile solution&#xA;for long-horizon reasoning, effective both as a trained agent and as a prompting&#xA;paradigm for frontier models.&lt;/p&gt;</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/projects/iter-research/feature.png" />
+    </item>
+    
+  </channel>
+</rss>

@@ -1,7 +1,7 @@
 ---
 title: "David Chen"
 date: 2026-01-01
-draft: false
+draft: true
 description: "Research Engineer — Code Intelligence"
 summary: "Research Engineer focused on code intelligence, program synthesis, and AI-assisted software development tools."
 tags: ["Engineering", "Code Intelligence"]

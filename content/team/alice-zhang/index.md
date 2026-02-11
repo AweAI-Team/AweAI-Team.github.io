@@ -1,7 +1,7 @@
 ---
 title: "Alice Zhang"
 date: 2026-01-01
-draft: false
+draft: true
 description: "Team Lead & Senior Research Scientist"
 summary: "Team Lead focusing on AI agent architectures and large language model research. Ph.D. from Tsinghua University."
 tags: ["Leadership", "Research"]

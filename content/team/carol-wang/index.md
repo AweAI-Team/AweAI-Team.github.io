@@ -1,7 +1,7 @@
 ---
 title: "Carol Wang"
 date: 2026-01-01
-draft: false
+draft: true
 description: "Research Scientist — Multimodal AI"
 summary: "Research Scientist working on multimodal reasoning and vision-language models. Published at CVPR, ECCV, and AAAI."
 tags: ["Research", "Multimodal"]

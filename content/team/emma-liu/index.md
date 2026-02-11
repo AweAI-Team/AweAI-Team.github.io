@@ -1,7 +1,7 @@
 ---
 title: "Emma Liu"
 date: 2026-01-01
-draft: false
+draft: true
 description: "Research Scientist — Data & Training"
 summary: "Research Scientist specializing in training data curation, model fine-tuning, and alignment techniques for code LLMs."
 tags: ["Research", "Data", "Training"]

@@ -1,7 +1,7 @@
 ---
 title: "Bob Li"
 date: 2026-01-01
-draft: false
+draft: true
 description: "Senior Engineer — Infrastructure & Systems"
 summary: "Senior Engineer specializing in distributed systems and AI infrastructure. Architect of the SWALM Portal and container orchestration platform."
 tags: ["Engineering", "Infrastructure"]

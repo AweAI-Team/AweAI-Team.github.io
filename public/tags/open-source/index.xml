@@ -1,1 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Open-Source on Awe-AI</title><link>//localhost:1313/tags/open-source/</link><description>Recent content in Open-Source on Awe-AI</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>© {year} Awe-AI Team. All rights reserved.</copyright><lastBuildDate>Tue, 20 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/open-source/index.xml" rel="self" type="application/rss+xml"/><item><title>Awe-Bench: Next-Generation Evaluation for AI Agents</title><link>//localhost:1313/projects/awe-bench/</link><pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate><guid>//localhost:1313/projects/awe-bench/</guid><description>Awe-Bench is our evaluation benchmark suite designed to rigorously test AI agents on real-world software engineering challenges. It goes beyond traditional benchmarks by incorporating diverse task types, realistic development environments, and fine-grained evaluation metrics.</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/projects/awe-bench/feature.svg"/></item><item><title>Agent Framework: Building Blocks for Autonomous AI</title><link>//localhost:1313/projects/agent-framework/</link><pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate><guid>//localhost:1313/projects/agent-framework/</guid><description>Our Agent Framework provides the foundational building blocks for creating autonomous AI systems. It offers a modular architecture with pluggable components for reasoning, tool use, memory management, and environment interaction — enabling rapid prototyping of novel agent designs.</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/projects/agent-framework/feature.svg"/></item><item><title>SWE Data Engine: Scalable Training Data for Code Agents</title><link>//localhost:1313/projects/data-engine/</link><pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate><guid>//localhost:1313/projects/data-engine/</guid><description>The SWE Data Engine is our automated pipeline for generating high-quality training data from real-world software repositories. It transforms raw repository history into structured training examples — including bug fixes, feature implementations, and code reviews — at scale.</description><media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/projects/data-engine/feature.svg"/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open-Source on Awe-AI</title>
+    <link>http://localhost:1313/tags/open-source/</link>
+    <description>Recent content in Open-Source on Awe-AI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2026 Awe-AI Team. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 20 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Awe-Bench: Next-Generation Evaluation for AI Agents</title>
+      <link>http://localhost:1313/projects/awe-bench/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/awe-bench/</guid>
+      <description>Awe-Bench is our evaluation benchmark suite designed to rigorously test AI agents on real-world software engineering challenges. It goes beyond traditional benchmarks by incorporating diverse task types, realistic development environments, and fine-grained evaluation metrics.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/projects/awe-bench/feature.svg" />
+    </item>
+    
+    <item>
+      <title>Agent Framework: Building Blocks for Autonomous AI</title>
+      <link>http://localhost:1313/projects/agent-framework/</link>
+      <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/agent-framework/</guid>
+      <description>Our Agent Framework provides the foundational building blocks for creating autonomous AI systems. It offers a modular architecture with pluggable components for reasoning, tool use, memory management, and environment interaction — enabling rapid prototyping of novel agent designs.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/projects/agent-framework/feature.svg" />
+    </item>
+    
+    <item>
+      <title>SWE Data Engine: Scalable Training Data for Code Agents</title>
+      <link>http://localhost:1313/projects/data-engine/</link>
+      <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/data-engine/</guid>
+      <description>The SWE Data Engine is our automated pipeline for generating high-quality training data from real-world software repositories. It transforms raw repository history into structured training examples — including bug fixes, feature implementations, and code reviews — at scale.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/projects/data-engine/feature.svg" />
+    </item>
+    
+  </channel>
+</rss>
