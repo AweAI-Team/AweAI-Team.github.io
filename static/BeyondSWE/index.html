@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeyondSWE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#002f7a',
+                        secondary: '#36D399',
+                        accent: '#FF6B35',
+                        dark: '#1E293B',
+                        'neutral-50': '#F9FAFB',
+                        'neutral-100': '#F3F4F6',
+                        'neutral-200': '#E5E7EB',
+                        'neutral-300': '#D1D5DB',
+                        'neutral-400': '#9CA3AF',
+                        'neutral-500': '#6B7280',
+                        'neutral-600': '#4B5563',
+                        'neutral-700': '#374151',
+                        'neutral-800': '#1F2937',
+                        'neutral-900': '#111827'
+                    },
+                    fontFamily: {
+                        sans: ['Cambria Math', 'Cambria', 'Georgia', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-balance {
+                text-wrap: balance;
+            }
+            .content-width {
+                max-width: 60vw;
+            }
+            .btn-link {
+                @apply px-5 py-3 rounded-md transition-all duration-300 text-white font-medium inline-flex items-center gap-2;
+            }
+            .btn-link-primary {
+                @apply bg-primary hover:bg-primary/90 focus:ring-4 focus:ring-primary/30 shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
+            }
+            .btn-link-secondary {
+                @apply bg-neutral-800 hover:bg-neutral-700 focus:ring-4 focus:ring-neutral-600/30 shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
+            }
+            .section-card {
+                @apply rounded-2xl p-8;
+            }
+            .image-placeholder {
+                @apply border border-dashed border-primary/40 rounded-2xl bg-primary/5 text-neutral-600 text-center px-6 py-16;
+            }
+            .gallery-card {
+                @apply bg-white border border-neutral-200 rounded-2xl shadow-sm transition-all duration-300;
+            }
+            .gallery-card:hover {
+                @apply -translate-y-1 shadow-md border-primary/40;
+            }
+            .tag-pill {
+                @apply bg-primary/10 text-primary text-xs px-3 py-1 rounded-full;
+            }
+            .custom-scrollbar::-webkit-scrollbar {
+                width: 6px;
+                height: 6px;
+            }
+            .custom-scrollbar::-webkit-scrollbar-track {
+                background: transparent;
+            }
+            .custom-scrollbar::-webkit-scrollbar-thumb {
+                background-color: rgba(156, 163, 175, 0.5);
+                border-radius: 20px;
+            }
+            .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+                background-color: rgba(107, 114, 128, 0.8);
+            }
+            .task-text {
+                @apply text-base text-neutral-800 leading-relaxed;
+            }
+            .task-text h1 {
+                @apply text-xl font-semibold text-neutral-900;
+            }
+            .task-text h2 {
+                @apply text-lg font-semibold text-primary;
+            }
+            .task-text h3 {
+                @apply text-base font-semibold text-neutral-900;
+            }
+            .task-text p {
+                @apply text-neutral-800;
+            }
+            .task-text p + p {
+                @apply mt-4;
+            }
+            .task-text ul {
+                @apply list-disc pl-6 space-y-2;
+            }
+            .task-text ol {
+                @apply list-decimal pl-6 space-y-2;
+            }
+            .task-text blockquote {
+                @apply border-l-4 border-primary/40 bg-primary/5 text-neutral-700 italic px-4 py-3 rounded-lg;
+            }
+            .task-text a {
+                @apply text-primary underline;
+            }
+            .task-text strong {
+                @apply text-primary font-semibold;
+            }
+            .task-text em {
+                @apply text-indigo-600;
+            }
+            .task-text code {
+                @apply font-mono text-sm bg-neutral-100 text-neutral-900 px-1.5 py-0.5 rounded;
+            }
+            .task-text pre {
+                @apply bg-neutral-900 text-neutral-100 rounded-xl p-4 overflow-x-auto text-sm leading-relaxed;
+            }
+            .task-text pre code {
+                @apply bg-transparent p-0 text-neutral-100;
+            }
+            .failure-modal {
+                @apply hidden fixed inset-0 z-50 items-center justify-center bg-neutral-900/60;
+            }
+            .failure-modal.active {
+                @apply flex;
+            }
+            .traj-item {
+                @apply rounded-2xl border border-neutral-200 bg-white/90 shadow-sm;
+            }
+            .traj-item.role-system {
+                @apply border-l-4 border-neutral-300;
+            }
+            .traj-item.role-user {
+                @apply border-l-4 border-primary/50;
+            }
+            .traj-item.role-assistant {
+                @apply border-l-4 border-emerald-400/60;
+            }
+            .traj-role {
+                @apply text-xs uppercase tracking-widest text-neutral-500 font-semibold;
+            }
+            .traj-summary {
+                @apply flex items-center justify-between gap-4 px-5 py-4 cursor-pointer select-none;
+            }
+            .traj-summary-text {
+                @apply flex items-center gap-3 text-sm text-neutral-700;
+            }
+            .traj-step {
+                @apply text-xs font-semibold text-neutral-500 rounded-full bg-neutral-100 px-2 py-0.5;
+            }
+            .traj-preview {
+                @apply text-neutral-500 truncate max-w-[46ch];
+            }
+            .traj-body {
+                @apply px-5 pb-5 pt-1;
+            }
+            .traj-item[open] .traj-summary {
+                @apply bg-neutral-50;
+            }
+            .traj-item summary {
+                list-style: none;
+            }
+            .traj-item summary::-webkit-details-marker {
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+<body class="bg-white text-neutral-800 min-h-screen flex flex-col items-center font-sans">
+    <header class="py-16 px-4 w-full flex justify-center">
+        <div class="content-width mx-auto text-center">
+            <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold text-neutral-900 mb-6 text-balance leading-tight">
+                BeyondSWE: Can Current Code Agent Survive Beyond
+Single-Repo Bug Fixing?
+            </h1>
+            <div class="text-xl text-neutral-600 mb-3">
+                Guoxin Chen<sup>1*</sup>, Fanzhe Meng<sup>1*</sup>, Jiale Zhao<sup>*</sup>
+            </div>
+            <div class="text-neutral-500 text-sm mb-8">
+                <sup>1</sup>GSAI, Renmin University of China &nbsp; <sup>*</sup>Corresponding authors
+            </div>
+            <div class="flex justify-center flex-wrap gap-4 text-base">
+                <a href="#" class="btn-link btn-link-secondary">
+                    <i class="fa fa-github"></i>
+                    <span>Github Repository</span>
+                </a>
+                <a href="#" class="btn-link btn-link-primary">
+                    <i class="fa fa-file-text-o"></i>
+                    <span>View on arXiv</span>
+                </a>
+                <a href="#" class="btn-link btn-link-secondary">
+                    <span>🤗</span>
+                    <span>Hugging Face</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow content-width mx-auto px-4 py-16 space-y-16">
+        <section id="main-figure" class="space-y-4">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+            </div>
+            <img src="assets/beyondswe.png" alt="BeyondSWE Main Figure" class="w-full">
+            <p class="text-neutral-600 text-center">Overview of BeyondSWE. Our benchmark extends evaluation along two dimensions — <em>knowledge scope</em> and <em>resolution scope</em>: <strong>CrossRepo</strong> and <strong>DomainFix</strong> expand knowledge scope by requiring external software resources and domain expertise respectively; <strong>DepMigrate</strong> and <strong>Doc2Repo</strong> expand resolution scope from localized patches to codebase-wide transformations.</p>
+        </section>
+
+        <section id="abstract" class="section-card">
+            <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 text-center">Abstract</h2>
+            <p class="text-neutral-900 leading-relaxed text-lg">
+                Current benchmarks for code agents primarily assess narrow, repository‑specific fixes, overlooking critical real‑world challenges such as cross‑repository reasoning, domain‑specialized problem solving, dependency‑driven migration, and full‑repository generation. 
+                To address this gap, we introduce <strong>BeyondSWE</strong>, a comprehensive benchmark that broadens existing evaluations along two axes—resolution scope and knowledge scope—using 500 real‑world instances across four distinct settings. 
+                Experimental results reveal a significant capability gap: even frontier models plateau below 45% success, and no single model performs consistently across task types.
+                To systematically investigate the role of external knowledge, we develop <strong>SearchSWE</strong>, a framework that integrates deep search with coding abilities.
+                Our experiments show that search augmentation yields inconsistent gains and can in some cases degrade performance, highlighting the difficulty of emulating developer‑like workflows that interleave search and reasoning during coding tasks.
+                This work offers both a realistic, challenging evaluation benchmark and a flexible framework to advance research toward more capable code agents.
+            </p>
+        </section>
+
+                <section id="benchmark-tasks" class="space-y-12">
+    <div class="text-center space-y-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary">Benchmark Tasks</h2>
+        <p class="text-neutral-700 leading-relaxed text-lg max-w-4xl mx-auto">
+            Our benchmark evaluates <strong>real-world</strong> code agents along <strong>complementary</strong> task families, spanning broader knowledge requirements and larger resolution scopes.
+        </p>
+    </div>
+
+    <!-- Carousel Container -->
+    <div class="relative max-w-7xl mx-auto px-4 group">
+        <!-- Slides Wrapper -->
+        <div id="task-carousel" class="relative bg-white rounded-3xl border border-neutral-200 shadow-xl overflow-hidden min-h-[600px]">
+            
+            <!-- Slide 1: CrossRepo -->
+            <div class="carousel-slide absolute inset-0 transition-all duration-500 ease-in-out opacity-0 translate-x-full" data-active="true">
+                <div class="grid lg:grid-cols-5 h-full">
+                    <div class="lg:col-span-2 p-8 md:p-12 flex flex-col justify-center bg-neutral-50/50 space-y-8">
+                        <div class="flex items-center gap-4">
+                            <span class="text-5xl">🔗</span>
+                            <div>
+                                <h3 class="text-2xl font-bold text-neutral-900">CROSS-REPOSITORY</h3>
+                                <div class="flex gap-2 mt-2">
+                                    <span class="tag-pill">Knowledge Scope</span>
+                                    <span class="tag-pill">External Resources</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="font-semibold text-lg text-neutral-900">Task Description</h4>
+                            <ul class="list-disc pl-5 space-y-3 text-neutral-700 leading-relaxed">
+                                <li>Requires consulting related projects, upstream libraries, and external dependencies—beyond a single codebase.</li>
+                                <li>Challenges agents to navigate ambiguous references, judge relevance, and synthesize transferable solutions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-3 p-8 md:p-12 bg-white text-sm overflow-y-auto custom-scrollbar border-l border-neutral-100">
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="text-sm font-mono text-neutral-500">Example: kitware_trame-server_pr8</span>
+                            <span class="text-xs font-semibold bg-primary/10 text-primary px-3 py-1 rounded-full">Problem Statement</span>
+                        </div>
+                        <h4 class="font-bold text-lg text-neutral-900 mb-4">Server ignores `host` argument in `start()` and `TRAME_DEFAULT_HOST` environment variable</h4>
+                        
+                        <h5 class="font-semibold text-neutral-900 mt-6 mb-2">Description</h5>
+                        <p class="text-neutral-600 mb-4">We are encountering an issue where the `host` parameter passed to `trame_server.Server.start()` is ignored, causing the server to always bind to `localhost` (127.0.0.1). This prevents external connections and is blocking downstream integrations that require binding to specific interfaces (e.g., `0.0.0.0` for containerized environments), such as the ongoing work in PyVista (see <a href="https://github.com/pyvista/pyvista/pull/3385" class="text-primary hover:underline">pyvista/pyvista#3385</a>).</p>
+                        <p class="text-neutral-600 mb-4">The server persists with the CLI default (`localhost`) even when an explicit override is provided in Python. Furthermore, the `TRAME_DEFAULT_HOST` environment variable, which is expected to define the host when no argument is provided, is currently not respected.</p>
+
+                        <h5 class="font-semibold text-neutral-900 mt-6 mb-2">Steps to Reproduce</h5>
+                        <p class="text-neutral-600 mb-2">The following script attempts to bind the server to `0.0.0.0`, but the server continues to listen on `127.0.0.1`:</p>
+                        <pre class="bg-neutral-900 text-neutral-100 p-4 rounded-lg my-3 overflow-x-auto font-mono text-xs leading-relaxed"><code>import os
+from trame_server import Server
+
+# Scenario 1: Attempt to start server on all interfaces via argument
+# Expected: Binds to 0.0.0.0
+# Actual: Binds to 127.0.0.1
+print("--- Testing host argument ---")
+server = Server()
+try:
+    # This host argument is currently ignored
+    server.start(port=8080, host='0.0.0.0', open_browser=False)
+except Exception as e:
+    print(f"Error: {e}")
+finally:
+    server.stop()
+
+# Scenario 2: Attempt using environment variable
+# Expected: Binds to 0.0.0.0
+# Actual: Binds to 127.0.0.1 (default)
+print("\n--- Testing environment variable ---")
+os.environ['TRAME_DEFAULT_HOST'] = '0.0.0.0'
+server2 = Server()
+try:
+    server2.start(port=8081, open_browser=False)
+except Exception as e:
+    print(f"Error: {e}")
+finally:
+    server2.stop()</code></pre>
+
+                        <h5 class="font-semibold text-neutral-900 mt-6 mb-2">Expected Behavior</h5>
+                        <ol class="list-decimal pl-5 space-y-1 text-neutral-600 text-xs">
+                            <li><strong>Argument Priority:</strong> When <code>server.start(host='0.0.0.0')</code> is called, the server should respect the <code>host</code> argument and bind to that address.</li>
+                            <li><strong>Environment Variable:</strong> If no <code>host</code> argument is provided to <code>start()</code>, the server should use the value of <code>TRAME_DEFAULT_HOST</code> if it is set.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: DomainFix -->
+            <div class="carousel-slide absolute inset-0 transition-all duration-500 ease-in-out opacity-0 translate-x-full">
+                <div class="grid lg:grid-cols-5 h-full">
+                    <div class="lg:col-span-2 p-8 md:p-12 flex flex-col justify-center bg-neutral-50/50 space-y-8">
+                        <div class="flex items-center gap-4">
+                            <span class="text-5xl">🧬</span>
+                            <div>
+                                <h3 class="text-2xl font-bold text-neutral-900">DOMAIN-SPECIFIC</h3>
+                                <div class="flex gap-2 mt-2">
+                                    <span class="tag-pill">Knowledge Scope</span>
+                                    <span class="tag-pill">Scientific Domain</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="font-semibold text-lg text-neutral-900">Task Description</h4>
+                            <ul class="list-disc pl-5 space-y-3 text-neutral-700 leading-relaxed">
+                                <li>Demands specialized scientific expertise (e.g., chemistry, quantum computing) in addition to programming skills.</li>
+                                <li>Tests whether agents can combine code manipulation with genuine domain reasoning.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-3 p-8 md:p-12 bg-white text-sm overflow-y-auto custom-scrollbar border-l border-neutral-100">
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="text-sm font-mono text-neutral-500">Example: cvxpy_cvxpy_pr2125</span>
+                            <span class="text-xs font-semibold bg-primary/10 text-primary px-3 py-1 rounded-full">Problem Statement</span>
+                        </div>
+                        <h4 class="font-bold text-lg text-neutral-900 mb-4">Implement sparse Cholesky decomposition</h4>
+                        
+                        <h5 class="font-semibold text-neutral-900 mt-6 mb-2">Description</h5>
+                        <p class="text-neutral-600 mb-4">Currently, `cvxpy` decomposes positive definite matrices into a Gram matrix format using eigendecomposition followed by scaling the eigenvectors by the square roots of the eigenvalues. This process is inefficient for sparse positive definite matrices, as it doesn't take advantage of sparsity.</p>
+                        <p class="text-neutral-600 mb-4">It would be beneficial to expose a sparse Cholesky decomposition functionality to handle these decompositions more efficiently. This would improve performance for operations involving large sparse positive definite matrices.</p>
+
+                        <h5 class="font-semibold text-neutral-900 mt-6 mb-2">Example Usage</h5>
+                        <pre class="bg-neutral-900 text-neutral-100 p-4 rounded-lg my-3 overflow-x-auto font-mono text-xs leading-relaxed"><code>import scipy.sparse as sp
+import numpy as np
+# This function doesn't exist yet
+from cvxpy.utilities.linalg import sparse_cholesky 
+
+n = 100
+A = sp.rand(n, n, density=0.05)
+A = A.T @ A + sp.eye(n) # Make it positive definite
+
+# Should return lower triangular matrix L and permutation p
+L, p = sparse_cholesky(A)</code></pre>
+
+                        <h5 class="font-semibold text-neutral-900 mt-6 mb-2">Expected Behavior</h5>
+                        <p class="text-neutral-600 mb-4">The <code>sparse_cholesky</code> function should return a sparse lower triangular matrix $L$ and a permutation vector $p$ such that $P A P^T = L L^T$, where $P$ is the permutation matrix associated with $p$.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: DepMigrate -->
+            <div class="carousel-slide absolute inset-0 transition-all duration-500 ease-in-out opacity-0 translate-x-full">
+                <div class="grid lg:grid-cols-5 h-full">
+                    <div class="lg:col-span-2 p-8 md:p-12 flex flex-col justify-center bg-neutral-50/50 space-y-8">
+                        <div class="flex items-center gap-4">
+                            <span class="text-5xl">🕊️</span>
+                            <div>
+                                <h3 class="text-2xl font-bold text-neutral-900">DEPENDENCY-DRIVEN MIGRATION</h3>
+                                <div class="flex gap-2 mt-2">
+                                    <span class="tag-pill">Resolution Scope</span>
+                                    <span class="tag-pill">Codebase-wide</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="font-semibold text-lg text-neutral-900">Task Description</h4>
+                            <ul class="list-disc pl-5 space-y-3 text-neutral-700 leading-relaxed">
+                                <li>Moves from localized patches to codebase-wide transformations triggered by dependency upgrades (e.g., Pydantic v1→v2).</li>
+                                <li>Requires mapping API changes and updating many call sites across dozens of files reliably.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-3 p-8 md:p-12 bg-white text-sm overflow-y-auto custom-scrollbar border-l border-neutral-100">
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="text-sm font-mono text-neutral-500">Example: stanfordnlp_dsp_pr403</span>
+                            <span class="text-xs font-semibold bg-primary/10 text-primary px-3 py-1 rounded-full">Problem Statement</span>
+                        </div>
+                        <h4 class="font-bold text-lg text-neutral-900 mb-4">Support OpenAI v1 SDK and fix Azure configuration issues</h4>
+                        
+                        <h5 class="font-semibold text-neutral-900 mt-6 mb-2">Description</h5>
+                        <p class="text-neutral-600 mb-4">We are upgrading the external `openai` dependency to version 1.0+. This upgrade has caused regressions in our Language Model (LM) client, specifically for **Azure OpenAI** configurations.</p>
+                        <p class="text-neutral-600 mb-4">Users attempting to run the application with the new SDK version are encountering errors related to argument handling. The current implementation's approach to mapping `model`, `engine`, and `deployment_id` appears to be incompatible with the updated library. Additionally, the logic used to infer model types (chat vs. text) is failing for Azure deployments with custom names.</p>
+
+                        <h5 class="font-semibold text-neutral-900 mt-6 mb-2">Current Behavior</h5>
+                        <ol class="list-decimal pl-5 space-y-1 text-neutral-600 text-xs">
+                            <li><strong>Upgrade Failure:</strong> The codebase is currently incompatible with `openai>=1.0`.</li>
+                            <li><strong>Azure Parameter Errors:</strong> When `api_provider="azure"` is used, initializing the client results in `AssertionError`s or parameter validation failures. The application struggles to reconcile the `model` argument with the parameters expected by the Azure endpoint (e.g., `deployment_id`, `engine`).</li>
+                            <li><strong>Inference Issues:</strong> The system attempts to deduce the model type based on the model name. This fails for Azure users with custom deployment names (e.g., names that do not contain "gpt" or "instruct"), causing the client to misbehave.</li>
+                        </ol>
+
+                        <h5 class="font-semibold text-neutral-900 mt-6 mb-2">Expected Behavior</h5>
+                        <ul class="list-disc pl-5 space-y-1 text-neutral-600 text-xs">
+                            <li>The library must support `openai>=1.0`.</li>
+                            <li>Azure-backed clients must initialize successfully without raising errors regarding `model`, `engine`, or `deployment_id` ambiguity.</li>
+                            <li>Azure model type inference should be robust enough to handle custom deployment names.</li>
+                            <li><strong>Constraint:</strong> The refactor must ensure that existing caches for standard OpenAI users remain valid.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Doc2Repo -->
+            <div class="carousel-slide absolute inset-0 transition-all duration-500 ease-in-out opacity-0 translate-x-full">
+                <div class="grid lg:grid-cols-5 h-full">
+                    <div class="lg:col-span-2 p-8 md:p-12 flex flex-col justify-center bg-neutral-50/50 space-y-8">
+                        <div class="flex items-center gap-4">
+                            <span class="text-5xl">📝</span>
+                            <div>
+                                <h3 class="text-2xl font-bold text-neutral-900">DOCUMENT-TO-REPOSITORY</h3>
+                                <div class="flex gap-2 mt-2">
+                                    <span class="tag-pill">Resolution Scope</span>
+                                    <span class="tag-pill">Full Repository</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <h4 class="font-semibold text-lg text-neutral-900">Task Description</h4>
+                            <ul class="list-disc pl-5 space-y-3 text-neutral-700 leading-relaxed">
+                                <li>Builds an entire functional repository from specifications such as design docs or API descriptions.</li>
+                                <li>Evaluates end-to-end planning: module structure, abstractions, and correct implementation of required behaviors.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-3 p-8 md:p-12 bg-white text-sm overflow-y-auto custom-scrollbar border-l border-neutral-100">
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="text-sm font-mono text-neutral-500">Example: doc2mark</span>
+                            <span class="text-xs font-semibold bg-primary/10 text-primary px-3 py-1 rounded-full">Problem Statement</span>
+                        </div>
+                        <h4 class="font-bold text-lg text-neutral-900 mb-4">Specification: target_repo</h4>
+                        
+                        <h5 class="font-semibold text-neutral-900 mt-6 mb-2">1. Overview</h5>
+                        <p class="text-neutral-600 mb-4">The `target_repo` library is a unified document processing tool designed to convert various document formats (PDF, Office files, Images, HTML, etc.) into clean Markdown. It emphasizes high-fidelity conversion by preserving layout, tables, and extracting images. A key feature is its integration with AI-powered OCR (specifically OpenAI's Vision API and Tesseract) to handle scanned documents and complex layouts that traditional extractors miss.</p>
+                        <p class="text-neutral-600 mb-4">The library provides a simple, unified API for processing single files or batch-processing entire directories. It abstracts away the complexity of handling different file formats, providing a consistent `ProcessedDocument` output containing the content, metadata, and extracted assets.</p>
+
+                        <h5 class="font-semibold text-neutral-900 mt-6 mb-2">2. API Reference</h5>
+                        
+                        <h6 class="font-semibold text-neutral-800 mt-4 mb-2">Component: `UnifiedDocumentLoader`</h6>
+                        <p class="text-neutral-600 text-xs mb-2"><strong>Import Path:</strong> <code>from target_repo import UnifiedDocumentLoader</code></p>
+                        <pre class="bg-neutral-900 text-neutral-100 p-4 rounded-lg my-3 overflow-x-auto font-mono text-xs leading-relaxed"><code>class UnifiedDocumentLoader:
+    def __init__(
+        self,
+        ocr_provider: Union[str, OCRProvider, BaseOCR] = 'openai',
+        api_key: Optional[str] = None,
+        ocr_config: Optional[OCRConfig] = None,
+        cache_dir: Optional[str] = None,
+        # Enhanced OCR configuration for OpenAI
+        model: str = "gpt-4.1",
+        temperature: float = 0,
+        max_tokens: int = 4096,
+        max_workers: int = 5,
+        prompt_template: Union[str, PromptTemplate] = PromptTemplate.DEFAULT,
+        timeout: int = 30,
+        max_retries: int = 3,
+        # Additional OpenAI parameters
+        top_p: float = 1.0,
+        frequency_penalty: float = 0.0,
+        presence_penalty: float = 0.0,
+        base_url: Optional[str] = None,
+        # General OCR parameters
+        default_prompt: Optional[str] = None,
+        # Table output configuration
+        table_style: Optional[str] = None
+    ): ...
+
+    @property
+    def supported_formats(self) -> List[str]: ...
+
+    @property
+    def ocr(self) -> BaseOCR: ...
+
+    @property
+    def cache_dir(self) -> Optional[Path]: ...
+
+    def load(
+        self,
+        file_path: Union[str, Path],
+        output_format: Union[str, OutputFormat] = OutputFormat.MARKDOWN,
+        extract_images: bool = False,
+        ocr_images: bool = False,
+        show_progress: bool = False,
+        # Format-specific parameters
+        encoding: str = 'utf-8',
+        delimiter: Optional[str] = None
+    ) -> ProcessedDocument: ...
+
+    def batch_process(
+        self,
+        input_dir: Union[str, Path],
+        output_dir: Optional[Union[str, Path]] = None,
+        output_format: Union[str, OutputFormat] = OutputFormat.MARKDOWN,
+        extract_images: bool = False,
+        ocr_images: bool = False,
+        recursive: bool = True,
+        show_progress: bool = True,
+        save_files: bool = True,
+        **kwargs
+    ) -> Dict[str, Any]: ...</code></pre>
+                        <p class="text-neutral-600 mb-2"><strong>Description:</strong> The main entry point for loading and processing documents. It manages format detection, processor selection, and OCR configuration. It supports caching processed results to avoid redundant computation.</p>
+
+                        <h6 class="font-semibold text-neutral-800 mt-4 mb-2">Component: Convenience Functions</h6>
+                        <p class="text-neutral-600 text-xs mb-2"><strong>Import Path:</strong> <code>from target_repo import load, batch_process_documents</code></p>
+                        <pre class="bg-neutral-900 text-neutral-100 p-4 rounded-lg my-3 overflow-x-auto font-mono text-xs leading-relaxed"><code>def load(
+    file_path: Union[str, Path],
+    output_format: Union[str, OutputFormat] = OutputFormat.MARKDOWN,
+    extract_images: bool = False,
+    ocr_images: bool = False,
+    ocr_provider: str = 'openai',
+    api_key: Optional[str] = None,
+    **kwargs
+) -> ProcessedDocument: ...
+
+def batch_process_documents(
+    input_dir: Union[str, Path],
+    output_dir: Optional[Union[str, Path]] = None,
+    output_format: Union[str, OutputFormat] = OutputFormat.MARKDOWN,
+    extract_images: bool = False,
+    ocr_images: bool = False,
+    recursive: bool = True,
+    ocr_provider: str = 'openai',
+    api_key: Optional[str] = None,
+    show_progress: bool = True,
+    save_files: bool = True,
+    **kwargs
+) -> Dict[str, Any]: ...</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <button id="prev-slide" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-8 bg-white text-neutral-800 w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-neutral-50 hover:scale-110 transition-all duration-300 opacity-0 group-hover:opacity-100 z-10">
+            <i class="fa fa-chevron-left text-lg"></i>
+        </button>
+        <button id="next-slide" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-8 bg-white text-neutral-800 w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-neutral-50 hover:scale-110 transition-all duration-300 opacity-0 group-hover:opacity-100 z-10">
+            <i class="fa fa-chevron-right text-lg"></i>
+        </button>
+        
+        <!-- Indicators -->
+        <div class="flex justify-center gap-3 mt-8">
+            <button class="w-3 h-3 rounded-full bg-primary transition-all duration-300" onclick="goToSlide(0)"></button>
+            <button class="w-3 h-3 rounded-full bg-neutral-300 hover:bg-neutral-400 transition-all duration-300" onclick="goToSlide(1)"></button>
+            <button class="w-3 h-3 rounded-full bg-neutral-300 hover:bg-neutral-400 transition-all duration-300" onclick="goToSlide(2)"></button>
+            <button class="w-3 h-3 rounded-full bg-neutral-300 hover:bg-neutral-400 transition-all duration-300" onclick="goToSlide(3)"></button>
+        </div>
+    </div>
+</section>
+
+        <section id="architecture" class="section-card space-y-5">
+  <h2 class="text-3xl md:text-4xl font-bold text-primary text-center">
+    Overview of SearchSWE Framework
+  </h2>
+
+  <div class="text-neutral-900 text-left leading-relaxed text-lg max-w-4xl mx-auto space-y-4">
+
+    <!-- <p>
+      SearchSWE adopts a dual-context design and is equipped with external tools that enable 
+      autonomous, research-aware problem solving.
+    </p> -->
+
+    <ul class="list-disc pl-6 space-y-3">
+      <li>
+        <strong>Dual-context design</strong>
+        <ul class="list-circle pl-6 space-y-1 mt-1">
+          <li>🐳 <strong>Local context</strong>: Docker environment for repo exploration, command execution, and testing.</li>
+          <li>🌎 <strong>Global context</strong>: access to external web information.</li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>Two external tools</strong>
+        <ul class="list-circle pl-6 space-y-1 mt-1">
+          <li>🔎 <strong>Search tool</strong>: query web search engines for relevant resources.</li>
+          <li>🌐 <strong>Browser tool</strong>: retrieve and summarize webpages given a URL and goal.</li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>Autonomous reasoning</strong>: the agent decides when and how to use external 
+        information during problem solving.
+      </li>
+    </ul>
+
+  </div>
+
+  <img src="assets/searchswe.png" alt="BeyondSWE Agent Architecture" class="w-full">
+
+  <p class="text-neutral-600 text-center">
+    Overview of The SearchSWE Framework. Left: the
+agent solves coding tasks by iteratively accessing external resources (search, browser) and local context (Docker container), with a blocklist preventing cheating. Right: evaluation applies
+patches to a fresh container and runs P2P/F2P tests for verification.
+  </p>
+</section>
+
+        <section id="results" class="section-card space-y-5">
+  <h2 class="text-3xl md:text-4xl font-bold text-primary text-center">
+    Evaluation Results
+  </h2>
+
+  <!-- 主表上方说明（来自 5.3 的精简总结） -->
+  <div class="text-neutral-900 text-left leading-relaxed text-lg max-w-4xl">
+    <p>
+      We evaluate frontier models with <strong>SearchSWE</strong> and compare against the
+      <strong>OpenHands</strong> baseline. Results highlight a key gap: <strong>search</strong> and
+      <strong>coding</strong> abilities have improved independently, but their integration remains
+      inconsistent in practice.
+    </p>
+
+    <ul class="list-disc pl-6 mt-3 space-y-2">
+      <li>
+        <strong>✅ When search helps:</strong> it can provide actionable external context (e.g., documentation,
+        migration guides), yielding gains on some model–task pairs (notably <strong>DomainFix</strong> and
+        <strong>DepMigrate</strong> for strong general-purpose models).
+      </li>
+      <li>
+        <strong>❌ When search hurts:</strong> benefits are not universal—irrelevant or mismatched retrieval can
+        inject noise and reduce performance (some code-specialized models degrade under search).
+      </li>
+      <li>
+        <strong>📊 Task-level patterns:</strong> <strong>CrossRepo</strong> tends to benefit broadly, while
+        <strong>Doc2Repo</strong> often suffers because fragmented search evidence can disrupt coherent
+        end-to-end design.
+      </li>
+      <li>
+        <strong>😭 Why it’s hard:</strong> 1. <strong>the information landscape</strong> ( the
+knowledge needed for code tasks is often embedded in raw
+artifacts); 2. <strong>version consistency</strong> (local environments often pin older
+versions); 3. <strong>the noise introduced by search can actively
+harm code generation</strong>.
+      </li>
+      <li>
+        <strong>🛎️ Implication:</strong> combining external information seeking with code reasoning is essential
+        but does not emerge automatically—BeyondSWE is designed to measure and drive progress on this integration.
+      </li>
+    </ul>
+  </div>
+
+  <!-- 表注（建议左对齐，与上方一致） -->
+  <p class="text-neutral-600 text-left max-w-5xl leading-relaxed">
+  Main results on BeyondSWE. Multiple frontier models evaluated with OpenHands and SearchSWE. 
+  <span class="text-green-600 font-medium">Green</span> / 
+  <span class="text-red-600 font-medium">Red</span> values indicate
+  SearchSWE’s gains/drops relative to OpenHands. Bold and underlined denote the best and
+  second-best results within each framework.
+</p>
+
+  <img src="assets/main_table.png" alt="BeyondSWE Evaluation Results" class="w-full">
+</section>
+
+        <section id="examples" class="space-y-6">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-3">Qualitative Analysis of Search-Code Disconnect</h2>
+                <p class="text-neutral-500">
+                    We investigated why search augmentation does not consistently translate to coding performance, and identify
+                    specific failure modes where the integration of external knowledge breaks down.
+                </p>
+            </div>
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <div class="gallery-card p-6">
+                    <div class="text-3xl mb-4">🛣️</div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Failure Mode 1</h3>
+                    <p class="text-sm text-neutral-600 mb-4">The Information Landscape Gap</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tag-pill">🔗 CrossRepo</span>
+                    </div>
+                    <button
+                        class="failure-open w-full py-2 rounded-lg bg-primary text-white font-semibold transition-all hover:bg-primary/90"
+                        data-title="Failure Mode 1: The Information Landscape Gap"
+                        data-reason="the information landscape, 🔗 CrossRepo"
+                        data-analysis="Search engines often surface **high-level docs** over **raw code artifacts**, creating an *information density gap* that leads to brittle implementations.
+
+**Case:** `unidata_siphon_pr234`
+
+- **Step 1 — Retrieval mismatch:** the engine ranks an API help page above the backend `raob.py` source.
+- **Step 2 — Ambiguity propagation:** the phrase **just a timestamp** is underspecified and hides edge-case logic.
+- **Step 3 — Implementation failure:** the agent implements a happy-path fix, misses robust error handling, and fails comprehensive tests.
+
+![](assets/fail_1.png)
+
+**Implication:** agents may stop at the first plausible doc snippet instead of persistently retrieving the ground-truth code artifact."
+                        data-src="assets/fail_mode_1_unidata_siphon_pr234.json"
+                    >
+                        View Trajectory →
+                    </button>
+                </div>
+
+                <div class="gallery-card p-6">
+                    <div class="text-3xl mb-4">🔐</div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Failure Mode 2</h3>
+                    <p class="text-sm text-neutral-600 mb-4">Version consistency</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tag-pill">🕊️ DepMigrate</span>
+                    </div>
+                    <button
+                        class="failure-open w-full py-2 rounded-lg bg-primary text-white font-semibold transition-all hover:bg-primary/90"
+                        data-title="Failure Mode 2: Version consistency"
+                        data-reason="version consistency, 🕊️ DepMigrate"
+                        data-analysis="A subtle but pervasive challenge is **Temporal Misalignment**: the discrepancy between *latest* knowledge surfaced by LLMs/search and the *legacy* constraints of the target repository.
+
+**Case:** `behave_behave-django_pr162` (repo pinned to legacy Django **2.2–3.x**)
+
+- **Step 1 — Hallucination-driven retrieval:** instead of verifying the local version (e.g., `pip freeze`, local config), the agent assumes a future/non-existent environment (Django 5.2) and searches to *confirm* this bias.
+- **Step 2 — Architecture conflict:** newer testing patterns favor `@classmethod` hooks, but legacy `TransactionTestCase` expects lifecycle hooks like `_pre_setup` to be **instance methods** (`self`).
+- **Step 3 — Breaking the inheritance chain:** the agent refactors `_pre_setup` from an instance method into a class method, creating a signature mismatch that breaks MRO / instance-state access and crashes the test suite.
+
+![](assets/fail_2.png)
+
+**Implication:** external knowledge is not strictly additive—under *recency bias*, search can become a liability by prioritizing modern practices incompatible with legacy constraints. Robust agents must actively reconcile retrieved information with the **local environment version**."
+                        data-src="assets/fail_mode_2_behave_behave-django_pr162.json"
+                    >
+                        View Trajectory →
+                    </button>
+                </div>
+
+                <div class="gallery-card p-6">
+                    <div class="text-3xl mb-4">💥</div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Failure Mode 3</h3>
+                    <p class="text-sm text-neutral-600 mb-4">Search Noise & Semantic Drift</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tag-pill">🔗 CrossRepo</span>
+                    </div>
+                    <button
+                        class="failure-open w-full py-2 rounded-lg bg-primary text-white font-semibold transition-all hover:bg-primary/90"
+                        data-title="Failure Mode 3: Search Noise & Semantic Drift"
+                        data-reason="semantic drift from noisy retrieval, 🔗 CrossRepo"
+                        data-analysis="**Case:** `abravalheri_validate-pyproject_pr105`
+
+**Core problem — Polysemy Trap:**  
+The agent searched `repo-review define checks fixtures families`.  
+Because the term *family* is overloaded in other domains (BIM, e-Discovery, legal tech), the search engine prioritized irrelevant but authoritative pages.
+
+### Step 1 — Polysemy Trap (Query Drift)
+The query was logically reasonable, but semantically ambiguous, causing retrieval to drift into unrelated technical domains.
+
+![Retrieval Noise Summary](assets/fail_3_1.png)
+
+### Step 2 — Context Contamination  
+Although the first result was relevant, subsequent results were dominated by:
+- Autodesk Revit (Architecture / BIM)  
+- RelativityOne (Legal Tech)
+
+Instead of filtering noise, the agent tried to synthesize a single narrative from incoherent sources, diluting the correct signal.
+
+![Retrieval Noise Table](assets/fail_3_2.png)
+
+### Step 3 — Retreat to Generic Hallucination  
+Unable to extract an idiomatic pattern from noisy context, the agent reverted to a **generic plugin-registration template** using `entry_points`, ignoring repo-specific test harness constraints.  
+This caused a **Side-Effect Violation**: the plugin was registered **twice** during tests.
+
+assert len(params.plugins) == 1
+AssertionError: assert 2 == 1
+
+**Implication:** search is not merely information retrieval—it can become noise generation.  
+BeyondSWE tests whether agents can perform **Domain Discrimination**: rejecting high-ranked results that match keywords but violate repository semantics."
+                        data-src="assets/fail_mode_3_abravalheri_validate-pyproject_pr41.json"
+                    >
+                        View Trajectory →
+                    </button>
+                </div>
+            </div>
+
+            <div id="failure-modal" class="failure-modal">
+                <div class="bg-white rounded-2xl w-[min(92vw,1100px)] max-h-[85vh] overflow-y-auto p-6 relative shadow-xl">
+                    <button id="failure-modal-close" class="absolute right-4 top-4 text-neutral-500 hover:text-neutral-900 text-xl">×</button>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="text-sm text-neutral-500 mb-2">Qualitative Failure Mode</div>
+                            <h3 id="failure-modal-title" class="text-2xl font-semibold text-neutral-900">Case Study</h3>
+                            <div id="failure-modal-reason" class="inline-flex mt-3 items-center rounded-full bg-primary/10 text-primary text-xs px-3 py-1"></div>
+                        </div>
+                        <div class="px-1">
+                            <div class="text-sm text-neutral-500 mb-2">Analysis</div>
+                            <p id="failure-modal-analysis" class="text-neutral-800 leading-relaxed text-base"></p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="text-sm text-neutral-500">Agent Trajectory</div>
+                            <div id="failure-modal-traj" class="space-y-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="citation" class="section-card space-y-4">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-2">Citation</h2>
+                <p class="text-neutral-500">If you find our work helpful, please cite us:</p>
+            </div>
+            <div class="relative bg-neutral-900 text-neutral-100 rounded-2xl p-6 border border-neutral-800">
+                <button id="copyBtn" class="absolute top-4 right-4 bg-primary text-white text-sm px-4 py-2 rounded-md transition-all hover:bg-primary/90" onclick="copyCitation()">
+                    <span id="copyBtnText">📋 Copy</span>
+                </button>
+                <pre id="citationText" class="text-sm leading-relaxed whitespace-pre-wrap">@article{beyondswe2026,
+  title={BeyondSWE: Can Current Code Agent Survive Beyond
+Single-Repo Bug Fixing?},
+  author={Author One and Author Two and Author Three and Author Four},
+  journal={arXiv preprint arXiv:xxxx.xxxxx},
+  year={2026}
+}</pre>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-neutral-900 text-white py-10 px-4 w-full flex justify-center">
+        <div class="content-width mx-auto text-center space-y-2">
+            <p>BeyondSWE © 2026</p>
+            <p class="text-neutral-400">Agentic software engineering beyond single-repo bug fixing</p>
+        </div>
+    </footer>
+
+    <script>
+        function copyCitation() {
+            const citationText = document.getElementById('citationText').textContent;
+            navigator.clipboard.writeText(citationText).then(() => {
+                const btn = document.getElementById('copyBtn');
+                const btnText = document.getElementById('copyBtnText');
+                btn.classList.remove('bg-primary');
+                btn.classList.add('bg-emerald-500');
+                btnText.textContent = '✓ Copied!';
+                setTimeout(() => {
+                    btn.classList.remove('bg-emerald-500');
+                    btn.classList.add('bg-primary');
+                    btnText.textContent = '📋 Copy';
+                }, 2000);
+            });
+        }
+
+        const escapeHtml = (value) => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        const formatInline = (value) => {
+            let output = escapeHtml(value);
+            output = output.replace(
+            /!\[([^\]]*)\]\(([^)]+)\)/g,
+            '<figure class="my-4"><img src="$2" alt="$1" class="w-full rounded-xl border border-neutral-200" loading="lazy"><figcaption class="text-xs text-neutral-500 mt-2">$1</figcaption></figure>'
+            );
+            output = output.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+            output = output.replace(/`([^`]+)`/g, '<code>$1</code>');
+            output = output.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+            output = output.replace(/\*([^*]+)\*/g, '<em>$1</em>');
+output = output.replace(
+  /==([^=]+)==/g,
+  '<span class="text-red-600 font-medium">$1</span>'
+);
+
+            return output;
+        };
+
+        const renderMarkdown = (text) => {
+            const lines = text.replace(/\r\n/g, '\n').split('\n');
+            const blocks = [];
+            let paragraph = [];
+            let list = [];
+            let listType = null;
+            let inCode = false;
+            let code = [];
+            let quote = [];
+
+            const flushParagraph = () => {
+                if (paragraph.length) {
+                    blocks.push({ type: 'p', content: paragraph.join('\n') });
+                    paragraph = [];
+                }
+            };
+            const flushList = () => {
+                if (list.length) {
+                    blocks.push({ type: listType, items: list });
+                    list = [];
+                    listType = null;
+                }
+            };
+            const flushQuote = () => {
+                if (quote.length) {
+                    blocks.push({ type: 'blockquote', content: quote.join('\n') });
+                    quote = [];
+                }
+            };
+
+            lines.forEach((line) => {
+                if (line.startsWith('```')) {
+                    if (inCode) {
+                        blocks.push({ type: 'code', content: code.join('\n') });
+                        code = [];
+                        inCode = false;
+                    } else {
+                        flushParagraph();
+                        flushList();
+                        flushQuote();
+                        inCode = true;
+                    }
+                    return;
+                }
+
+                if (inCode) {
+                    code.push(line);
+                    return;
+                }
+
+                if (!line.trim()) {
+                    flushParagraph();
+                    flushList();
+                    flushQuote();
+                    return;
+                }
+
+                const headingMatch = line.match(/^(#{1,3})\s+(.*)$/);
+                if (headingMatch) {
+                    flushParagraph();
+                    flushList();
+                    flushQuote();
+                    blocks.push({ type: 'h', level: headingMatch[1].length, content: headingMatch[2] });
+                    return;
+                }
+
+                const quoteMatch = line.match(/^>\s?(.*)$/);
+                if (quoteMatch) {
+                    flushParagraph();
+                    flushList();
+                    quote.push(quoteMatch[1]);
+                    return;
+                }
+
+                const orderedMatch = line.match(/^\d+\.\s+(.*)$/);
+                if (orderedMatch) {
+                    if (listType && listType !== 'ol') {
+                        flushList();
+                    }
+                    listType = 'ol';
+                    list.push(orderedMatch[1]);
+                    return;
+                }
+
+                const bulletMatch = line.match(/^[-*+]\s+(.*)$/);
+                if (bulletMatch) {
+                    if (listType && listType !== 'ul') {
+                        flushList();
+                    }
+                    listType = 'ul';
+                    list.push(bulletMatch[1]);
+                    return;
+                }
+
+                flushList();
+                flushQuote();
+                paragraph.push(line);
+            });
+
+            if (inCode && code.length) {
+                blocks.push({ type: 'code', content: code.join('\n') });
+            }
+            flushParagraph();
+            flushList();
+            flushQuote();
+
+            return blocks.map((block) => {
+                if (block.type === 'code') {
+                    return `<pre><code>${escapeHtml(block.content)}</code></pre>`;
+                }
+                if (block.type === 'blockquote') {
+                    return `<blockquote>${formatInline(block.content)}</blockquote>`;
+                }
+                if (block.type === 'ol') {
+                    return `<ol>${block.items.map((item) => `<li>${formatInline(item)}</li>`).join('')}</ol>`;
+                }
+                if (block.type === 'ul') {
+                    return `<ul>${block.items.map((item) => `<li>${formatInline(item)}</li>`).join('')}</ul>`;
+                }
+                if (block.type === 'h') {
+                    const level = Math.min(block.level, 3);
+                    return `<h${level}>${formatInline(block.content)}</h${level}>`;
+                }
+                return `<p>${formatInline(block.content).replace(/\n/g, '<br>')}</p>`;
+            }).join('');
+        };
+
+
+
+        function initFailureModes() {
+            const modal = document.getElementById('failure-modal');
+            if (!modal) return;
+            const closeButton = document.getElementById('failure-modal-close');
+            const titleEl = document.getElementById('failure-modal-title');
+            const reasonEl = document.getElementById('failure-modal-reason');
+            const analysisEl = document.getElementById('failure-modal-analysis');
+            const trajEl = document.getElementById('failure-modal-traj');
+            const buttons = Array.from(document.querySelectorAll('.failure-open'));
+
+            const extractAgentRun = (data) => {
+                if (!data || typeof data !== 'object') return [];
+                if (Array.isArray(data.agent_run_result)) return data.agent_run_result;
+                const key = Object.keys(data)[0];
+                if (key && data[key] && Array.isArray(data[key].agent_run_result)) {
+                    return data[key].agent_run_result;
+                }
+                return [];
+            };
+
+            const renderTrajectory = (items) => {
+                if (!items.length) {
+                    trajEl.innerHTML = '<div class="text-sm text-neutral-500">No trajectory content found to display.</div>';
+                    return;
+                }
+                trajEl.innerHTML = items.map((item, index) => {
+                    const role = item.role || 'unknown';
+                    const content = item.content || '';
+                    const previewLine = String(content).split('\n').find((line) => line.trim()) || '';
+                    const preview = previewLine.length > 120 ? `${previewLine.slice(0, 120)}…` : previewLine;
+                    return `
+                        <details class="traj-item role-${role}">
+                            <summary class="traj-summary">
+                                <div class="traj-summary-text">
+                                    <span class="traj-step">Step ${index + 1}</span>
+                                    <span class="traj-role">${role}</span>
+                                    <span class="traj-preview">${escapeHtml(preview)}</span>
+                                </div>
+                                <span class="text-xs text-neutral-400">Expand</span>
+                            </summary>
+                            <div class="traj-body">
+                                <div class="task-text">${renderMarkdown(String(content))}</div>
+                            </div>
+                        </details>
+                    `;
+                }).join('');
+            };
+
+            const openModal = async (button) => {
+                const title = button.getAttribute('data-title') || 'Case Study';
+                const reason = button.getAttribute('data-reason') || '';
+                const analysis = button.getAttribute('data-analysis') || '';
+                const src = button.getAttribute('data-src');
+                titleEl.textContent = title;
+                reasonEl.textContent = reason;
+                analysisEl.innerHTML = renderMarkdown(String(analysis));
+                analysisEl.classList.add('task-text');
+                trajEl.innerHTML = '<div class="text-sm text-neutral-500">Loading trajectory...</div>';
+                modal.classList.add('active');
+                document.body.classList.add('overflow-hidden');
+
+                if (src) {
+                    try {
+                        if (window.location.protocol === 'file:') {
+                            throw new Error('file-protocol');
+                        }
+                        const url = new URL(src, window.location.href);
+                        const response = await fetch(url);
+                        if (!response.ok) {
+                            throw new Error(`http-${response.status}`);
+                        }
+                        const data = await response.json();
+                        renderTrajectory(extractAgentRun(data));
+                    } catch (error) {
+                        let hint = '加载失败，请检查 JSON 路径。';
+                        const message = String(error.message || '');
+                        if (message.includes('file-protocol')) {
+                            hint = '请通过本地服务访问页面（例如 http://localhost:5174），file:// 无法读取 JSON。';
+                        } else if (message.startsWith('http-')) {
+                            const status = message.replace('http-', '');
+                            const origin = window.location.origin === 'null' ? '' : window.location.origin;
+                            const rootHint = origin ? `请确保在项目根目录启动服务，并访问 ${origin}/` : '请确保在项目根目录启动服务';
+                            hint = `JSON 请求失败（HTTP ${status}）。${rootHint}，并确认 ${src} 存在。`;
+                        } else if (message.includes('Unexpected') || message.includes('JSON')) {
+                            hint = `JSON 解析失败，请确认 ${src} 为合法 JSON。`;
+                        }
+                        trajEl.innerHTML = `<div class="text-sm text-neutral-500">${hint}</div>`;
+                    }
+                }
+            };
+
+            const closeModal = () => {
+                modal.classList.remove('active');
+                document.body.classList.remove('overflow-hidden');
+            };
+
+            buttons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    openModal(button);
+                });
+            });
+
+            if (closeButton) {
+                closeButton.addEventListener('click', closeModal);
+            }
+
+            modal.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    closeModal();
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initFailureModes();
+        });
+    </script>
+    <style>
+        .carousel-slide {
+            transition: all 0.5s ease-in-out;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transform: translateX(100%);
+            pointer-events: none;
+        }
+
+        .carousel-slide[data-active="true"] {
+            opacity: 1;
+            transform: translateX(0);
+            pointer-events: auto;
+            z-index: 10;
+        }
+
+        .carousel-slide.slide-left {
+            transform: translateX(-100%);
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.carousel-slide');
+            const indicators = document.querySelectorAll('#task-carousel + div button, #task-carousel ~ div button'); // Select indicators
+            const prevBtn = document.getElementById('prev-slide');
+            const nextBtn = document.getElementById('next-slide');
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+            let autoPlayInterval;
+
+            function updateSlides(direction) {
+                slides.forEach((slide, index) => {
+                    // Reset classes
+                    slide.classList.remove('slide-left');
+                    
+                    if (index === currentSlide) {
+                        slide.setAttribute('data-active', 'true');
+                        slide.style.transform = 'translateX(0)';
+                    } else {
+                        slide.setAttribute('data-active', 'false');
+                        if (index < currentSlide) {
+                            slide.classList.add('slide-left');
+                        } else {
+                            // Ensure it's on the right
+                             slide.style.transform = ''; 
+                        }
+                    }
+                });
+
+                // Update indicators
+                // Note: The indicators selection might be tricky if not specific enough
+                // Let's assume the indicators are the ones in the div following the carousel
+                const indicatorsContainer = document.querySelector('#task-carousel ~ div');
+                if (indicatorsContainer) {
+                    const dots = indicatorsContainer.querySelectorAll('button');
+                    dots.forEach((dot, index) => {
+                         if (index === currentSlide) {
+                            dot.classList.remove('bg-neutral-300', 'hover:bg-neutral-400');
+                            dot.classList.add('bg-primary');
+                        } else {
+                            dot.classList.add('bg-neutral-300', 'hover:bg-neutral-400');
+                            dot.classList.remove('bg-primary');
+                        }
+                    });
+                }
+            }
+
+            // Expose goToSlide globally so onclick works
+            window.goToSlide = (index) => {
+                if (index === currentSlide) return;
+                currentSlide = index;
+                updateSlides();
+                resetAutoPlay();
+            };
+
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                    updateSlides('prev');
+                    resetAutoPlay();
+                });
+            }
+
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                    updateSlides('next');
+                    resetAutoPlay();
+                });
+            }
+
+            function startAutoPlay() {
+                // Clear any existing interval first to avoid duplicates
+                if (autoPlayInterval) clearInterval(autoPlayInterval);
+                
+                autoPlayInterval = setInterval(() => {
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                    updateSlides('next');
+                }, 6000);
+            }
+
+            function resetAutoPlay() {
+                clearInterval(autoPlayInterval);
+                startAutoPlay();
+            }
+
+            // Initialize
+            updateSlides();
+            startAutoPlay();
+        });
+    </script>
+</body>
+</html>

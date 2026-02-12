@@ -1,0 +1,17 @@
+# Support OpenAI v1 SDK and fix Azure configuration issues
+
+## Description
+We are upgrading the external `openai` dependency to version 1.0+. This upgrade has caused regressions in our Language Model (LM) client, specifically for **Azure OpenAI** configurations.
+
+Users attempting to run the application with the new SDK version are encountering errors related to argument handling. The current implementation's approach to mapping `model`, `engine`, and `deployment\_id` appears to be incompatible with the updated library. Additionally, the logic used to infer model types (chat vs. text) is failing for Azure deployments with custom names.
+
+## Current Behavior
+1.  **Upgrade Failure:** The codebase is currently incompatible with `openai>=1.0`.
+2.  **Azure Parameter Errors:** When `api\_provider="azure"` is used, initializing the client results in `AssertionError`s or parameter validation failures. The application struggles to reconcile the `model` argument with the parameters expected by the Azure endpoint (e.g., `deployment\_id`, `engine`).
+3.  **Inference Issues:** The system attempts to deduce the model type based on the model name. This fails for Azure users with custom deployment names (e.g., names that do not contain "gpt" or "instruct"), causing the client to misbehave.
+
+## Expected Behavior
+*   The library must support `openai>=1.0`.
+*   Azure-backed clients must initialize successfully without raising errors regarding `model`, `engine`, or `deployment\_id` ambiguity.
+*   Azure model type inference should be robust enough to handle custom deployment names.
+*   **Constraint:** The refactor must ensure that existing caches for standard OpenAI users remain valid.

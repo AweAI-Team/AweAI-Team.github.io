@@ -1,0 +1,24 @@
+# Implement sparse Cholesky decomposition
+
+## Description
+Currently, `cvxpy` decomposes positive definite matrices into a Gram matrix format using eigendecomposition followed by scaling the eigenvectors by the square roots of the eigenvalues. This process is inefficient for sparse positive definite matrices, as it doesn't take advantage of sparsity.
+
+It would be beneficial to expose a sparse Cholesky decomposition functionality to handle these decompositions more efficiently. This would improve performance for operations involving large sparse positive definite matrices.
+
+## Example Usage
+```python
+import scipy.sparse as sp
+import numpy as np
+# This function doesn't exist yet
+from cvxpy.utilities.linalg import sparse\_cholesky 
+
+n = 100
+A = sp.rand(n, n, density=0.05)
+A = A.T @ A + sp.eye(n) # Make it positive definite
+
+# Should return lower triangular matrix L and permutation p
+L, p = sparse\_cholesky(A)
+```
+
+## Expected Behavior
+The `sparse\_cholesky` function should return a sparse lower triangular matrix $L$ and a permutation vector $p$ such that $P A P^T = L L^T$, where $P$ is the permutation matrix associated with $p$.

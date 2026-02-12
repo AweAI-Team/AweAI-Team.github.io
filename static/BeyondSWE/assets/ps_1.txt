@@ -1,0 +1,44 @@
+# Server ignores `host` argument in `start()` and `TRAME_DEFAULT_HOST` environment variable
+
+## Description
+We are encountering an issue where the `host` parameter passed to `trame_server.Server.start()` is ignored, causing the server to always bind to `localhost` (127.0.0.1). This prevents external connections and is blocking downstream integrations that require binding to specific interfaces (e.g., `0.0.0.0` for containerized environments), such as the ongoing work in PyVista (see [pyvista/pyvista#3385](https://github.com/pyvista/pyvista/pull/3385)).
+
+The server persists with the CLI default (`localhost`) even when an explicit override is provided in Python. Furthermore, the `TRAME_DEFAULT_HOST` environment variable, which is expected to define the host when no argument is provided, is currently not respected.
+
+## Steps to Reproduce
+The following script attempts to bind the server to `0.0.0.0`, but the server continues to listen on `127.0.0.1`:
+
+```python
+import os
+from trame_server import Server
+
+# Scenario 1: Attempt to start server on all interfaces via argument
+# Expected: Binds to 0.0.0.0
+# Actual: Binds to 127.0.0.1
+print("--- Testing host argument ---")
+server = Server()
+try:
+    # This host argument is currently ignored
+    server.start(port=8080, host='0.0.0.0', open_browser=False)
+except Exception as e:
+    print(f"Error: {e}")
+finally:
+    server.stop()
+
+# Scenario 2: Attempt using environment variable
+# Expected: Binds to 0.0.0.0
+# Actual: Binds to 127.0.0.1 (default)
+print("\n--- Testing environment variable ---")
+os.environ['TRAME_DEFAULT_HOST'] = '0.0.0.0'
+server2 = Server()
+try:
+    server2.start(port=8081, open_browser=False)
+except Exception as e:
+    print(f"Error: {e}")
+finally:
+    server2.stop()
+```
+
+## Expected Behavior
+1.  **Argument Priority:** When `server.start(host='0.0.0.0')` is called, the server should respect the `host` argument and bind to that address.
+2.  **Environment Variable:** If no `host` argument is provided to `start()`, the server should use the value of `TRAME_DEFAULT_HOST` if it is set.

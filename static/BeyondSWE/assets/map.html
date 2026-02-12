@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Day Tokyo Trip - Food, Photography & Culture</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+        }
+        #sidebar {
+            width: 320px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            overflow-y: auto;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+        }
+        #map {
+            flex: 1;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .subtitle {
+            font-size: 14px;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        .day-section {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        .day-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 5px;
+        }
+        .location-item {
+            margin: 10px 0;
+            padding: 8px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 5px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .location-item:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateX(5px);
+        }
+        .time {
+            font-weight: bold;
+            color: #ffd700;
+        }
+        .leaflet-popup-content {
+            margin: 15px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .popup-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 5px;
+        }
+        .popup-time {
+            font-weight: bold;
+            color: #764ba2;
+            margin-bottom: 8px;
+        }
+        .popup-activity {
+            margin-bottom: 10px;
+        }
+        .popup-food {
+            background: #fff3cd;
+            padding: 8px;
+            border-radius: 5px;
+            border-left: 3px solid #ff9800;
+        }
+        .popup-food strong {
+            color: #d68200;
+        }
+        .legend {
+            background: rgba(255,255,255,0.15);
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-size: 12px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+        .legend-color {
+            width: 20px;
+            height: 4px;
+            margin-right: 8px;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <h1>🗾 3-Day Tokyo Adventure</h1>
+        <div class="subtitle">Food • Photography • Culture | For Couples ❤️</div>
+        
+        <div class="day-section">
+            <div class="day-title">📅 Day 1: Traditional Tokyo</div>
+            <div class="location-item" onclick="focusMarker(0)">
+                <div class="time">09:00 - 11:00</div>
+                Senso-ji Temple (Asakusa)
+            </div>
+            <div class="location-item" onclick="focusMarker(1)">
+                <div class="time">11:00 - 13:00</div>
+                Nakamise Shopping Street
+            </div>
+            <div class="location-item" onclick="focusMarker(2)">
+                <div class="time">14:00 - 17:00</div>
+                Tokyo Skytree
+            </div>
+            <div class="location-item" onclick="focusMarker(3)">
+                <div class="time">18:00 - 20:00</div>
+                Sumida River Walk
+            </div>
+        </div>
+
+        <div class="day-section">
+            <div class="day-title">📅 Day 2: Modern & Trendy</div>
+            <div class="location-item" onclick="focusMarker(4)">
+                <div class="time">08:00 - 10:00</div>
+                Meiji Shrine
+            </div>
+            <div class="location-item" onclick="focusMarker(5)">
+                <div class="time">10:30 - 13:00</div>
+                Harajuku & Takeshita Street
+            </div>
+            <div class="location-item" onclick="focusMarker(6)">
+                <div class="time">14:00 - 16:00</div>
+                Shibuya Crossing
+            </div>
+            <div class="location-item" onclick="focusMarker(7)">
+                <div class="time">18:00 - 21:00</div>
+                Shibuya Center-gai
+            </div>
+        </div>
+
+        <div class="day-section">
+            <div class="day-title">📅 Day 3: Urban Culture</div>
+            <div class="location-item" onclick="focusMarker(8)">
+                <div class="time">06:00 - 09:00</div>
+                Tsukiji Outer Market
+            </div>
+            <div class="location-item" onclick="focusMarker(9)">
+                <div class="time">10:00 - 13:00</div>
+                Shinjuku Gyoen Garden
+            </div>
+            <div class="location-item" onclick="focusMarker(10)">
+                <div class="time">14:00 - 16:00</div>
+                Tokyo Metropolitan Building
+            </div>
+            <div class="location-item" onclick="focusMarker(11)">
+                <div class="time">18:00 - 21:00</div>
+                Omoide Yokocho
+            </div>
+        </div>
+
+        <div class="legend">
+            <strong>Route Legend:</strong>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #e74c3c;"></div>
+                Day 1: Traditional
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #3498db;"></div>
+                Day 2: Modern
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #2ecc71;"></div>
+                Day 3: Urban
+            </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <script>
+        // Initialize map centered on Tokyo
+        const map = L.map('map').setView([35.6762, 139.6503], 12);
+
+        // Add tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Define locations with details
+        const locations = [
+            // Day 1: Traditional Tokyo (Asakusa)
+            {
+                name: "Senso-ji Temple",
+                coords: [35.7148, 139.7967],
+                time: "09:00 - 11:00",
+                activity: "• Explore Tokyo's oldest temple<br>• Photo: Giant red lantern & incense burner<br>• Cultural tip: Draw an omikuji fortune",
+                food: "Try freshly made ningyo-yaki (small cakes) near the temple",
+                day: 1
+            },
+            {
+                name: "Nakamise Shopping Street",
+                coords: [35.7119, 139.7965],
+                time: "11:00 - 13:00",
+                activity: "• Traditional craft shops & souvenirs<br>• Street food tasting tour<br>• Photo: Colorful shop fronts",
+                food: "Lunch: Tempura at Daikokuya, age-manju, melon pan",
+                day: 1
+            },
+            {
+                name: "Tokyo Skytree",
+                coords: [35.7101, 139.8107],
+                time: "14:00 - 17:00",
+                activity: "• Observatory deck for panoramic views<br>• Photo: Golden hour cityscape<br>• Shopping at Solamachi mall",
+                food: "Matcha parfait at Nana's Green Tea (Solamachi)",
+                day: 1
+            },
+            {
+                name: "Sumida River Walk",
+                coords: [35.7072, 139.8050],
+                time: "18:00 - 20:00",
+                activity: "• Romantic evening stroll<br>• Photo: Skytree illuminated at night<br>• Cherry blossom spots (seasonal)",
+                food: "Dinner: Izakaya on Azumabashi Bridge area",
+                day: 1
+            },
+
+            // Day 2: Modern Tokyo (Shibuya/Harajuku)
+            {
+                name: "Meiji Shrine",
+                coords: [35.6764, 139.6993],
+                time: "08:00 - 10:00",
+                activity: "• Peaceful forest shrine walk<br>• Photo: Torii gate in morning light<br>• Traditional wedding ceremonies (if lucky)",
+                food: "Breakfast: Fluffy pancakes at Bills Omotesando",
+                day: 2
+            },
+            {
+                name: "Harajuku & Takeshita Street",
+                coords: [35.6708, 139.7033],
+                time: "10:30 - 13:00",
+                activity: "• Colorful street fashion & pop culture<br>• Photo: Quirky shops & cosplay<br>• Crepe tasting adventure",
+                food: "Iconic rainbow crepes, trendy taiyaki ice cream",
+                day: 2
+            },
+            {
+                name: "Shibuya Crossing",
+                coords: [35.6595, 139.7004],
+                time: "14:00 - 16:00",
+                activity: "• World's busiest intersection<br>• Photo: From Starbucks 2nd floor or Shibuya Sky<br>• Hachiko statue visit",
+                food: "Wagyu beef bowl at Gyukatsu Motomura",
+                day: 2
+            },
+            {
+                name: "Shibuya Center-gai",
+                coords: [35.6615, 139.6982],
+                time: "18:00 - 21:00",
+                activity: "• Neon-lit food street exploration<br>• Photo: Night street vibes & neon signs<br>• Izakaya hopping",
+                food: "Yakitori at Torikizoku, ramen at Ichiran",
+                day: 2
+            },
+
+            // Day 3: Urban Tokyo (Shinjuku)
+            {
+                name: "Tsukiji Outer Market",
+                coords: [35.6654, 139.7707],
+                time: "06:00 - 09:00",
+                activity: "• Fresh seafood & breakfast adventure<br>• Photo: Vibrant market stalls<br>• Culinary cultural experience",
+                food: "Sushi breakfast, tamagoyaki, fresh uni, grilled scallops",
+                day: 3
+            },
+            {
+                name: "Shinjuku Gyoen Garden",
+                coords: [35.6852, 139.7100],
+                time: "10:00 - 13:00",
+                activity: "• Serene gardens (Japanese, French, English)<br>• Photo: Seasonal flowers & landscapes<br>• Peaceful couple's walk",
+                food: "Picnic lunch or bento from nearby konbini",
+                day: 3
+            },
+            {
+                name: "Tokyo Metropolitan Building",
+                coords: [35.6896, 139.6917],
+                time: "14:00 - 16:00",
+                activity: "• FREE observation deck (45th floor)<br>• Photo: 360° Tokyo views, Mt. Fuji (clear days)<br>• Urban architecture",
+                food: "Coffee at observation deck cafe",
+                day: 3
+            },
+            {
+                name: "Omoide Yokocho",
+                coords: [35.6945, 139.7006],
+                time: "18:00 - 21:00",
+                activity: "• Nostalgic 'Memory Lane' alleyways<br>• Photo: Lantern-lit narrow streets<br>• Authentic yakitori experience",
+                food: "Grilled skewers, sake tasting, intimate izakaya dining",
+                day: 3
+            }
+        ];
+
+        // Custom icons for different days
+        const dayIcons = {
+            1: L.icon({
+                iconUrl: 'data:image/svg+xml;base64,' + btoa('<svg xmlns="http://www.w3.org/2000/svg" width="25" height="41" viewBox="0 0 25 41"><path fill="#e74c3c" stroke="#fff" stroke-width="2" d="M12.5 0C5.596 0 0 5.596 0 12.5c0 1.104.154 2.173.425 3.187C2.351 25.82 12.5 41 12.5 41s10.149-15.18 12.075-25.313A12.387 12.387 0 0 0 25 12.5C25 5.596 19.404 0 12.5 0z"/><circle cx="12.5" cy="12.5" r="5" fill="#fff"/></svg>'),
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+                popupAnchor: [1, -34]
+            }),
+            2: L.icon({
+                iconUrl: 'data:image/svg+xml;base64,' + btoa('<svg xmlns="http://www.w3.org/2000/svg" width="25" height="41" viewBox="0 0 25 41"><path fill="#3498db" stroke="#fff" stroke-width="2" d="M12.5 0C5.596 0 0 5.596 0 12.5c0 1.104.154 2.173.425 3.187C2.351 25.82 12.5 41 12.5 41s10.149-15.18 12.075-25.313A12.387 12.387 0 0 0 25 12.5C25 5.596 19.404 0 12.5 0z"/><circle cx="12.5" cy="12.5" r="5" fill="#fff"/></svg>'),
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+                popupAnchor: [1, -34]
+            }),
+            3: L.icon({
+                iconUrl: 'data:image/svg+xml;base64,' + btoa('<svg xmlns="http://www.w3.org/2000/svg" width="25" height="41" viewBox="0 0 25 41"><path fill="#2ecc71" stroke="#fff" stroke-width="2" d="M12.5 0C5.596 0 0 5.596 0 12.5c0 1.104.154 2.173.425 3.187C2.351 25.82 12.5 41 12.5 41s10.149-15.18 12.075-25.313A12.387 12.387 0 0 0 25 12.5C25 5.596 19.404 0 12.5 0z"/><circle cx="12.5" cy="12.5" r="5" fill="#fff"/></svg>'),
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+                popupAnchor: [1, -34]
+            })
+        };
+
+        // Store markers globally for focusing
+        const markers = [];
+
+        // Add markers to map
+        locations.forEach((location, index) => {
+            const popupContent = `
+                <div class="popup-title">${location.name}</div>
+                <div class="popup-time">⏰ ${location.time}</div>
+                <div class="popup-activity">${location.activity}</div>
+                <div class="popup-food"><strong>🍜 Food Tip:</strong><br>${location.food}</div>
+            `;
+            
+            const marker = L.marker(location.coords, { icon: dayIcons[location.day] })
+                .addTo(map)
+                .bindPopup(popupContent, { maxWidth: 300 });
+            
+            markers.push(marker);
+        });
+
+        // Draw routes for each day
+        const routes = {
+            day1: {
+                coords: locations.filter(l => l.day === 1).map(l => l.coords),
+                color: '#e74c3c'
+            },
+            day2: {
+                coords: locations.filter(l => l.day === 2).map(l => l.coords),
+                color: '#3498db'
+            },
+            day3: {
+                coords: locations.filter(l => l.day === 3).map(l => l.coords),
+                color: '#2ecc71'
+            }
+        };
+
+        Object.values(routes).forEach(route => {
+            L.polyline(route.coords, {
+                color: route.color,
+                weight: 3,
+                opacity: 0.7,
+                dashArray: '10, 10'
+            }).addTo(map);
+        });
+
+        // Function to focus on a specific marker
+        function focusMarker(index) {
+            const marker = markers[index];
+            map.setView(marker.getLatLng(), 15, { animate: true });
+            marker.openPopup();
+        }
+
+        // Fit map to show all markers on load
+        const bounds = L.latLngBounds(locations.map(l => l.coords));
+        map.fitBounds(bounds, { padding: [50, 50] });
+    </script>
+</body>
+</html>
+

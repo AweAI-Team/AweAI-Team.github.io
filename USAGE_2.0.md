@@ -71,6 +71,24 @@ git commit -m "Update content"
 git push origin main
 ```
 
+#### 项目静态网页部署上线
+```bash
+# 1. 进入正确的仓库目录
+cd /Users/bytedance/codes/frontier/blowfish_template
+
+# 2. 确认状态（您应该看到 static/BeyondSWE/ 为新增内容）
+git status
+
+# 3. 添加所有新文件
+git add static/BeyondSWE/
+
+# 4. 提交更改（这将创建全新的提交记录，去除旧贡献者）
+git commit -m "Add BeyondSWE project page"
+
+# 5. 推送到 GitHub
+git push origin main
+```
+
 推送成功后：
 1. 打开 GitHub 仓库的 **Actions** 标签页查看构建进度。
 2. 构建完成后，网站会自动更新至 `https://aweai-team.github.io/`。

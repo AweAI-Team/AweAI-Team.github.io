@@ -1,0 +1,241 @@
+# Specification: target_repo
+
+## 1. Overview
+The `target_repo` library is a unified document processing tool designed to convert various document formats (PDF, Office files, Images, HTML, etc.) into clean Markdown. It emphasizes high-fidelity conversion by preserving layout, tables, and extracting images. A key feature is its integration with AI-powered OCR (specifically OpenAI's Vision API and Tesseract) to handle scanned documents and complex layouts that traditional extractors miss.
+
+The library provides a simple, unified API for processing single files or batch-processing entire directories. It abstracts away the complexity of handling different file formats, providing a consistent `ProcessedDocument` output containing the content, metadata, and extracted assets.
+
+## 2. API Reference
+
+### Component: `UnifiedDocumentLoader`
+
+**Import Path:**
+`from target_repo import UnifiedDocumentLoader`
+
+**Signature:**
+```python
+class UnifiedDocumentLoader:
+    def __init__(
+        self,
+        ocr_provider: Union[str, OCRProvider, BaseOCR] = 'openai',
+        api_key: Optional[str] = None,
+        ocr_config: Optional[OCRConfig] = None,
+        cache_dir: Optional[str] = None,
+        # Enhanced OCR configuration for OpenAI
+        model: str = "gpt-4.1",
+        temperature: float = 0,
+        max_tokens: int = 4096,
+        max_workers: int = 5,
+        prompt_template: Union[str, PromptTemplate] = PromptTemplate.DEFAULT,
+        timeout: int = 30,
+        max_retries: int = 3,
+        # Additional OpenAI parameters
+        top_p: float = 1.0,
+        frequency_penalty: float = 0.0,
+        presence_penalty: float = 0.0,
+        base_url: Optional[str] = None,
+        # General OCR parameters
+        default_prompt: Optional[str] = None,
+        # Table output configuration
+        table_style: Optional[str] = None
+    ): ...
+
+    @property
+    def supported_formats(self) -> List[str]: ...
+
+    @property
+    def ocr(self) -> BaseOCR: ...
+
+    @property
+    def cache_dir(self) -> Optional[Path]: ...
+
+    def load(
+        self,
+        file_path: Union[str, Path],
+        output_format: Union[str, OutputFormat] = OutputFormat.MARKDOWN,
+        extract_images: bool = False,
+        ocr_images: bool = False,
+        show_progress: bool = False,
+        # Format-specific parameters
+        encoding: str = 'utf-8',
+        delimiter: Optional[str] = None
+    ) -> ProcessedDocument: ...
+
+    def batch_process(
+        self,
+        input_dir: Union[str, Path],
+        output_dir: Optional[Union[str, Path]] = None,
+        output_format: Union[str, OutputFormat] = OutputFormat.MARKDOWN,
+        extract_images: bool = False,
+        ocr_images: bool = False,
+        recursive: bool = True,
+        show_progress: bool = True,
+        save_files: bool = True,
+        **kwargs
+    ) -> Dict[str, Any]: ...
+```
+
+**Description:**
+The main entry point for loading and processing documents. It manages format detection, processor selection, and OCR configuration. It supports caching processed results to avoid redundant computation.
+
+**Parameters (Constructor):**
+* **ocr_provider** (*Union[str, OCRProvider, BaseOCR]*): The OCR provider to use. Defaults to `'openai'`.
+* **api_key** (*Optional[str]*): API key for the OCR provider. For OpenAI, defaults to `OPENAI_API_KEY` env var.
+* **ocr_config** (*Optional[OCRConfig]*): Basic configuration object for OCR.
+* **cache_dir** (*Optional[str]*): Directory path to store cached results.
+* **model** (*str*): OpenAI model name (default: "gpt-4.1").
+* **temperature** (*float*): Sampling temperature for AI generation (0.0-2.0).
+* **max_tokens** (*int*): Maximum tokens for AI response.
+* **prompt_template** (*Union[str, PromptTemplate]*): Template for the OCR prompt.
+* **timeout** (*int*): Request timeout in seconds.
+* **max_retries** (*int*): Number of retries for failed requests.
+* **base_url** (*Optional[str]*): Custom base URL for OpenAI-compatible endpoints.
+* **table_style** (*Optional[str]*): Style for table output.
+
+**Properties:**
+* **supported_formats** (*List[str]*): Returns a list of supported file extensions (e.g., `'docx'`, `'pdf'`, `'md'`, `'html'`, `'xml'`, etc.).
+* **ocr** (*BaseOCR*): Access to the initialized OCR provider instance.
+* **cache_dir** (*Optional[Path]*): The configured cache directory.
+
+**Parameters (load):**
+* **file_path** (*Union[str, Path]*): Path to the input file.
+* **output_format** (*Union[str, OutputFormat]*): Desired output format (default: `MARKDOWN`).
+* **extract_images** (*bool*): If `True`, extracts images from documents.
+* **ocr_images** (*bool*): If `True`, performs OCR on extracted images.
+* **show_progress** (*bool*): If `True`, displays progress indicators.
+
+**Parameters (batch_process):**
+* **input_dir** (*Union[str, Path]*): Directory containing files to process.
+* **output_dir** (*Optional[Union[str, Path]]*): Directory to save processed output.
+* **recursive** (*bool*): If `True`, processes subdirectories recursively.
+* **save_files** (*bool*): If `True`, writes output files to `output_dir`.
+
+**Returns:**
+* **ProcessedDocument**: An object containing the converted content and metadata.
+
+**Raises:**
+* **FileNotFoundError**: If the file does not exist.
+* **UnsupportedFormatError**: If the file format is not supported.
+
+---
+
+### Component: Convenience Functions
+
+**Import Path:**
+`from target_repo import load, batch_process_documents`
+
+**Signature:**
+```python
+def load(
+    file_path: Union[str, Path],
+    output_format: Union[str, OutputFormat] = OutputFormat.MARKDOWN,
+    extract_images: bool = False,
+    ocr_images: bool = False,
+    ocr_provider: str = 'openai',
+    api_key: Optional[str] = None,
+    **kwargs
+) -> ProcessedDocument: ...
+
+def batch_process_documents(
+    input_dir: Union[str, Path],
+    output_dir: Optional[Union[str, Path]] = None,
+    output_format: Union[str, OutputFormat] = OutputFormat.MARKDOWN,
+    extract_images: bool = False,
+    ocr_images: bool = False,
+    recursive: bool = True,
+    ocr_provider: str = 'openai',
+    api_key: Optional[str] = None,
+    show_progress: bool = True,
+    save_files: bool = True,
+    **kwargs
+) -> Dict[str, Any]: ...
+```
+
+**Description:**
+High-level wrappers around `UnifiedDocumentLoader` for quick usage.
+
+---
+
+### Component: Data Models & Enums
+
+**Import Path:**
+`from target_repo.core.base import DocumentFormat, OutputFormat, DocumentMetadata, ProcessedDocument`
+
+**Description:**
+Core data structures used throughout the library.
+
+#### Class: `DocumentFormat` (Enum)
+Supported input formats include:
+* `DOCX`, `XLSX`, `PPTX`
+* `PDF`
+* `TXT`, `CSV`, `JSON`, `JSONL`
+* `HTML`, `XML`, `MARKDOWN`
+
+#### Class: `OutputFormat` (Enum)
+Values:
+* `MARKDOWN` ("markdown")
+* `JSON` ("json")
+* `TEXT` ("text")
+
+#### Class: `DocumentMetadata`
+**Signature:**
+```python
+@dataclass
+class DocumentMetadata:
+    filename: str
+    format: DocumentFormat
+    size_bytes: int
+    # ... optional fields ...
+```
+
+#### Class: `ProcessedDocument`
+**Signature:**
+```python
+@dataclass
+class ProcessedDocument:
+    content: str
+    metadata: DocumentMetadata
+    images: Optional[List[Dict[str, Any]]] = None
+    tables: Optional[List[Dict[str, Any]]] = None
+    # ... additional fields ...
+```
+
+---
+
+### Component: OCR & Configuration
+
+**Import Path:**
+`from target_repo.ocr.base import OCRProvider, BaseOCR`
+
+#### Class: `OCRProvider` (Enum)
+* `OPENAI`
+* `TESSERACT`
+
+#### Class: `OpenAIOCR`
+**(Import from `target_repo.ocr.openai`)**
+Supports initialization with configuration for models, templates, and API keys.
+
+---
+
+### Component: CLI
+
+**Module:** `target_repo.cli`
+
+**Description:**
+Command-line interface for processing documents.
+
+**Usage:**
+```bash
+target_repo <input_path> [options]
+```
+
+**Arguments:**
+* `input_path`: Path to a file or directory.
+* `--ocr <provider>`: OCR provider to use (e.g., `openai`, `tesseract`).
+* `--api-key <key>`: API key for the OCR provider.
+* `--no-extract-images`: Disable image extraction.
+* `-o <dir>`, `--output-dir <dir>`: Directory to save results.
+* `-r`, `--recursive`: Process directories recursively.
+
+**Entry Point:**
+The CLI is accessible via the `main()` function in `target_repo.cli` or by executing the module.
