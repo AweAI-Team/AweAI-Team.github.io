@@ -12,3 +12,5 @@ weight: -3
 **Role:** Team Member
 
 [**Google Scholar**](https://scholar.google.com/citations?user=f62CFMEAAAAJ&hl=en&oi=ao) {{< icon "google-scholar" >}}
+
+**Semantic Scholar**: https://www.semanticscholar.org/author/Jie-Chen/2307777878

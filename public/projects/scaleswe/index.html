@@ -246,7 +246,7 @@
     "keywords": ["Software Engineering","Code Agent"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "189"
+    "wordCount": "1248"
   }]
   </script>
 
@@ -695,7 +695,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-02-10T00:00:00&#43;00:00">10 February 2026</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+      <time datetime="2026-02-10T00:00:00&#43;00:00">10 February 2026</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">6 mins</span>
     
 
     
@@ -842,9 +842,22 @@
     class="min-w-[220px] py-2 border-dotted border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#overview">Overview</a></li>
-    <li><a href="#performance">Performance</a></li>
-    <li><a href="#links">Links</a></li>
+    <li><a href="#1-the-importance-of-real-world-swe-data">1. The Importance of Real-World SWE Data</a></li>
+    <li><a href="#2-why-real-world-swe-data-has-not-been-scaled-before">2. Why Real-World SWE Data Has Not Been Scaled Before</a>
+      <ul>
+        <li><a href="#1-complexity-of-environment-configuration">(1) Complexity of Environment Configuration</a></li>
+        <li><a href="#2-scarcity-of-unit-tests">(2) Scarcity of Unit Tests</a></li>
+        <li><a href="#3-rigor-of-problem-statements">(3) Rigor of Problem Statements</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-the-scale-swe-method">3. The Scale-SWE Method</a>
+      <ul>
+        <li><a href="#1-environment-builder-agent-eba">(1) Environment Builder Agent (EBA)</a></li>
+        <li><a href="#2-unit-test-creator-agent-uca">(2) Unit-test Creator Agent (UCA)</a></li>
+        <li><a href="#3-problem-statement-writer-agent-pswa">(3) Problem Statement Writer Agent (PSWA)</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-results">4. Results</a></li>
   </ul>
 </nav>
   </div>
@@ -858,9 +871,22 @@
     class="py-2 border-dotted border-neutral-300 border-s-1 -ms-5 ps-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#overview">Overview</a></li>
-    <li><a href="#performance">Performance</a></li>
-    <li><a href="#links">Links</a></li>
+    <li><a href="#1-the-importance-of-real-world-swe-data">1. The Importance of Real-World SWE Data</a></li>
+    <li><a href="#2-why-real-world-swe-data-has-not-been-scaled-before">2. Why Real-World SWE Data Has Not Been Scaled Before</a>
+      <ul>
+        <li><a href="#1-complexity-of-environment-configuration">(1) Complexity of Environment Configuration</a></li>
+        <li><a href="#2-scarcity-of-unit-tests">(2) Scarcity of Unit Tests</a></li>
+        <li><a href="#3-rigor-of-problem-statements">(3) Rigor of Problem Statements</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-the-scale-swe-method">3. The Scale-SWE Method</a>
+      <ul>
+        <li><a href="#1-environment-builder-agent-eba">(1) Environment Builder Agent (EBA)</a></li>
+        <li><a href="#2-unit-test-creator-agent-uca">(2) Unit-test Creator Agent (UCA)</a></li>
+        <li><a href="#3-problem-statement-writer-agent-pswa">(3) Problem Statement Writer Agent (PSWA)</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-results">4. Results</a></li>
   </ul>
 </nav>
   </div>
@@ -977,55 +1003,157 @@
         
 
         <div class="article-content max-w-prose mb-20">
-          
-<h2 class="relative group">Overview
-    <div id="overview" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#overview" aria-label="Anchor">#</a>
-    </span>
-    
-</h2>
-<p>Achieving mastery in real world software engineering tasks is fundamentally bottlenecked by the scarcity of large scale, high quality training data. Scaling such data has been limited by the complexity of environment setup, unit test generation, and problem statement curation. In this paper, we propose ScaleSWE, an automated, sandboxed multi agent workflow designed to construct high quality SWE data at scale. The system coordinates three specialized agents for environment setup, test creation, and problem description synthesis to process 6 million pull requests across 5200 repositories, producing Scale SWE Data: 100k verified SWE instances, the largest such dataset to date. It substantially surpasses existing real world datasets in repository diversity and reflects realistic task complexity. We further demonstrate the dataset utility for training by distilling 71498 high quality trajectories and finetuning Qwen30BA3BInstruct to produce ScaleSWE Agent. Our agent achieves a 64 resolve rate on SWE Bench Verified a nearly three fold improvement over the base model. ScaleSWE provides a scalable, reproducible approach for data construction to advance LLM based software engineering. Scale SWE will be publicly available.</p>
+          <p><strong>Paper Link:</strong> <a href="https://arxiv.org/abs/2602.09892"  target="_blank" rel="noreferrer">https://arxiv.org/abs/2602.09892</a></p>
+<p><strong>Repository Link:</strong> <a href="https://github.com/AweAI-Team/ScaleSWE"  target="_blank" rel="noreferrer">https://github.com/AweAI-Team/ScaleSWE</a></p>
+<p><strong>Data Link:</strong> <a href="https://huggingface.co/datasets/Awe-AI/Scale-SWE"  target="_blank" rel="noreferrer">https://huggingface.co/datasets/Awe-AI/Scale-SWE</a></p>
+<p>We propose the <strong>Scale-SWE</strong> dataset. By utilizing a Sandboxed multi-agent system, we achieved the scaling of SWE tasks to construct 100k real SWE data points, creating the <strong>largest open-source high-quality SWE dataset</strong> to date. This makes it possible to fully train Code Agents on GitHub-scale data.</p>
+<p>Furthermore, by utilizing distilled data to train <strong>Qwen3-30A3B-Instruct</strong>, we achieved a score of <strong>64% on SWE-bench-Verified</strong>. This makes it possible for academic models of the same size to <strong>surpass industrial models</strong> (such as GLM-4.7-Flash)!</p>
 
-<h2 class="relative group">Performance
-    <div id="performance" class="anchor"></div>
+<h2 class="relative group">1. The Importance of Real-World SWE Data
+    <div id="1-the-importance-of-real-world-swe-data" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#performance" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#1-the-importance-of-real-world-swe-data" aria-label="Anchor">#</a>
     </span>
     
 </h2>
-<p><figure><img
+<p>There have been previous works, such as SWE-smith and SWE-Mirror, which utilized automated workflows to generate synthetic data, achieving the scaling of SWE data. It was possible to construct tens of thousands of SWE data points using only a small number of repositories. For instance, SWE-smith used 128 repositories to construct 50k data points. The advantage of this approach is the relatively simple and rapid realization of data scaling.</p>
+<p>However, previous analysis (e.g., BugPilot) observed that the data distribution of synthetic datasets is extremely unbalanced, which aligns with our classification results shown below:
+<figure><img
     class="my-0 rounded-md"
     loading="lazy"
     decoding="async"
     fetchpriority="auto"
     alt=""
-    width="2016"
-    height="1656"
-    src="/projects/scaleswe/images/performance_hu_bc12651918c18b07.png"
-    srcset="/projects/scaleswe/images/performance_hu_bc12651918c18b07.png 800w, /projects/scaleswe/images/performance_hu_b39cf01131811536.png 1280w"
+    width="3470"
+    height="1049"
+    src="/projects/scaleswe/figures/dataset_comparison_icml_hu_e9979ce651d81f11.png"
+    srcset="/projects/scaleswe/figures/dataset_comparison_icml_hu_e9979ce651d81f11.png 800w, /projects/scaleswe/figures/dataset_comparison_icml_hu_1bb4392f75cdb4c8.png 1280w"
     sizes="(min-width: 768px) 50vw, 65vw"
-    data-zoom-src="/projects/scaleswe/images/performance.png"></figure>
+    data-zoom-src="/projects/scaleswe/figures/dataset_comparison_icml.png"></figure>
 </p>
+<p>It can be seen that compared to real data, the vast majority of data types in SWE-smith are concentrated on logic errors. Other real-world datasets, such as Scale-SWE and SWE-Gym, exhibit a relatively balanced category distribution. Real data is better able to approximate the data category distribution of real-world scenarios.</p>
 
-<h2 class="relative group">Links
-    <div id="links" class="anchor"></div>
+<h2 class="relative group">2. Why Real-World SWE Data Has Not Been Scaled Before
+    <div id="2-why-real-world-swe-data-has-not-been-scaled-before" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#links" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#2-why-real-world-swe-data-has-not-been-scaled-before" aria-label="Anchor">#</a>
     </span>
     
 </h2>
-<ul>
-<li><a href="https://arxiv.org/abs/2602.09892"  target="_blank" rel="noreferrer">Arxiv</a><span class="relative inline-block align-text-bottom icon"><svg id="logomark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.611 201"><g id="medium"><path d="M456.756,249.1l-42.324,49.375c-1.885,2.01-3.054,5.535-2,8.066a6.9,6.9,0,0,0,6.443,4.27c1.6,0,2.911-.56,4.631-2.289l52.364-54.278a8.927,8.927,0,0,0,.061-12.584Z" transform="translate(-391.029 -166.577)" fill="#aa142d"/><path d="M455.876,248.071l39.168-49.545c2.186-2.914,3.219-4.44,2.186-6.921a7.536,7.536,0,0,0-6.566-4.633h0a5.9,5.9,0,0,0-4.408,1.624l-50.072,53.061c-3.816,3.816-3.808,8.753.023,12.584l70.031,73.438a5.738,5.738,0,0,0,4.6,1.748c2.833,0,4.67-1.667,5.9-4.131,1.054-2.531-.112-5.038-2.056-7.664l-58.8-69.561" transform="translate(-391.029 -166.577)" fill="#bdb9b4"/><path d="M475.931,241.657l-68.388-71.966s-2.511-3.048-5.165-3.112a6.75,6.75,0,0,0-6.357,4.084c-1.033,2.481-.291,4.223,1.977,7.47L456.756,249.1Z" transform="translate(-391.029 -166.577)" fill="#aa142d"/><path d="M472.39,367.577a2.2,2.2,0,0,1-1.895-1.1l-8.528-14.161-8.576,14.161a2.152,2.152,0,0,1-1.9,1.1,2.33,2.33,0,0,1-2.343-2.3,2.269,2.269,0,0,1,.348-1.246l9.925-15.907L451.3,335.114a2.722,2.722,0,0,1-.351-1.247,2.331,2.331,0,0,1,2.347-2.292,2.093,2.093,0,0,1,1.894,1.046l6.779,11.42,6.734-11.42a2.011,2.011,0,0,1,1.843-1.046,2.268,2.268,0,0,1,2.346,2.292,2.7,2.7,0,0,1-.3,1.247l-8.079,13.015,9.825,15.907a1.956,1.956,0,0,1,.4,1.246A2.363,2.363,0,0,1,472.39,367.577Z" transform="translate(-391.029 -166.577)"/><path d="M429.138,342.132c1.021,0,1.7.681,2.188,1.9a2.817,2.817,0,0,1,2.578-1.9h8.169a2.231,2.231,0,0,1,2.237,2.237v4.3a1.983,1.983,0,0,1-2.237,2.237,2,2,0,0,1-2.237-2.237v-2.061h-5.787a1.324,1.324,0,0,0-1.458,1.507v14.929h5.494a2.237,2.237,0,1,1,0,4.473H423.6a2.237,2.237,0,0,1,0-4.473h4.522V346.606H424.13a2.238,2.238,0,0,1,0-4.474Z" transform="translate(-391.029 -166.577)"/><path d="M490.449,342.132a2,2,0,0,1,2.237,2.237v18.673h5.543a2.237,2.237,0,1,1,0,4.473H482.523a2.237,2.237,0,1,1,0-4.473h5.69V346.606h-4.686a2.237,2.237,0,0,1,0-4.474Zm2.317-9.672a3.217,3.217,0,1,1-3.194-3.195A3.241,3.241,0,0,1,492.766,332.46Z" transform="translate(-391.029 -166.577)"/><path d="M526.64,344.369a2.527,2.527,0,0,1-.147.875l-8.169,20.91a2.042,2.042,0,0,1-2.043,1.361h-3.258a2.027,2.027,0,0,1-2.091-1.361l-8.266-20.91a1.78,1.78,0,0,1-.195-.875,2.242,2.242,0,0,1,2.286-2.237,2.086,2.086,0,0,1,2.042,1.459l7.878,19.84,7.634-19.84a2.087,2.087,0,0,1,2.043-1.459A2.242,2.242,0,0,1,526.64,344.369Z" transform="translate(-391.029 -166.577)"/><path d="M408.844,342.132a4.268,4.268,0,0,1,4.506,4.611v20.772h-19.5a2.643,2.643,0,0,1-2.824-2.706v-7.153a4.533,4.533,0,0,1,3.842-4.474l14-1.961v-4.615H393.3a2.2,2.2,0,0,1-2.274-2.237,2.173,2.173,0,0,1,2.391-2.237Zm.032,20.91v-7.3L395.5,357.607v5.435Z" transform="translate(-391.029 -166.577)"/></g></svg></span></li>
-<li><a href="https://huggingface.co/datasets/Awe-AI/Scale-SWE"  target="_blank" rel="noreferrer">Dataset on HuggingFace</a><span class="relative inline-block align-text-bottom icon"><svg height="1em" style="flex:none;line-height:1" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><title>HuggingFace</title><path d="M2.25 11.535c0-3.407 1.847-6.554 4.844-8.258a9.822 9.822 0 019.687 0c2.997 1.704 4.844 4.851 4.844 8.258 0 5.266-4.337 9.535-9.687 9.535S2.25 16.8 2.25 11.535z" fill="#FF9D0B"></path><path d="M11.938 20.086c4.797 0 8.687-3.829 8.687-8.551 0-4.722-3.89-8.55-8.687-8.55-4.798 0-8.688 3.828-8.688 8.55 0 4.722 3.89 8.55 8.688 8.55z" fill="#FFD21E"></path><path d="M11.875 15.113c2.457 0 3.25-2.156 3.25-3.263 0-.576-.393-.394-1.023-.089-.582.283-1.365.675-2.224.675-1.798 0-3.25-1.693-3.25-.586 0 1.107.79 3.263 3.25 3.263h-.003z" fill="#FF323D"></path><path d="M14.76 9.21c.32.108.445.753.767.585.447-.233.707-.708.659-1.204a1.235 1.235 0 00-.879-1.059 1.262 1.262 0 00-1.33.394c-.322.384-.377.92-.14 1.36.153.283.638-.177.925-.079l-.002.003zm-5.887 0c-.32.108-.448.753-.768.585a1.226 1.226 0 01-.658-1.204c.048-.495.395-.913.878-1.059a1.262 1.262 0 011.33.394c.322.384.377.92.14 1.36-.152.283-.64-.177-.925-.079l.003.003zm1.12 5.34a2.166 2.166 0 011.325-1.106c.07-.02.144.06.219.171l.192.306c.069.1.139.175.209.175.074 0 .15-.074.223-.172l.205-.302c.08-.11.157-.188.234-.165.537.168.986.536 1.25 1.026.932-.724 1.275-1.905 1.275-2.633 0-.508-.306-.426-.81-.19l-.616.296c-.52.24-1.148.48-1.824.48-.676 0-1.302-.24-1.823-.48l-.589-.283c-.52-.248-.838-.342-.838.177 0 .703.32 1.831 1.187 2.56l.18.14z" fill="#3A3B45"></path><path d="M17.812 10.366a.806.806 0 00.813-.8c0-.441-.364-.8-.813-.8a.806.806 0 00-.812.8c0 .442.364.8.812.8zm-11.624 0a.806.806 0 00.812-.8c0-.441-.364-.8-.812-.8a.806.806 0 00-.813.8c0 .442.364.8.813.8zM4.515 13.073c-.405 0-.765.162-1.017.46a1.455 1.455 0 00-.333.925 1.801 1.801 0 00-.485-.074c-.387 0-.737.146-.985.409a1.41 1.41 0 00-.2 1.722 1.302 1.302 0 00-.447.694c-.06.222-.12.69.2 1.166a1.267 1.267 0 00-.093 1.236c.238.533.81.958 1.89 1.405l.24.096c.768.3 1.473.492 1.478.494.89.243 1.808.375 2.732.394 1.465 0 2.513-.443 3.115-1.314.93-1.342.842-2.575-.274-3.763l-.151-.154c-.692-.684-1.155-1.69-1.25-1.912-.195-.655-.71-1.383-1.562-1.383-.46.007-.889.233-1.15.605-.25-.31-.495-.553-.715-.694a1.87 1.87 0 00-.993-.312zm14.97 0c.405 0 .767.162 1.017.46.216.262.333.588.333.925.158-.047.322-.071.487-.074.388 0 .738.146.985.409a1.41 1.41 0 01.2 1.722c.22.178.377.422.445.694.06.222.12.69-.2 1.166.244.37.279.836.093 1.236-.238.533-.81.958-1.889 1.405l-.239.096c-.77.3-1.475.492-1.48.494-.89.243-1.808.375-2.732.394-1.465 0-2.513-.443-3.115-1.314-.93-1.342-.842-2.575.274-3.763l.151-.154c.695-.684 1.157-1.69 1.252-1.912.195-.655.708-1.383 1.56-1.383.46.007.889.233 1.15.605.25-.31.495-.553.718-.694.244-.162.523-.265.814-.3l.176-.012z" fill="#FF9D0B"></path><path d="M9.785 20.132c.688-.994.638-1.74-.305-2.667-.945-.928-1.495-2.288-1.495-2.288s-.205-.788-.672-.714c-.468.074-.81 1.25.17 1.971.977.721-.195 1.21-.573.534-.375-.677-1.405-2.416-1.94-2.751-.532-.332-.907-.148-.782.541.125.687 2.357 2.35 2.14 2.707-.218.362-.983-.42-.983-.42S2.953 14.9 2.43 15.46c-.52.558.398 1.026 1.7 1.803 1.308.778 1.41.985 1.225 1.28-.187.295-3.07-2.1-3.34-1.083-.27 1.011 2.943 1.304 2.745 2.006-.2.7-2.265-1.324-2.685-.537-.425.79 2.913 1.718 2.94 1.725 1.075.276 3.813.859 4.77-.522zm4.432 0c-.687-.994-.64-1.74.305-2.667.943-.928 1.493-2.288 1.493-2.288s.205-.788.675-.714c.465.074.807 1.25-.17 1.971-.98.721.195 1.21.57.534.377-.677 1.407-2.416 1.94-2.751.532-.332.91-.148.782.541-.125.687-2.355 2.35-2.137 2.707.215.362.98-.42.98-.42S21.05 14.9 21.57 15.46c.52.558-.395 1.026-1.7 1.803-1.308.778-1.408.985-1.225 1.28.187.295 3.07-2.1 3.34-1.083.27 1.011-2.94 1.304-2.743 2.006.2.7 2.263-1.324 2.685-.537.423.79-2.912 1.718-2.94 1.725-1.077.276-3.815.859-4.77-.522z" fill="#FFD21E"></path></svg></span></li>
-<li><a href="https://huggingface.co/Awe-AI/Scale-SWE"  target="_blank" rel="noreferrer">Model on HuggingFace</a><span class="relative inline-block align-text-bottom icon"><svg height="1em" style="flex:none;line-height:1" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><title>HuggingFace</title><path d="M2.25 11.535c0-3.407 1.847-6.554 4.844-8.258a9.822 9.822 0 019.687 0c2.997 1.704 4.844 4.851 4.844 8.258 0 5.266-4.337 9.535-9.687 9.535S2.25 16.8 2.25 11.535z" fill="#FF9D0B"></path><path d="M11.938 20.086c4.797 0 8.687-3.829 8.687-8.551 0-4.722-3.89-8.55-8.687-8.55-4.798 0-8.688 3.828-8.688 8.55 0 4.722 3.89 8.55 8.688 8.55z" fill="#FFD21E"></path><path d="M11.875 15.113c2.457 0 3.25-2.156 3.25-3.263 0-.576-.393-.394-1.023-.089-.582.283-1.365.675-2.224.675-1.798 0-3.25-1.693-3.25-.586 0 1.107.79 3.263 3.25 3.263h-.003z" fill="#FF323D"></path><path d="M14.76 9.21c.32.108.445.753.767.585.447-.233.707-.708.659-1.204a1.235 1.235 0 00-.879-1.059 1.262 1.262 0 00-1.33.394c-.322.384-.377.92-.14 1.36.153.283.638-.177.925-.079l-.002.003zm-5.887 0c-.32.108-.448.753-.768.585a1.226 1.226 0 01-.658-1.204c.048-.495.395-.913.878-1.059a1.262 1.262 0 011.33.394c.322.384.377.92.14 1.36-.152.283-.64-.177-.925-.079l.003.003zm1.12 5.34a2.166 2.166 0 011.325-1.106c.07-.02.144.06.219.171l.192.306c.069.1.139.175.209.175.074 0 .15-.074.223-.172l.205-.302c.08-.11.157-.188.234-.165.537.168.986.536 1.25 1.026.932-.724 1.275-1.905 1.275-2.633 0-.508-.306-.426-.81-.19l-.616.296c-.52.24-1.148.48-1.824.48-.676 0-1.302-.24-1.823-.48l-.589-.283c-.52-.248-.838-.342-.838.177 0 .703.32 1.831 1.187 2.56l.18.14z" fill="#3A3B45"></path><path d="M17.812 10.366a.806.806 0 00.813-.8c0-.441-.364-.8-.813-.8a.806.806 0 00-.812.8c0 .442.364.8.812.8zm-11.624 0a.806.806 0 00.812-.8c0-.441-.364-.8-.812-.8a.806.806 0 00-.813.8c0 .442.364.8.813.8zM4.515 13.073c-.405 0-.765.162-1.017.46a1.455 1.455 0 00-.333.925 1.801 1.801 0 00-.485-.074c-.387 0-.737.146-.985.409a1.41 1.41 0 00-.2 1.722 1.302 1.302 0 00-.447.694c-.06.222-.12.69.2 1.166a1.267 1.267 0 00-.093 1.236c.238.533.81.958 1.89 1.405l.24.096c.768.3 1.473.492 1.478.494.89.243 1.808.375 2.732.394 1.465 0 2.513-.443 3.115-1.314.93-1.342.842-2.575-.274-3.763l-.151-.154c-.692-.684-1.155-1.69-1.25-1.912-.195-.655-.71-1.383-1.562-1.383-.46.007-.889.233-1.15.605-.25-.31-.495-.553-.715-.694a1.87 1.87 0 00-.993-.312zm14.97 0c.405 0 .767.162 1.017.46.216.262.333.588.333.925.158-.047.322-.071.487-.074.388 0 .738.146.985.409a1.41 1.41 0 01.2 1.722c.22.178.377.422.445.694.06.222.12.69-.2 1.166.244.37.279.836.093 1.236-.238.533-.81.958-1.889 1.405l-.239.096c-.77.3-1.475.492-1.48.494-.89.243-1.808.375-2.732.394-1.465 0-2.513-.443-3.115-1.314-.93-1.342-.842-2.575.274-3.763l.151-.154c.695-.684 1.157-1.69 1.252-1.912.195-.655.708-1.383 1.56-1.383.46.007.889.233 1.15.605.25-.31.495-.553.718-.694.244-.162.523-.265.814-.3l.176-.012z" fill="#FF9D0B"></path><path d="M9.785 20.132c.688-.994.638-1.74-.305-2.667-.945-.928-1.495-2.288-1.495-2.288s-.205-.788-.672-.714c-.468.074-.81 1.25.17 1.971.977.721-.195 1.21-.573.534-.375-.677-1.405-2.416-1.94-2.751-.532-.332-.907-.148-.782.541.125.687 2.357 2.35 2.14 2.707-.218.362-.983-.42-.983-.42S2.953 14.9 2.43 15.46c-.52.558.398 1.026 1.7 1.803 1.308.778 1.41.985 1.225 1.28-.187.295-3.07-2.1-3.34-1.083-.27 1.011 2.943 1.304 2.745 2.006-.2.7-2.265-1.324-2.685-.537-.425.79 2.913 1.718 2.94 1.725 1.075.276 3.813.859 4.77-.522zm4.432 0c-.687-.994-.64-1.74.305-2.667.943-.928 1.493-2.288 1.493-2.288s.205-.788.675-.714c.465.074.807 1.25-.17 1.971-.98.721.195 1.21.57.534.377-.677 1.407-2.416 1.94-2.751.532-.332.91-.148.782.541-.125.687-2.355 2.35-2.137 2.707.215.362.98-.42.98-.42S21.05 14.9 21.57 15.46c.52.558-.395 1.026-1.7 1.803-1.308.778-1.408.985-1.225 1.28.187.295 3.07-2.1 3.34-1.083.27 1.011-2.94 1.304-2.743 2.006.2.7 2.263-1.324 2.685-.537.423.79-2.912 1.718-2.94 1.725-1.077.276-3.815.859-4.77-.522z" fill="#FFD21E"></path></svg></span></li>
-</ul>
+
+<h3 class="relative group">(1) Complexity of Environment Configuration
+    <div id="1-complexity-of-environment-configuration" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#1-complexity-of-environment-configuration" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>Previous data often focused on relatively few repositories with relatively simple environment configurations. The advantage is that most pull requests could likely rely on the same, relatively simple trajectories to achieve environment configuration. However, simply choosing repositories with simple environment configurations (e.g., directly executing <code>pip install -e .</code>) makes it impossible to achieve large-scale dataset construction, as the environment configuration for most repositories on GitHub is not that simple. Most previous methods were based on rules or single-turn LLM dialogue forms to generate files similar to <code>requirements.txt</code>. For complex environment configurations, such methods make it difficult to execute test scripts in real-time to verify if the environment is configured successfully and then adjust the configuration based on feedback errors.</p>
+
+<h3 class="relative group">(2) Scarcity of Unit Tests
+    <div id="2-scarcity-of-unit-tests" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#2-scarcity-of-unit-tests" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>For SWE tasks, unit tests are critical, including Fail-to-Pass (F2P) and Pass-to-Pass (P2P). However, many developers nowadays no longer have the habit of writing unit tests casually, which poses a severe challenge for constructing real SWE data. We observed that a large number of precious high-quality pull requests do not include unit tests. Previous SWE dataset construction methods only retained unit tests inserted by authors in the pull request, which led to the loss of a large volume of high-quality pull requests.</p>
+
+<h3 class="relative group">(3) Rigor of Problem Statements
+    <div id="3-rigor-of-problem-statements" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#3-rigor-of-problem-statements" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>A large number of pull requests are actually not associated with issues. To construct the problem statement in SWE tasks, previous work often provided the content of the pull request dialogue and other meta-information to the LLM to generate the problem statement. At the same time, the pull request itself consists of the code and description submitted by the author after solving the problem. If given directly to the large model to generate a problem statement, it can easily lead to leakage, such as leaking the location of the bug or the solution.</p>
+
+<h2 class="relative group">3. The Scale-SWE Method
+    <div id="3-the-scale-swe-method" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#3-the-scale-swe-method" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>To address the above problems, we propose a multi-agent workflow operating within a sandbox. This includes the <strong>Environment Builder Agent</strong>, <strong>Unit-test Creator Agent</strong>, and <strong>Problem Statement Writer Agent</strong>.</p>
+
+<h3 class="relative group">(1) Environment Builder Agent (EBA)
+    <div id="1-environment-builder-agent-eba" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#1-environment-builder-agent-eba" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>Compared to previous methods, the EBA can freely explore the repository structure in the sandbox, finding and reading files related to environment configuration, such as <code>README.md</code>, <code>setup.py</code>, <code>pyproject.toml</code>, etc. Additionally, the EBA can execute <code>pytest</code> or other scripts after configuration to test whether the environment was truly successfully configured. If there are errors during execution, it can continue to adjust the environment configuration based on the error results.</p>
+
+<h3 class="relative group">(2) Unit-test Creator Agent (UCA)
+    <div id="2-unit-test-creator-agent-uca" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#2-unit-test-creator-agent-uca" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>Since a large number of high-quality pull requests lack unit tests contributed by the authors, we need to construct unit tests ourselves. The UCA can explore the structure code of the repository in the sandbox, write F2P/P2P code based on the diff situation of the pull request, and then verify if F2P is truly achieved by switching commits and running test cases. If the results do not meet the definition of F2P/P2P, it can continue to adjust the code of the test cases.</p>
+
+<h3 class="relative group">(3) Problem Statement Writer Agent (PSWA)
+    <div id="3-problem-statement-writer-agent-pswa" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#3-problem-statement-writer-agent-pswa" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>For SWE task data, the problem statement is an extremely important link. On one hand, it directly determines the agent&rsquo;s behavior; on the other hand, it lacks rule-based verification methods (environment and unit tests can be verified by rules such as directly executing <code>pytest</code>). We conducted internal lightweight ablation studies (not extremely rigorous) and found that the quality of the problem statement has a huge impact on the performance of the model after SFT (close to 10% on SWE-bench-Verified).</p>
+<p>High-quality problem statements mainly have two considerations: 1. Must not leak F2P, bug location, or solutions. 2. The instructions and semantics of the problem statement must be consistent with F2P. That is to say, it must ensure that the problem statement is truly describing the bug/feature completely and comprehensively. However, to enable the PSWA to describe it completely, it is necessary to provide all the diff information of the F2P and the corresponding pull request to the PSWA. This makes it easy for the PSWA to leak information in the problem statement. Therefore, the PSWA&rsquo;s prompt and the model&rsquo;s instruction-following capability are crucial.</p>
+<p>For the PSWA, to ensure strong instruction following and logical ability to prevent information leakage, we adopted <strong>Gemini3-Pro</strong> as the driving model for the Agent. We observed that even GPT 5.1 or DeepSeek v3.2 might exhibit phenomena of leaking bug locations or solutions.</p>
+<p>Statistics of the distilled data are shown in the figure below:</p>
+<div align="center">
+  <img src="figures/merge_traj_stat.drawio.png" width="50%" />
+</div>
+<p>It can be seen that Scale-SWE data requires more turns and tokens for DeepSeek v3.2 to solve during the distillation process. This can also reflect the leakage situation from one aspect, because if the problem statement had leaks, it would naturally require fewer turns to explore the repository and fewer turns to verify and fix the code.</p>
+
+<h2 class="relative group">4. Results
+    <div id="4-results" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#4-results" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>To verify the effectiveness of Scale-SWE data, we used <strong>DeepSeek v3.2</strong> for distillation. We obtained 71k successful trajectories and performed SFT based on <strong>Qwen3-30B-A3B-Instruct</strong>. The results are as follows:</p>
+<div align="center">
+  <img src="figures/performance.png" width="75%" />
+</div>
+It can be seen that for models of the same scale, such as **Qwen3-Coder-30A3B** and **GLM-4.7-Flash-30A3B**, the Scale-SWE-Agent shows significant improvement. Even compared to larger scale models like KAT-Dev-32B and models trained on other datasets like SWE-Lego-32B, there is still a performance improvement. This proves the effectiveness of the Scale-SWE dataset.
+<p>In addition, compared to other datasets, we also conducted a comparison of results obtained from the same distillation pipeline, as shown below:</p>
+<div align="center">
+  <img src="figures/dataset_comp.png" width="45%" />
+</div>
+This further verifies the importance of real data. Even though the data volume of SWE-smith far exceeds that of SWE-Gym, the effects of the two are similar. Meanwhile, the fact that Scale-SWE significantly outperforms SWE-Gym also proves the importance of data Scaling.
+<p>For more details and experimental results, please refer to our paper. We hope that Scale-SWE can lower the threshold for researchers in the SWE field and provide a large amount of open-source SWE data as well as directly usable massive distilled data.</p>
+<!-- ## Links
+
+- [Arxiv](https://arxiv.org/abs/2602.09892)<span class="relative inline-block align-text-bottom icon"><svg id="logomark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.611 201"><g id="medium"><path d="M456.756,249.1l-42.324,49.375c-1.885,2.01-3.054,5.535-2,8.066a6.9,6.9,0,0,0,6.443,4.27c1.6,0,2.911-.56,4.631-2.289l52.364-54.278a8.927,8.927,0,0,0,.061-12.584Z" transform="translate(-391.029 -166.577)" fill="#aa142d"/><path d="M455.876,248.071l39.168-49.545c2.186-2.914,3.219-4.44,2.186-6.921a7.536,7.536,0,0,0-6.566-4.633h0a5.9,5.9,0,0,0-4.408,1.624l-50.072,53.061c-3.816,3.816-3.808,8.753.023,12.584l70.031,73.438a5.738,5.738,0,0,0,4.6,1.748c2.833,0,4.67-1.667,5.9-4.131,1.054-2.531-.112-5.038-2.056-7.664l-58.8-69.561" transform="translate(-391.029 -166.577)" fill="#bdb9b4"/><path d="M475.931,241.657l-68.388-71.966s-2.511-3.048-5.165-3.112a6.75,6.75,0,0,0-6.357,4.084c-1.033,2.481-.291,4.223,1.977,7.47L456.756,249.1Z" transform="translate(-391.029 -166.577)" fill="#aa142d"/><path d="M472.39,367.577a2.2,2.2,0,0,1-1.895-1.1l-8.528-14.161-8.576,14.161a2.152,2.152,0,0,1-1.9,1.1,2.33,2.33,0,0,1-2.343-2.3,2.269,2.269,0,0,1,.348-1.246l9.925-15.907L451.3,335.114a2.722,2.722,0,0,1-.351-1.247,2.331,2.331,0,0,1,2.347-2.292,2.093,2.093,0,0,1,1.894,1.046l6.779,11.42,6.734-11.42a2.011,2.011,0,0,1,1.843-1.046,2.268,2.268,0,0,1,2.346,2.292,2.7,2.7,0,0,1-.3,1.247l-8.079,13.015,9.825,15.907a1.956,1.956,0,0,1,.4,1.246A2.363,2.363,0,0,1,472.39,367.577Z" transform="translate(-391.029 -166.577)"/><path d="M429.138,342.132c1.021,0,1.7.681,2.188,1.9a2.817,2.817,0,0,1,2.578-1.9h8.169a2.231,2.231,0,0,1,2.237,2.237v4.3a1.983,1.983,0,0,1-2.237,2.237,2,2,0,0,1-2.237-2.237v-2.061h-5.787a1.324,1.324,0,0,0-1.458,1.507v14.929h5.494a2.237,2.237,0,1,1,0,4.473H423.6a2.237,2.237,0,0,1,0-4.473h4.522V346.606H424.13a2.238,2.238,0,0,1,0-4.474Z" transform="translate(-391.029 -166.577)"/><path d="M490.449,342.132a2,2,0,0,1,2.237,2.237v18.673h5.543a2.237,2.237,0,1,1,0,4.473H482.523a2.237,2.237,0,1,1,0-4.473h5.69V346.606h-4.686a2.237,2.237,0,0,1,0-4.474Zm2.317-9.672a3.217,3.217,0,1,1-3.194-3.195A3.241,3.241,0,0,1,492.766,332.46Z" transform="translate(-391.029 -166.577)"/><path d="M526.64,344.369a2.527,2.527,0,0,1-.147.875l-8.169,20.91a2.042,2.042,0,0,1-2.043,1.361h-3.258a2.027,2.027,0,0,1-2.091-1.361l-8.266-20.91a1.78,1.78,0,0,1-.195-.875,2.242,2.242,0,0,1,2.286-2.237,2.086,2.086,0,0,1,2.042,1.459l7.878,19.84,7.634-19.84a2.087,2.087,0,0,1,2.043-1.459A2.242,2.242,0,0,1,526.64,344.369Z" transform="translate(-391.029 -166.577)"/><path d="M408.844,342.132a4.268,4.268,0,0,1,4.506,4.611v20.772h-19.5a2.643,2.643,0,0,1-2.824-2.706v-7.153a4.533,4.533,0,0,1,3.842-4.474l14-1.961v-4.615H393.3a2.2,2.2,0,0,1-2.274-2.237,2.173,2.173,0,0,1,2.391-2.237Zm.032,20.91v-7.3L395.5,357.607v5.435Z" transform="translate(-391.029 -166.577)"/></g></svg></span>
+- [Dataset on HuggingFace](https://huggingface.co/datasets/Awe-AI/Scale-SWE)<span class="relative inline-block align-text-bottom icon"><svg height="1em" style="flex:none;line-height:1" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><title>HuggingFace</title><path d="M2.25 11.535c0-3.407 1.847-6.554 4.844-8.258a9.822 9.822 0 019.687 0c2.997 1.704 4.844 4.851 4.844 8.258 0 5.266-4.337 9.535-9.687 9.535S2.25 16.8 2.25 11.535z" fill="#FF9D0B"></path><path d="M11.938 20.086c4.797 0 8.687-3.829 8.687-8.551 0-4.722-3.89-8.55-8.687-8.55-4.798 0-8.688 3.828-8.688 8.55 0 4.722 3.89 8.55 8.688 8.55z" fill="#FFD21E"></path><path d="M11.875 15.113c2.457 0 3.25-2.156 3.25-3.263 0-.576-.393-.394-1.023-.089-.582.283-1.365.675-2.224.675-1.798 0-3.25-1.693-3.25-.586 0 1.107.79 3.263 3.25 3.263h-.003z" fill="#FF323D"></path><path d="M14.76 9.21c.32.108.445.753.767.585.447-.233.707-.708.659-1.204a1.235 1.235 0 00-.879-1.059 1.262 1.262 0 00-1.33.394c-.322.384-.377.92-.14 1.36.153.283.638-.177.925-.079l-.002.003zm-5.887 0c-.32.108-.448.753-.768.585a1.226 1.226 0 01-.658-1.204c.048-.495.395-.913.878-1.059a1.262 1.262 0 011.33.394c.322.384.377.92.14 1.36-.152.283-.64-.177-.925-.079l.003.003zm1.12 5.34a2.166 2.166 0 011.325-1.106c.07-.02.144.06.219.171l.192.306c.069.1.139.175.209.175.074 0 .15-.074.223-.172l.205-.302c.08-.11.157-.188.234-.165.537.168.986.536 1.25 1.026.932-.724 1.275-1.905 1.275-2.633 0-.508-.306-.426-.81-.19l-.616.296c-.52.24-1.148.48-1.824.48-.676 0-1.302-.24-1.823-.48l-.589-.283c-.52-.248-.838-.342-.838.177 0 .703.32 1.831 1.187 2.56l.18.14z" fill="#3A3B45"></path><path d="M17.812 10.366a.806.806 0 00.813-.8c0-.441-.364-.8-.813-.8a.806.806 0 00-.812.8c0 .442.364.8.812.8zm-11.624 0a.806.806 0 00.812-.8c0-.441-.364-.8-.812-.8a.806.806 0 00-.813.8c0 .442.364.8.813.8zM4.515 13.073c-.405 0-.765.162-1.017.46a1.455 1.455 0 00-.333.925 1.801 1.801 0 00-.485-.074c-.387 0-.737.146-.985.409a1.41 1.41 0 00-.2 1.722 1.302 1.302 0 00-.447.694c-.06.222-.12.69.2 1.166a1.267 1.267 0 00-.093 1.236c.238.533.81.958 1.89 1.405l.24.096c.768.3 1.473.492 1.478.494.89.243 1.808.375 2.732.394 1.465 0 2.513-.443 3.115-1.314.93-1.342.842-2.575-.274-3.763l-.151-.154c-.692-.684-1.155-1.69-1.25-1.912-.195-.655-.71-1.383-1.562-1.383-.46.007-.889.233-1.15.605-.25-.31-.495-.553-.715-.694a1.87 1.87 0 00-.993-.312zm14.97 0c.405 0 .767.162 1.017.46.216.262.333.588.333.925.158-.047.322-.071.487-.074.388 0 .738.146.985.409a1.41 1.41 0 01.2 1.722c.22.178.377.422.445.694.06.222.12.69-.2 1.166.244.37.279.836.093 1.236-.238.533-.81.958-1.889 1.405l-.239.096c-.77.3-1.475.492-1.48.494-.89.243-1.808.375-2.732.394-1.465 0-2.513-.443-3.115-1.314-.93-1.342-.842-2.575.274-3.763l.151-.154c.695-.684 1.157-1.69 1.252-1.912.195-.655.708-1.383 1.56-1.383.46.007.889.233 1.15.605.25-.31.495-.553.718-.694.244-.162.523-.265.814-.3l.176-.012z" fill="#FF9D0B"></path><path d="M9.785 20.132c.688-.994.638-1.74-.305-2.667-.945-.928-1.495-2.288-1.495-2.288s-.205-.788-.672-.714c-.468.074-.81 1.25.17 1.971.977.721-.195 1.21-.573.534-.375-.677-1.405-2.416-1.94-2.751-.532-.332-.907-.148-.782.541.125.687 2.357 2.35 2.14 2.707-.218.362-.983-.42-.983-.42S2.953 14.9 2.43 15.46c-.52.558.398 1.026 1.7 1.803 1.308.778 1.41.985 1.225 1.28-.187.295-3.07-2.1-3.34-1.083-.27 1.011 2.943 1.304 2.745 2.006-.2.7-2.265-1.324-2.685-.537-.425.79 2.913 1.718 2.94 1.725 1.075.276 3.813.859 4.77-.522zm4.432 0c-.687-.994-.64-1.74.305-2.667.943-.928 1.493-2.288 1.493-2.288s.205-.788.675-.714c.465.074.807 1.25-.17 1.971-.98.721.195 1.21.57.534.377-.677 1.407-2.416 1.94-2.751.532-.332.91-.148.782.541-.125.687-2.355 2.35-2.137 2.707.215.362.98-.42.98-.42S21.05 14.9 21.57 15.46c.52.558-.395 1.026-1.7 1.803-1.308.778-1.408.985-1.225 1.28.187.295 3.07-2.1 3.34-1.083.27 1.011-2.94 1.304-2.743 2.006.2.7 2.263-1.324 2.685-.537.423.79-2.912 1.718-2.94 1.725-1.077.276-3.815.859-4.77-.522z" fill="#FFD21E"></path></svg></span>
+- [Model on HuggingFace](https://huggingface.co/Awe-AI/Scale-SWE)<span class="relative inline-block align-text-bottom icon"><svg height="1em" style="flex:none;line-height:1" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><title>HuggingFace</title><path d="M2.25 11.535c0-3.407 1.847-6.554 4.844-8.258a9.822 9.822 0 019.687 0c2.997 1.704 4.844 4.851 4.844 8.258 0 5.266-4.337 9.535-9.687 9.535S2.25 16.8 2.25 11.535z" fill="#FF9D0B"></path><path d="M11.938 20.086c4.797 0 8.687-3.829 8.687-8.551 0-4.722-3.89-8.55-8.687-8.55-4.798 0-8.688 3.828-8.688 8.55 0 4.722 3.89 8.55 8.688 8.55z" fill="#FFD21E"></path><path d="M11.875 15.113c2.457 0 3.25-2.156 3.25-3.263 0-.576-.393-.394-1.023-.089-.582.283-1.365.675-2.224.675-1.798 0-3.25-1.693-3.25-.586 0 1.107.79 3.263 3.25 3.263h-.003z" fill="#FF323D"></path><path d="M14.76 9.21c.32.108.445.753.767.585.447-.233.707-.708.659-1.204a1.235 1.235 0 00-.879-1.059 1.262 1.262 0 00-1.33.394c-.322.384-.377.92-.14 1.36.153.283.638-.177.925-.079l-.002.003zm-5.887 0c-.32.108-.448.753-.768.585a1.226 1.226 0 01-.658-1.204c.048-.495.395-.913.878-1.059a1.262 1.262 0 011.33.394c.322.384.377.92.14 1.36-.152.283-.64-.177-.925-.079l.003.003zm1.12 5.34a2.166 2.166 0 011.325-1.106c.07-.02.144.06.219.171l.192.306c.069.1.139.175.209.175.074 0 .15-.074.223-.172l.205-.302c.08-.11.157-.188.234-.165.537.168.986.536 1.25 1.026.932-.724 1.275-1.905 1.275-2.633 0-.508-.306-.426-.81-.19l-.616.296c-.52.24-1.148.48-1.824.48-.676 0-1.302-.24-1.823-.48l-.589-.283c-.52-.248-.838-.342-.838.177 0 .703.32 1.831 1.187 2.56l.18.14z" fill="#3A3B45"></path><path d="M17.812 10.366a.806.806 0 00.813-.8c0-.441-.364-.8-.813-.8a.806.806 0 00-.812.8c0 .442.364.8.812.8zm-11.624 0a.806.806 0 00.812-.8c0-.441-.364-.8-.812-.8a.806.806 0 00-.813.8c0 .442.364.8.813.8zM4.515 13.073c-.405 0-.765.162-1.017.46a1.455 1.455 0 00-.333.925 1.801 1.801 0 00-.485-.074c-.387 0-.737.146-.985.409a1.41 1.41 0 00-.2 1.722 1.302 1.302 0 00-.447.694c-.06.222-.12.69.2 1.166a1.267 1.267 0 00-.093 1.236c.238.533.81.958 1.89 1.405l.24.096c.768.3 1.473.492 1.478.494.89.243 1.808.375 2.732.394 1.465 0 2.513-.443 3.115-1.314.93-1.342.842-2.575-.274-3.763l-.151-.154c-.692-.684-1.155-1.69-1.25-1.912-.195-.655-.71-1.383-1.562-1.383-.46.007-.889.233-1.15.605-.25-.31-.495-.553-.715-.694a1.87 1.87 0 00-.993-.312zm14.97 0c.405 0 .767.162 1.017.46.216.262.333.588.333.925.158-.047.322-.071.487-.074.388 0 .738.146.985.409a1.41 1.41 0 01.2 1.722c.22.178.377.422.445.694.06.222.12.69-.2 1.166.244.37.279.836.093 1.236-.238.533-.81.958-1.889 1.405l-.239.096c-.77.3-1.475.492-1.48.494-.89.243-1.808.375-2.732.394-1.465 0-2.513-.443-3.115-1.314-.93-1.342-.842-2.575.274-3.763l.151-.154c.695-.684 1.157-1.69 1.252-1.912.195-.655.708-1.383 1.56-1.383.46.007.889.233 1.15.605.25-.31.495-.553.718-.694.244-.162.523-.265.814-.3l.176-.012z" fill="#FF9D0B"></path><path d="M9.785 20.132c.688-.994.638-1.74-.305-2.667-.945-.928-1.495-2.288-1.495-2.288s-.205-.788-.672-.714c-.468.074-.81 1.25.17 1.971.977.721-.195 1.21-.573.534-.375-.677-1.405-2.416-1.94-2.751-.532-.332-.907-.148-.782.541.125.687 2.357 2.35 2.14 2.707-.218.362-.983-.42-.983-.42S2.953 14.9 2.43 15.46c-.52.558.398 1.026 1.7 1.803 1.308.778 1.41.985 1.225 1.28-.187.295-3.07-2.1-3.34-1.083-.27 1.011 2.943 1.304 2.745 2.006-.2.7-2.265-1.324-2.685-.537-.425.79 2.913 1.718 2.94 1.725 1.075.276 3.813.859 4.77-.522zm4.432 0c-.687-.994-.64-1.74.305-2.667.943-.928 1.493-2.288 1.493-2.288s.205-.788.675-.714c.465.074.807 1.25-.17 1.971-.98.721.195 1.21.57.534.377-.677 1.407-2.416 1.94-2.751.532-.332.91-.148.782.541-.125.687-2.355 2.35-2.137 2.707.215.362.98-.42.98-.42S21.05 14.9 21.57 15.46c.52.558-.395 1.026-1.7 1.803-1.308.778-1.408.985-1.225 1.28.187.295 3.07-2.1 3.34-1.083.27 1.011-2.94 1.304-2.743 2.006.2.7 2.263-1.324 2.685-.537.423.79-2.912 1.718-2.94 1.725-1.077.276-3.815.859-4.77-.522z" fill="#FFD21E"></path></svg></span> -->
 
           
           

@@ -796,7 +796,7 @@ Explore our latest <a href="/projects/" >projects</a> or meet our <a href="/team
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2026-02-10T00:00:00&#43;00:00">10 February 2026</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+      <time datetime="2026-02-10T00:00:00&#43;00:00">10 February 2026</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">6 mins</span>
     
 
     
@@ -816,7 +816,11 @@ Explore our latest <a href="/projects/" >projects</a> or meet our <a href="/team
     </div>
     
       <div class="article-link__summary prose dark:prose-invert mt-1 line-clamp-5">
-        Overview # Achieving mastery in real world software engineering tasks is fundamentally bottlenecked by the scarcity of large scale, high quality training data. Scaling such data has been limited by the complexity of environment setup, unit test generation, and problem statement curation. In this paper, we propose ScaleSWE, an automated, sandboxed multi agent workflow designed to construct high quality SWE data at scale. The system coordinates three specialized agents for environment setup, test creation, and problem description synthesis to process 6 million pull requests across 5200 repositories, producing Scale SWE Data: 100k verified SWE instances, the largest such dataset to date. It substantially surpasses existing real world datasets in repository diversity and reflects realistic task complexity. We further demonstrate the dataset utility for training by distilling 71498 high quality trajectories and finetuning Qwen30BA3BInstruct to produce ScaleSWE Agent. Our agent achieves a 64 resolve rate on SWE Bench Verified a nearly three fold improvement over the base model. ScaleSWE provides a scalable, reproducible approach for data construction to advance LLM based software engineering. Scale SWE will be publicly available.
+        Paper Link: https://arxiv.org/abs/2602.09892
+Repository Link: https://github.com/AweAI-Team/ScaleSWE
+Data Link: https://huggingface.co/datasets/Awe-AI/Scale-SWE
+We propose the Scale-SWE dataset. By utilizing a Sandboxed multi-agent system, we achieved the scaling of SWE tasks to construct 100k real SWE data points, creating the largest open-source high-quality SWE dataset to date. This makes it possible to fully train Code Agents on GitHub-scale data.
+Furthermore, by utilizing distilled data to train Qwen3-30A3B-Instruct, we achieved a score of 64% on SWE-bench-Verified. This makes it possible for academic models of the same size to surpass industrial models (such as GLM-4.7-Flash)!
 
       </div>
     
@@ -876,6 +880,16 @@ Explore our latest <a href="/projects/" >projects</a> or meet our <a href="/team
         class="not-prose absolute inset-0 w-full h-full object-cover">
     </div>
   
+  
+    <span class="absolute top-0 right-0 m-2">
+      <span class="flex cursor-pointer">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Draft
+  </span>
+</span>
+
+    </span>
   
   <div class="p-4">
     <header>
