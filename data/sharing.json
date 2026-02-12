@@ -1,0 +1,7 @@
+{
+  "weibo": {
+    "icon": "weibo",
+    "title": "Weibo",
+    "url": "http://service.weibo.com/share/share.php?url=%s&title=%s"
+  }
+}
