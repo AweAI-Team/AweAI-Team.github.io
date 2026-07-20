@@ -1,0 +1,7802 @@
+{
+  "id": "openhands__kimi-k2.5",
+  "agent": "OpenHands",
+  "model": "kimi-k2.5",
+  "model_org": "Moonshot",
+  "agent_org": "AweAI",
+  "cross_repo": [
+    {
+      "instance_id": "pylons_plaster_pastedeploy_pr14",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 207.73367623006925,
+      "steps": 29,
+      "llm_time": 187.412,
+      "tool_time": 5.067,
+      "tool_usage": {
+        "str_replace_editor": 11,
+        "execute_bash": 17,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_colander_pr315",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 284.8413036260754,
+      "steps": 47,
+      "llm_time": 261.834,
+      "tool_time": 6.492,
+      "tool_usage": {
+        "str_replace_editor": 13,
+        "execute_bash": 33,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "thekevjames_coveralls-python_pr236",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 294.6285870047286,
+      "steps": 36,
+      "llm_time": 268.915,
+      "tool_time": 9.059,
+      "tool_usage": {
+        "str_replace_editor": 13,
+        "execute_bash": 22,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_colander_pr288",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 364.3012775131501,
+      "steps": 52,
+      "llm_time": 339.168,
+      "tool_time": 8.712,
+      "tool_usage": {
+        "str_replace_editor": 20,
+        "execute_bash": 31,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr1373",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 376.1568534038961,
+      "steps": 54,
+      "llm_time": 337.551,
+      "tool_time": 8.796,
+      "tool_usage": {
+        "str_replace_editor": 24,
+        "execute_bash": 29,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr2874",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 463.84101340780035,
+      "steps": 71,
+      "llm_time": 405.105,
+      "tool_time": 22.311,
+      "tool_usage": {
+        "str_replace_editor": 32,
+        "execute_bash": 38,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pycqa_pyflakes_pr413",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 306.41922903293744,
+      "steps": 52,
+      "llm_time": 276.369,
+      "tool_time": 13.461,
+      "tool_usage": {
+        "str_replace_editor": 24,
+        "execute_bash": 27,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "kitware_trame-server_pr8",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 536.1296307779849,
+      "steps": 64,
+      "llm_time": 502.681,
+      "tool_time": 16.517,
+      "tool_usage": {
+        "str_replace_editor": 26,
+        "execute_bash": 37,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "factoryboy_factory_boy_pr1059",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 562.1528470851481,
+      "steps": 89,
+      "llm_time": 525.498,
+      "tool_time": 20.931,
+      "tool_usage": {
+        "execute_bash": 61,
+        "str_replace_editor": 27,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr2951",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 315.8402452180162,
+      "steps": 37,
+      "llm_time": 268.006,
+      "tool_time": 6.713,
+      "tool_usage": {
+        "str_replace_editor": 13,
+        "execute_bash": 23,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "iamconsortium_units_pr45",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 640.4332733531483,
+      "steps": 82,
+      "llm_time": 594.393,
+      "tool_time": 28.329,
+      "tool_usage": {
+        "execute_bash": 57,
+        "str_replace_editor": 24,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr3034",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 388.0078271650709,
+      "steps": 53,
+      "llm_time": 346.252,
+      "tool_time": 7.229,
+      "tool_usage": {
+        "str_replace_editor": 30,
+        "execute_bash": 22,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pycqa_pyflakes_pr632",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 385.21834967890754,
+      "steps": 62,
+      "llm_time": 354.047,
+      "tool_time": 11.496,
+      "tool_usage": {
+        "str_replace_editor": 27,
+        "execute_bash": 34,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hyundai-kia-connect_hyundai_kia_connect_api_pr489",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 786.0214712801389,
+      "steps": 65,
+      "llm_time": 759.121,
+      "tool_time": 10.021,
+      "tool_usage": {
+        "execute_bash": 35,
+        "str_replace_editor": 29,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "diamondlightsource_python-workflows_pr76",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 342.00965342111886,
+      "steps": 46,
+      "llm_time": 307.736,
+      "tool_time": 14.12,
+      "tool_usage": {
+        "str_replace_editor": 21,
+        "execute_bash": 24,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_colander_pr304",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 227.57362490799278,
+      "steps": 49,
+      "llm_time": 198.672,
+      "tool_time": 12.732,
+      "tool_usage": {
+        "execute_bash": 35,
+        "str_replace_editor": 13,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "thekevjames_coveralls-python_pr249",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 424.63932366203517,
+      "steps": 40,
+      "llm_time": 399.494,
+      "tool_time": 8.643,
+      "tool_usage": {
+        "execute_bash": 23,
+        "str_replace_editor": 16,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr1320",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 369.81416296586394,
+      "steps": 52,
+      "llm_time": 322.993,
+      "tool_time": 12.386,
+      "tool_usage": {
+        "execute_bash": 34,
+        "str_replace_editor": 17,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aboutcode-org_saneyaml_pr15",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 331.4659920022823,
+      "steps": 36,
+      "llm_time": 305.796,
+      "tool_time": 8.187,
+      "tool_usage": {
+        "str_replace_editor": 11,
+        "execute_bash": 24,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "neuralensemble_python-neo_pr1554",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 662.3362199361436,
+      "steps": 82,
+      "llm_time": 529.72,
+      "tool_time": 48.613,
+      "tool_usage": {
+        "str_replace_editor": 25,
+        "execute_bash": 56,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "diamondlightsource_python-zocalo_pr193",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 365.5666611189954,
+      "steps": 49,
+      "llm_time": 326.15,
+      "tool_time": 24.251,
+      "tool_usage": {
+        "str_replace_editor": 18,
+        "execute_bash": 30,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cornices_cornice_pr271",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 521.2111403988674,
+      "steps": 69,
+      "llm_time": 477.698,
+      "tool_time": 24.168,
+      "tool_usage": {
+        "str_replace_editor": 32,
+        "execute_bash": 36,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "kozea_tinycss2_pr49",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 224.66537385201082,
+      "steps": 32,
+      "llm_time": 206.336,
+      "tool_time": 4.256,
+      "tool_usage": {
+        "execute_bash": 13,
+        "str_replace_editor": 18,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "kitware_trame-server_pr12",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 335.09301506495103,
+      "steps": 48,
+      "llm_time": 314.935,
+      "tool_time": 6.587,
+      "tool_usage": {
+        "str_replace_editor": 9,
+        "execute_bash": 38,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pycqa_pyflakes_pr374",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 489.7510287701152,
+      "steps": 77,
+      "llm_time": 441.175,
+      "tool_time": 28.617,
+      "tool_usage": {
+        "str_replace_editor": 26,
+        "execute_bash": 50,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_colander_pr323",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 583.5008121677674,
+      "steps": 67,
+      "llm_time": 549.008,
+      "tool_time": 14.319,
+      "tool_usage": {
+        "str_replace_editor": 24,
+        "execute_bash": 42,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cornices_cornice_pr424",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 510.06177268596366,
+      "steps": 61,
+      "llm_time": 458.28,
+      "tool_time": 29.438,
+      "tool_usage": {
+        "execute_bash": 35,
+        "str_replace_editor": 25,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr2984",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 703.7937590940855,
+      "steps": 69,
+      "llm_time": 615.205,
+      "tool_time": 46.914,
+      "tool_usage": {
+        "str_replace_editor": 29,
+        "execute_bash": 39,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr2823",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 465.5426406930201,
+      "steps": 56,
+      "llm_time": 415.998,
+      "tool_time": 11.869,
+      "tool_usage": {
+        "str_replace_editor": 24,
+        "execute_bash": 31,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "adamboche_python-marshmallow-union_pr33",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 414.7688182326965,
+      "steps": 59,
+      "llm_time": 383.934,
+      "tool_time": 8.502,
+      "tool_usage": {
+        "execute_bash": 43,
+        "str_replace_editor": 15,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pycqa_pydocstyle_pr107",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 467.10019758110866,
+      "steps": 70,
+      "llm_time": 442.167,
+      "tool_time": 9.037,
+      "tool_usage": {
+        "str_replace_editor": 29,
+        "execute_bash": 40,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_venusian_pr63",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 658.0307451360859,
+      "steps": 102,
+      "llm_time": 627.699,
+      "tool_time": 12.927,
+      "tool_usage": {
+        "execute_bash": 81,
+        "str_replace_editor": 20,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr2985",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 605.2311397041194,
+      "steps": 80,
+      "llm_time": 545.846,
+      "tool_time": 19.831,
+      "tool_usage": {
+        "execute_bash": 48,
+        "str_replace_editor": 31,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pycqa_docformatter_pr77",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 361.1007808819413,
+      "steps": 44,
+      "llm_time": 336.866,
+      "tool_time": 9.228,
+      "tool_usage": {
+        "str_replace_editor": 17,
+        "execute_bash": 26,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_colander_pr185",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 398.59044645819813,
+      "steps": 60,
+      "llm_time": 367.747,
+      "tool_time": 10.596,
+      "tool_usage": {
+        "execute_bash": 45,
+        "str_replace_editor": 14,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hyundai-kia-connect_hyundai_kia_connect_api_pr378",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1154.081736727152,
+      "steps": 107,
+      "llm_time": 1123.128,
+      "tool_time": 12.596,
+      "tool_usage": {
+        "str_replace_editor": 29,
+        "execute_bash": 77,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "adamchainz_flake8-comprehensions_pr409",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 503.81874033389613,
+      "steps": 73,
+      "llm_time": 421.812,
+      "tool_time": 57.955,
+      "tool_usage": {
+        "str_replace_editor": 27,
+        "execute_bash": 45,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_waitress_pr238",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1624.053070356138,
+      "steps": 108,
+      "llm_time": 861.707,
+      "tool_time": 144.455,
+      "tool_usage": {
+        "execute_bash": 67,
+        "str_replace_editor": 40,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_colander_pr96",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 431.018537866883,
+      "steps": 71,
+      "llm_time": 398.635,
+      "tool_time": 13.827,
+      "tool_usage": {
+        "execute_bash": 49,
+        "str_replace_editor": 21,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pycqa_pyflakes_pr842",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 732.0183174083941,
+      "steps": 103,
+      "llm_time": 697.767,
+      "tool_time": 15.117,
+      "tool_usage": {
+        "str_replace_editor": 26,
+        "execute_bash": 76,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hyundai-kia-connect_hyundai_kia_connect_api_pr580",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 589.8053273209371,
+      "steps": 76,
+      "llm_time": 561.111,
+      "tool_time": 9.672,
+      "tool_usage": {
+        "execute_bash": 48,
+        "str_replace_editor": 27,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "diamondlightsource_python-zocalo_pr90",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 511.605133744888,
+      "steps": 70,
+      "llm_time": 482.475,
+      "tool_time": 13.708,
+      "tool_usage": {
+        "execute_bash": 47,
+        "str_replace_editor": 22,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hyundai-kia-connect_hyundai_kia_connect_api_pr529",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 435.26635656598955,
+      "steps": 49,
+      "llm_time": 393.0,
+      "tool_time": 28.483,
+      "tool_usage": {
+        "str_replace_editor": 19,
+        "execute_bash": 29,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pycqa_pyflakes_pr448",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 611.2668575178832,
+      "steps": 77,
+      "llm_time": 582.765,
+      "tool_time": 12.304,
+      "tool_usage": {
+        "str_replace_editor": 33,
+        "execute_bash": 43,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "adamchainz_flake8-logging_pr96",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 1093.5917723230086,
+      "steps": 141,
+      "llm_time": 1040.903,
+      "tool_time": 34.328,
+      "tool_usage": {
+        "str_replace_editor": 46,
+        "execute_bash": 94,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr3328",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 390.0933303711936,
+      "steps": 68,
+      "llm_time": 332.254,
+      "tool_time": 17.68,
+      "tool_usage": {
+        "str_replace_editor": 30,
+        "execute_bash": 37,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hyundai-kia-connect_hyundai_kia_connect_api_pr356",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 452.0638014031574,
+      "steps": 52,
+      "llm_time": 424.969,
+      "tool_time": 7.958,
+      "tool_usage": {
+        "execute_bash": 34,
+        "str_replace_editor": 17,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hyundai-kia-connect_hyundai_kia_connect_api_pr429",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 650.0396763272583,
+      "steps": 66,
+      "llm_time": 626.296,
+      "tool_time": 8.081,
+      "tool_usage": {
+        "str_replace_editor": 24,
+        "execute_bash": 41,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr2964",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 536.4427574239671,
+      "steps": 77,
+      "llm_time": 478.591,
+      "tool_time": 16.485,
+      "tool_usage": {
+        "str_replace_editor": 44,
+        "execute_bash": 32,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr3084",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 461.68186081713066,
+      "steps": 51,
+      "llm_time": 412.759,
+      "tool_time": 9.284,
+      "tool_usage": {
+        "execute_bash": 30,
+        "str_replace_editor": 20,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "yelp_mrjob_pr1443",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 515.7794352131896,
+      "steps": 72,
+      "llm_time": 324.451,
+      "tool_time": 135.194,
+      "tool_usage": {
+        "str_replace_editor": 26,
+        "execute_bash": 45,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr2413",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 562.9776412299834,
+      "steps": 88,
+      "llm_time": 505.095,
+      "tool_time": 21.028,
+      "tool_usage": {
+        "str_replace_editor": 42,
+        "execute_bash": 45,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "kitware_trame-server_pr68",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 402.916985495016,
+      "steps": 63,
+      "llm_time": 347.664,
+      "tool_time": 35.606,
+      "tool_usage": {
+        "str_replace_editor": 22,
+        "execute_bash": 40,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "adamtheturtle_doccmd_pr563",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 321.9716676506214,
+      "steps": 49,
+      "llm_time": 266.322,
+      "tool_time": 27.877,
+      "tool_usage": {
+        "execute_bash": 35,
+        "str_replace_editor": 13,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr3054",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 552.276014237199,
+      "steps": 84,
+      "llm_time": 487.879,
+      "tool_time": 25.41,
+      "tool_usage": {
+        "str_replace_editor": 37,
+        "execute_bash": 46,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hyundai-kia-connect_hyundai_kia_connect_api_pr567",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 669.845646626316,
+      "steps": 62,
+      "llm_time": 642.155,
+      "tool_time": 9.932,
+      "tool_usage": {
+        "str_replace_editor": 28,
+        "execute_bash": 33,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr1837",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 619.1870647179894,
+      "steps": 70,
+      "llm_time": 568.852,
+      "tool_time": 12.949,
+      "tool_usage": {
+        "execute_bash": 43,
+        "str_replace_editor": 26,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hyundai-kia-connect_hyundai_kia_connect_api_pr498",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 447.74130649631843,
+      "steps": 72,
+      "llm_time": 422.205,
+      "tool_time": 7.449,
+      "tool_usage": {
+        "str_replace_editor": 32,
+        "execute_bash": 39,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "adamchainz_flake8-comprehensions_pr553",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 734.0703193168156,
+      "steps": 76,
+      "llm_time": 580.62,
+      "tool_time": 124.223,
+      "tool_usage": {
+        "execute_bash": 50,
+        "str_replace_editor": 25,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "diamondlightsource_python-zocalo_pr140",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 470.42839641915634,
+      "steps": 51,
+      "llm_time": 425.511,
+      "tool_time": 13.679,
+      "tool_usage": {
+        "execute_bash": 33,
+        "str_replace_editor": 17,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr1028",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 428.6786295999773,
+      "steps": 57,
+      "llm_time": 383.634,
+      "tool_time": 11.34,
+      "tool_usage": {
+        "str_replace_editor": 25,
+        "execute_bash": 31,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "thekevjames_coveralls-python_pr97",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 274.6243309509009,
+      "steps": 33,
+      "llm_time": 247.893,
+      "tool_time": 9.441,
+      "tool_usage": {
+        "str_replace_editor": 13,
+        "execute_bash": 19,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "abravalheri_validate-pyproject_pr41",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 461.32975166197866,
+      "steps": 58,
+      "llm_time": 402.427,
+      "tool_time": 36.999,
+      "tool_usage": {
+        "execute_bash": 36,
+        "str_replace_editor": 21,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hyundai-kia-connect_hyundai_kia_connect_api_pr726",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 702.0946729620919,
+      "steps": 85,
+      "llm_time": 671.878,
+      "tool_time": 14.094,
+      "tool_usage": {
+        "str_replace_editor": 38,
+        "execute_bash": 46,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr2778",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 580.3628251319751,
+      "steps": 73,
+      "llm_time": 523.402,
+      "tool_time": 19.587,
+      "tool_usage": {
+        "str_replace_editor": 28,
+        "execute_bash": 44,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "ota-insight_djangosaml2idp_pr51",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 1088.8496285541914,
+      "steps": 129,
+      "llm_time": 977.139,
+      "tool_time": 86.678,
+      "tool_usage": {
+        "str_replace_editor": 63,
+        "execute_bash": 65,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr2873",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 789.7578796660528,
+      "steps": 91,
+      "llm_time": 732.585,
+      "tool_time": 16.005,
+      "tool_usage": {
+        "str_replace_editor": 37,
+        "execute_bash": 53,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pycqa_docformatter_pr138",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 586.8132843310013,
+      "steps": 83,
+      "llm_time": 546.889,
+      "tool_time": 18.506,
+      "tool_usage": {
+        "execute_bash": 74,
+        "str_replace_editor": 8,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr3319",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 512.1435969700105,
+      "steps": 69,
+      "llm_time": 454.354,
+      "tool_time": 11.864,
+      "tool_usage": {
+        "execute_bash": 41,
+        "str_replace_editor": 27,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "esss_pytest-regressions_pr201",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 762.7156019359827,
+      "steps": 87,
+      "llm_time": 706.212,
+      "tool_time": 37.133,
+      "tool_usage": {
+        "execute_bash": 50,
+        "str_replace_editor": 36,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "adamchainz_flake8-logging_pr77",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 209.8162358594127,
+      "steps": 40,
+      "llm_time": 184.948,
+      "tool_time": 7.277,
+      "tool_usage": {
+        "str_replace_editor": 13,
+        "execute_bash": 26,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "adamchainz_flake8-comprehensions_pr490",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 386.2057525203563,
+      "steps": 49,
+      "llm_time": 302.645,
+      "tool_time": 53.387,
+      "tool_usage": {
+        "str_replace_editor": 17,
+        "execute_bash": 31,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "acsone_setuptools-odoo_pr17",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 541.4615911031142,
+      "steps": 64,
+      "llm_time": 502.431,
+      "tool_time": 18.239,
+      "tool_usage": {
+        "execute_bash": 32,
+        "str_replace_editor": 31,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr3086",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 753.463852383662,
+      "steps": 92,
+      "llm_time": 687.101,
+      "tool_time": 17.172,
+      "tool_usage": {
+        "str_replace_editor": 34,
+        "execute_bash": 57,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "identitypython_pyjwkest_pr88",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 237.88712406530976,
+      "steps": 35,
+      "llm_time": 209.566,
+      "tool_time": 8.659,
+      "tool_usage": {
+        "execute_bash": 19,
+        "str_replace_editor": 15,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "thekevjames_coveralls-python_pr94",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 379.8902176958509,
+      "steps": 48,
+      "llm_time": 348.777,
+      "tool_time": 11.715,
+      "tool_usage": {
+        "execute_bash": 33,
+        "str_replace_editor": 14,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cornices_cornice_pr477",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 540.9086675867438,
+      "steps": 77,
+      "llm_time": 491.862,
+      "tool_time": 28.775,
+      "tool_usage": {
+        "str_replace_editor": 29,
+        "execute_bash": 47,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hyundai-kia-connect_hyundai_kia_connect_api_pr892",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 443.23548967111856,
+      "steps": 55,
+      "llm_time": 415.083,
+      "tool_time": 8.802,
+      "tool_usage": {
+        "str_replace_editor": 22,
+        "execute_bash": 32,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_plaster_pastedeploy_pr6",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 859.6216107322834,
+      "steps": 77,
+      "llm_time": 825.176,
+      "tool_time": 16.211,
+      "tool_usage": {
+        "str_replace_editor": 21,
+        "execute_bash": 55,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hyundai-kia-connect_hyundai_kia_connect_api_pr850",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 408.4672372126952,
+      "steps": 52,
+      "llm_time": 381.076,
+      "tool_time": 9.538,
+      "tool_usage": {
+        "str_replace_editor": 24,
+        "execute_bash": 27,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "courtbouillon_pydyf_pr21",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 537.068763801828,
+      "steps": 65,
+      "llm_time": 505.422,
+      "tool_time": 13.044,
+      "tool_usage": {
+        "execute_bash": 37,
+        "str_replace_editor": 27,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_colander_pr108",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 664.3966173897497,
+      "steps": 84,
+      "llm_time": 637.293,
+      "tool_time": 8.067,
+      "tool_usage": {
+        "execute_bash": 66,
+        "str_replace_editor": 17,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_translationstring_pr12",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 205.17349107936025,
+      "steps": 25,
+      "llm_time": 182.601,
+      "tool_time": 3.074,
+      "tool_usage": {
+        "execute_bash": 13,
+        "str_replace_editor": 11,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pycqa_pep8_pr919",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1054.4932691571303,
+      "steps": 157,
+      "llm_time": 1010.294,
+      "tool_time": 26.266,
+      "tool_usage": {
+        "str_replace_editor": 42,
+        "execute_bash": 114,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr2517",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 516.2123951460235,
+      "steps": 77,
+      "llm_time": 464.198,
+      "tool_time": 13.888,
+      "tool_usage": {
+        "str_replace_editor": 25,
+        "execute_bash": 51,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "iamconsortium_units_pr57",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 576.1435583936982,
+      "steps": 74,
+      "llm_time": 497.296,
+      "tool_time": 60.794,
+      "tool_usage": {
+        "str_replace_editor": 31,
+        "execute_bash": 42,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "edinburgh-genome-foundry_python_codon_tables_pr4",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 362.47913092467934,
+      "steps": 48,
+      "llm_time": 294.255,
+      "tool_time": 44.087,
+      "tool_usage": {
+        "execute_bash": 27,
+        "str_replace_editor": 20,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pycqa_pycodestyle_pr970",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 497.52006656304,
+      "steps": 72,
+      "llm_time": 466.692,
+      "tool_time": 11.97,
+      "tool_usage": {
+        "str_replace_editor": 27,
+        "execute_bash": 44,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr2662",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 568.1986866267398,
+      "steps": 66,
+      "llm_time": 514.021,
+      "tool_time": 9.105,
+      "tool_usage": {
+        "str_replace_editor": 15,
+        "execute_bash": 50,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr1471",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 791.9455304951407,
+      "steps": 112,
+      "llm_time": 714.862,
+      "tool_time": 15.196,
+      "tool_usage": {
+        "execute_bash": 64,
+        "str_replace_editor": 47,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr1417",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 464.1805511210114,
+      "steps": 62,
+      "llm_time": 417.952,
+      "tool_time": 12.286,
+      "tool_usage": {
+        "execute_bash": 36,
+        "str_replace_editor": 25,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hyundai-kia-connect_hyundai_kia_connect_api_pr877",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 738.1482089757919,
+      "steps": 71,
+      "llm_time": 634.83,
+      "tool_time": 67.295,
+      "tool_usage": {
+        "execute_bash": 40,
+        "str_replace_editor": 30,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "jellezijlstra_ast_decompiler_pr48",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 414.2988352631219,
+      "steps": 52,
+      "llm_time": 392.067,
+      "tool_time": 5.241,
+      "tool_usage": {
+        "execute_bash": 32,
+        "str_replace_editor": 19,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_colander_pr318",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 441.5047098980285,
+      "steps": 57,
+      "llm_time": 413.768,
+      "tool_time": 9.958,
+      "tool_usage": {
+        "execute_bash": 38,
+        "str_replace_editor": 18,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_plaster_pastedeploy_pr11",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 368.7699119099416,
+      "steps": 49,
+      "llm_time": 341.876,
+      "tool_time": 11.362,
+      "tool_usage": {
+        "str_replace_editor": 21,
+        "execute_bash": 27,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_plaster_pastedeploy_pr7",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 653.3692453168333,
+      "steps": 121,
+      "llm_time": 616.56,
+      "tool_time": 20.283,
+      "tool_usage": {
+        "execute_bash": 89,
+        "str_replace_editor": 31,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pycqa_pydocstyle_pr137",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 576.515153313987,
+      "steps": 88,
+      "llm_time": 538.86,
+      "tool_time": 17.856,
+      "tool_usage": {
+        "str_replace_editor": 42,
+        "execute_bash": 45,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_colander_pr239",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 777.4313536239788,
+      "steps": 108,
+      "llm_time": 745.518,
+      "tool_time": 14.26,
+      "tool_usage": {
+        "str_replace_editor": 29,
+        "execute_bash": 78,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hyundai-kia-connect_hyundai_kia_connect_api_pr507",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 347.4148199399933,
+      "steps": 51,
+      "llm_time": 321.673,
+      "tool_time": 10.362,
+      "tool_usage": {
+        "execute_bash": 31,
+        "str_replace_editor": 19,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr3029",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 512.2124694529921,
+      "steps": 72,
+      "llm_time": 439.572,
+      "tool_time": 28.353,
+      "tool_usage": {
+        "str_replace_editor": 27,
+        "execute_bash": 44,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "abravalheri_validate-pyproject_pr104",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 350.7694675340317,
+      "steps": 51,
+      "llm_time": 292.903,
+      "tool_time": 33.967,
+      "tool_usage": {
+        "execute_bash": 37,
+        "str_replace_editor": 13,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr2989",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 353.17574344575405,
+      "steps": 59,
+      "llm_time": 282.827,
+      "tool_time": 22.039,
+      "tool_usage": {
+        "execute_bash": 34,
+        "str_replace_editor": 24,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cornices_cornice_pr206",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 480.8040711679496,
+      "steps": 83,
+      "llm_time": 447.193,
+      "tool_time": 17.833,
+      "tool_usage": {
+        "execute_bash": 56,
+        "str_replace_editor": 26,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "kozea_weasyprint_pr1869",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 809.3150874436833,
+      "steps": 85,
+      "llm_time": 518.129,
+      "tool_time": 216.512,
+      "tool_usage": {
+        "execute_bash": 50,
+        "str_replace_editor": 34,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "matthieudartiailh_bytecode_pr56",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 494.8341371691786,
+      "steps": 55,
+      "llm_time": 471.067,
+      "tool_time": 8.266,
+      "tool_usage": {
+        "execute_bash": 37,
+        "str_replace_editor": 17,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hyundai-kia-connect_hyundai_kia_connect_api_pr958",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 596.7365753310733,
+      "steps": 89,
+      "llm_time": 566.071,
+      "tool_time": 10.935,
+      "tool_usage": {
+        "str_replace_editor": 31,
+        "execute_bash": 57,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pycqa_pyflakes_pr61",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 373.69854344800115,
+      "steps": 72,
+      "llm_time": 343.582,
+      "tool_time": 12.286,
+      "tool_usage": {
+        "str_replace_editor": 22,
+        "execute_bash": 49,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr2810",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 402.3165011177771,
+      "steps": 55,
+      "llm_time": 354.17,
+      "tool_time": 9.376,
+      "tool_usage": {
+        "execute_bash": 38,
+        "str_replace_editor": 16,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aboutcode-org_commoncode_pr44",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 319.67345312796533,
+      "steps": 47,
+      "llm_time": 286.848,
+      "tool_time": 13.781,
+      "tool_usage": {
+        "str_replace_editor": 22,
+        "execute_bash": 24,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_session_pr890",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 337.8751617660746,
+      "steps": 43,
+      "llm_time": 228.806,
+      "tool_time": 17.308,
+      "tool_usage": {
+        "execute_bash": 31,
+        "str_replace_editor": 11,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "adamchainz_flake8-comprehensions_pr427",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 573.1374660851434,
+      "steps": 84,
+      "llm_time": 429.695,
+      "tool_time": 112.315,
+      "tool_usage": {
+        "execute_bash": 59,
+        "str_replace_editor": 24,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hyundai-kia-connect_hyundai_kia_connect_api_pr680",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 647.0710755931213,
+      "steps": 68,
+      "llm_time": 614.109,
+      "tool_time": 14.002,
+      "tool_usage": {
+        "str_replace_editor": 26,
+        "execute_bash": 41,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hyundai-kia-connect_hyundai_kia_connect_api_pr214",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 615.7464431626722,
+      "steps": 72,
+      "llm_time": 589.693,
+      "tool_time": 10.287,
+      "tool_usage": {
+        "str_replace_editor": 22,
+        "execute_bash": 49,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hyundai-kia-connect_hyundai_kia_connect_api_pr750",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 345.46961046382785,
+      "steps": 47,
+      "llm_time": 318.019,
+      "tool_time": 8.188,
+      "tool_usage": {
+        "str_replace_editor": 21,
+        "execute_bash": 25,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "alastair_python-musicbrainzngs_pr165",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 314.9707875922322,
+      "steps": 53,
+      "llm_time": 271.032,
+      "tool_time": 25.418,
+      "tool_usage": {
+        "str_replace_editor": 15,
+        "execute_bash": 37,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "kozea_weasyprint_pr1520",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 752.5231022159569,
+      "steps": 84,
+      "llm_time": 409.551,
+      "tool_time": 283.209,
+      "tool_usage": {
+        "execute_bash": 54,
+        "str_replace_editor": 29,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "andialbrecht_sqlparse_pr676",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 477.9000403978862,
+      "steps": 67,
+      "llm_time": 450.789,
+      "tool_time": 7.778,
+      "tool_usage": {
+        "str_replace_editor": 18,
+        "execute_bash": 48,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "alastair_python-musicbrainzngs_pr183",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 527.0853867842816,
+      "steps": 87,
+      "llm_time": 490.137,
+      "tool_time": 18.15,
+      "tool_usage": {
+        "str_replace_editor": 17,
+        "execute_bash": 69,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "esss_pytest-regressions_pr72",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 557.6104379156604,
+      "steps": 96,
+      "llm_time": 492.85,
+      "tool_time": 41.274,
+      "tool_usage": {
+        "str_replace_editor": 25,
+        "execute_bash": 70,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "akaihola_darkgraylib_pr53",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 307.3699028203264,
+      "steps": 48,
+      "llm_time": 267.92,
+      "tool_time": 16.162,
+      "tool_usage": {
+        "str_replace_editor": 25,
+        "execute_bash": 22,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pycqa_docformatter_pr204",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 429.6686952961609,
+      "steps": 68,
+      "llm_time": 393.116,
+      "tool_time": 13.694,
+      "tool_usage": {
+        "str_replace_editor": 22,
+        "execute_bash": 45,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_sse_pr430",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 335.43641591165215,
+      "steps": 36,
+      "llm_time": 270.041,
+      "tool_time": 41.489,
+      "tool_usage": {
+        "str_replace_editor": 18,
+        "execute_bash": 17,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_sse_pr454",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 175.86480389116332,
+      "steps": 29,
+      "llm_time": 132.44,
+      "tool_time": 22.041,
+      "tool_usage": {
+        "str_replace_editor": 11,
+        "execute_bash": 17,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pycqa_docformatter_pr284",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 898.7909824368544,
+      "steps": 114,
+      "llm_time": 861.659,
+      "tool_time": 14.947,
+      "tool_usage": {
+        "str_replace_editor": 52,
+        "execute_bash": 61,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr3019",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 414.9270031298511,
+      "steps": 75,
+      "llm_time": 360.584,
+      "tool_time": 13.469,
+      "tool_usage": {
+        "str_replace_editor": 27,
+        "execute_bash": 47,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hyundai-kia-connect_hyundai_kia_connect_api_pr371",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 938.263277137652,
+      "steps": 86,
+      "llm_time": 902.044,
+      "tool_time": 16.401,
+      "tool_usage": {
+        "str_replace_editor": 23,
+        "execute_bash": 62,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_sse_pr370",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 265.701090994291,
+      "steps": 40,
+      "llm_time": 203.814,
+      "tool_time": 34.003,
+      "tool_usage": {
+        "str_replace_editor": 17,
+        "execute_bash": 22,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_multidict_pr629",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 333.8542302879505,
+      "steps": 61,
+      "llm_time": 290.928,
+      "tool_time": 23.313,
+      "tool_usage": {
+        "str_replace_editor": 21,
+        "execute_bash": 39,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr2859",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 377.5179340420291,
+      "steps": 55,
+      "llm_time": 325.379,
+      "tool_time": 8.828,
+      "tool_usage": {
+        "execute_bash": 33,
+        "str_replace_editor": 21,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_multidict_pr677",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 330.159674863331,
+      "steps": 50,
+      "llm_time": 291.176,
+      "tool_time": 18.904,
+      "tool_usage": {
+        "str_replace_editor": 20,
+        "execute_bash": 29,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_pr10474",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 557.6954768160358,
+      "steps": 68,
+      "llm_time": 329.737,
+      "tool_time": 100.428,
+      "tool_usage": {
+        "str_replace_editor": 27,
+        "execute_bash": 40,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_pr8608",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 480.7084744325839,
+      "steps": 55,
+      "llm_time": 335.78,
+      "tool_time": 69.533,
+      "tool_usage": {
+        "str_replace_editor": 22,
+        "execute_bash": 32,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "suor_funcy_pr118",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 465.0913152140565,
+      "steps": 74,
+      "llm_time": 438.991,
+      "tool_time": 9.54,
+      "tool_usage": {
+        "execute_bash": 48,
+        "str_replace_editor": 25,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "kitware_trame-vtk_pr4",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 510.95458575570956,
+      "steps": 65,
+      "llm_time": 473.409,
+      "tool_time": 11.792,
+      "tool_usage": {
+        "str_replace_editor": 24,
+        "execute_bash": 40,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aklajnert_pytest-subprocess_pr180",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 436.1512649599463,
+      "steps": 58,
+      "llm_time": 373.278,
+      "tool_time": 41.341,
+      "tool_usage": {
+        "str_replace_editor": 29,
+        "execute_bash": 28,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aiortc_aioice_pr82",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 443.38369402103126,
+      "steps": 51,
+      "llm_time": 343.121,
+      "tool_time": 75.284,
+      "tool_usage": {
+        "execute_bash": 32,
+        "str_replace_editor": 18,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_colander_pr305",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 684.6034689280204,
+      "steps": 140,
+      "llm_time": 646.146,
+      "tool_time": 21.001,
+      "tool_usage": {
+        "str_replace_editor": 50,
+        "execute_bash": 89,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_security_pr161",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 210.86154826078564,
+      "steps": 32,
+      "llm_time": 184.598,
+      "tool_time": 9.38,
+      "tool_usage": {
+        "execute_bash": 16,
+        "str_replace_editor": 15,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "weblateorg_translation-finder_pr535",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 379.8516789628193,
+      "steps": 49,
+      "llm_time": 353.801,
+      "tool_time": 7.774,
+      "tool_usage": {
+        "str_replace_editor": 19,
+        "execute_bash": 29,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_sse_pr85",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 951.0456690890715,
+      "steps": 80,
+      "llm_time": 427.327,
+      "tool_time": 376.668,
+      "tool_usage": {
+        "str_replace_editor": 35,
+        "execute_bash": 44,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "akaihola_graylint_pr34",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 580.9849158413708,
+      "steps": 95,
+      "llm_time": 537.181,
+      "tool_time": 24.748,
+      "tool_usage": {
+        "execute_bash": 68,
+        "str_replace_editor": 26,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "ansys_pyansys-units_pr309",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 644.030199940782,
+      "steps": 86,
+      "llm_time": 579.601,
+      "tool_time": 44.777,
+      "tool_usage": {
+        "execute_bash": 59,
+        "str_replace_editor": 26,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_pr7541",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 828.7794966246001,
+      "steps": 112,
+      "llm_time": 701.427,
+      "tool_time": 70.334,
+      "tool_usage": {
+        "str_replace_editor": 62,
+        "execute_bash": 49,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "akaihola_darkgraylib_pr2",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 731.1420735628344,
+      "steps": 89,
+      "llm_time": 678.503,
+      "tool_time": 32.046,
+      "tool_usage": {
+        "str_replace_editor": 35,
+        "execute_bash": 53,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_propcache_pr19",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 197.3557526380755,
+      "steps": 45,
+      "llm_time": 168.804,
+      "tool_time": 13.197,
+      "tool_usage": {
+        "execute_bash": 28,
+        "str_replace_editor": 16,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_security_pr154",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 939.1521561127156,
+      "steps": 49,
+      "llm_time": 312.45,
+      "tool_time": 610.481,
+      "tool_usage": {
+        "str_replace_editor": 22,
+        "execute_bash": 26,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aiven_aiven-client_pr321",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 604.6221825731918,
+      "steps": 101,
+      "llm_time": 542.033,
+      "tool_time": 44.022,
+      "tool_usage": {
+        "execute_bash": 80,
+        "str_replace_editor": 20,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "akaihola_darkgraylib_pr64",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 230.1746898763813,
+      "steps": 36,
+      "llm_time": 197.79,
+      "tool_time": 12.283,
+      "tool_usage": {
+        "str_replace_editor": 17,
+        "execute_bash": 18,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_jinja2_pr635",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 501.6553301848471,
+      "steps": 69,
+      "llm_time": 473.607,
+      "tool_time": 11.936,
+      "tool_usage": {
+        "execute_bash": 49,
+        "str_replace_editor": 19,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aiven_aiven-client_pr399",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 753.122265977785,
+      "steps": 96,
+      "llm_time": 644.732,
+      "tool_time": 78.141,
+      "tool_usage": {
+        "str_replace_editor": 28,
+        "execute_bash": 67,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_pr9366",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 431.1552617419511,
+      "steps": 48,
+      "llm_time": 264.775,
+      "tool_time": 78.032,
+      "tool_usage": {
+        "str_replace_editor": 13,
+        "execute_bash": 34,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_security_pr371",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 566.2529602954164,
+      "steps": 80,
+      "llm_time": 505.08,
+      "tool_time": 45.254,
+      "tool_usage": {
+        "str_replace_editor": 34,
+        "execute_bash": 45,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "turbo87_utm_pr47",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 340.6450662421994,
+      "steps": 53,
+      "llm_time": 297.991,
+      "tool_time": 22.072,
+      "tool_usage": {
+        "execute_bash": 35,
+        "str_replace_editor": 17,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_pr7944",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 860.4203278669156,
+      "steps": 70,
+      "llm_time": 732.802,
+      "tool_time": 66.805,
+      "tool_usage": {
+        "execute_bash": 42,
+        "str_replace_editor": 27,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aiven_aiven-client_pr427",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 281.1634178413078,
+      "steps": 53,
+      "llm_time": 218.525,
+      "tool_time": 42.603,
+      "tool_usage": {
+        "execute_bash": 37,
+        "str_replace_editor": 15,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "akaihola_darkgraylib_pr38",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 284.5347245768644,
+      "steps": 50,
+      "llm_time": 242.405,
+      "tool_time": 22.415,
+      "tool_usage": {
+        "execute_bash": 31,
+        "str_replace_editor": 18,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "akaihola_darkgraylib_pr87",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 222.68632363528013,
+      "steps": 26,
+      "llm_time": 199.295,
+      "tool_time": 5.679,
+      "tool_usage": {
+        "execute_bash": 18,
+        "str_replace_editor": 7,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "akaihola_graylint_pr74",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 679.847862442024,
+      "steps": 124,
+      "llm_time": 629.812,
+      "tool_time": 39.464,
+      "tool_usage": {
+        "execute_bash": 85,
+        "str_replace_editor": 38,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_pr10656",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 825.9188851919025,
+      "steps": 76,
+      "llm_time": 588.121,
+      "tool_time": 120.524,
+      "tool_usage": {
+        "str_replace_editor": 31,
+        "execute_bash": 44,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "akaihola_darkgraylib_pr23",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 887.9734844998457,
+      "steps": 97,
+      "llm_time": 842.827,
+      "tool_time": 24.023,
+      "tool_usage": {
+        "str_replace_editor": 30,
+        "execute_bash": 66,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "abravalheri_validate-pyproject_pr105",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "max_steps",
+      "duration": 621.7023192457855,
+      "steps": 200,
+      "llm_time": 594.754,
+      "tool_time": 9.072,
+      "tool_usage": {
+        "execute_bash": 193,
+        "str_replace_editor": 7
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp-asyncmdnsresolver_pr23",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 540.5082367160358,
+      "steps": 91,
+      "llm_time": 502.525,
+      "tool_time": 17.454,
+      "tool_usage": {
+        "execute_bash": 66,
+        "str_replace_editor": 24,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "akoumjian_datefinder_pr97",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 481.7454229099676,
+      "steps": 79,
+      "llm_time": 453.231,
+      "tool_time": 10.995,
+      "tool_usage": {
+        "execute_bash": 65,
+        "str_replace_editor": 13,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_pr7978",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 574.2446065028198,
+      "steps": 70,
+      "llm_time": 448.614,
+      "tool_time": 55.218,
+      "tool_usage": {
+        "str_replace_editor": 21,
+        "execute_bash": 48,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aklajnert_pytest-subprocess_pr105",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 512.4345849398524,
+      "steps": 80,
+      "llm_time": 447.165,
+      "tool_time": 46.259,
+      "tool_usage": {
+        "str_replace_editor": 33,
+        "execute_bash": 46,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "akaihola_darkgraylib_pr61",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 255.90689081978053,
+      "steps": 52,
+      "llm_time": 226.468,
+      "tool_time": 12.965,
+      "tool_usage": {
+        "str_replace_editor": 20,
+        "execute_bash": 31,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "adamchainz_apig-wsgi_pr188",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 288.70390495005995,
+      "steps": 45,
+      "llm_time": 263.449,
+      "tool_time": 7.218,
+      "tool_usage": {
+        "execute_bash": 26,
+        "str_replace_editor": 18,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiosignal_pr699",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 503.75974571797997,
+      "steps": 79,
+      "llm_time": 471.092,
+      "tool_time": 15.406,
+      "tool_usage": {
+        "execute_bash": 49,
+        "str_replace_editor": 29,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "kitware_trame-vtk_pr19",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 436.91602392774075,
+      "steps": 76,
+      "llm_time": 389.036,
+      "tool_time": 29.139,
+      "tool_usage": {
+        "str_replace_editor": 20,
+        "execute_bash": 55,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_pr7611",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 469.9052977967076,
+      "steps": 64,
+      "llm_time": 322.07,
+      "tool_time": 64.721,
+      "tool_usage": {
+        "execute_bash": 46,
+        "str_replace_editor": 17,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hyundai-kia-connect_hyundai_kia_connect_api_pr288",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 381.0156310410239,
+      "steps": 48,
+      "llm_time": 356.586,
+      "tool_time": 7.692,
+      "tool_usage": {
+        "str_replace_editor": 19,
+        "execute_bash": 28,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_pr7180",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 303.24678965704516,
+      "steps": 39,
+      "llm_time": 215.409,
+      "tool_time": 23.5,
+      "tool_usage": {
+        "str_replace_editor": 19,
+        "execute_bash": 19,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "adamtheturtle_sybil-extras_pr219",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 637.9903207859024,
+      "steps": 89,
+      "llm_time": 572.815,
+      "tool_time": 47.085,
+      "tool_usage": {
+        "execute_bash": 59,
+        "str_replace_editor": 29,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "neuralensemble_python-neo_pr1522",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 727.7465735240839,
+      "steps": 66,
+      "llm_time": 653.062,
+      "tool_time": 22.605,
+      "tool_usage": {
+        "str_replace_editor": 33,
+        "execute_bash": 32,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_pr6559",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 464.9712546141818,
+      "steps": 65,
+      "llm_time": 322.054,
+      "tool_time": 72.449,
+      "tool_usage": {
+        "str_replace_editor": 30,
+        "execute_bash": 34,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "uberi_speech_recognition_pr262",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 355.8883656580001,
+      "steps": 40,
+      "llm_time": 295.53,
+      "tool_time": 21.351,
+      "tool_usage": {
+        "str_replace_editor": 18,
+        "execute_bash": 21,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_pr11634",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 947.9497617492452,
+      "steps": 98,
+      "llm_time": 528.483,
+      "tool_time": 303.618,
+      "tool_usage": {
+        "execute_bash": 48,
+        "str_replace_editor": 49,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_pr9873",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 571.5772679639049,
+      "steps": 69,
+      "llm_time": 402.834,
+      "tool_time": 80.019,
+      "tool_usage": {
+        "str_replace_editor": 20,
+        "execute_bash": 48,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "stevenlooman_python-didl-lite_pr11",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 277.4282358037308,
+      "steps": 45,
+      "llm_time": 258.857,
+      "tool_time": 4.343,
+      "tool_usage": {
+        "execute_bash": 23,
+        "str_replace_editor": 21,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "ansys_pyfluent_pr524",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 344.9779171962291,
+      "steps": 49,
+      "llm_time": 306.724,
+      "tool_time": 15.362,
+      "tool_usage": {
+        "str_replace_editor": 20,
+        "execute_bash": 28,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_pr7824",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 741.5626063128002,
+      "steps": 78,
+      "llm_time": 622.483,
+      "tool_time": 46.117,
+      "tool_usage": {
+        "str_replace_editor": 23,
+        "execute_bash": 54,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_pr9997",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 538.8197036739439,
+      "steps": 71,
+      "llm_time": 315.464,
+      "tool_time": 142.502,
+      "tool_usage": {
+        "str_replace_editor": 25,
+        "execute_bash": 45,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_pr6747",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 369.7198029747233,
+      "steps": 44,
+      "llm_time": 239.671,
+      "tool_time": 39.029,
+      "tool_usage": {
+        "str_replace_editor": 18,
+        "execute_bash": 25,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_pr8485",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 592.9329424928874,
+      "steps": 65,
+      "llm_time": 481.949,
+      "tool_time": 41.117,
+      "tool_usage": {
+        "str_replace_editor": 26,
+        "execute_bash": 38,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "factoryboy_factory_boy_pr799",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 310.0346344485879,
+      "steps": 54,
+      "llm_time": 259.548,
+      "tool_time": 32.644,
+      "tool_usage": {
+        "execute_bash": 35,
+        "str_replace_editor": 18,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "adamchainz_flake8-comprehensions_pr205",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 736.9901709719561,
+      "steps": 70,
+      "llm_time": 666.327,
+      "tool_time": 44.223,
+      "tool_usage": {
+        "str_replace_editor": 24,
+        "execute_bash": 45,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_pr7954",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 594.3736114390194,
+      "steps": 71,
+      "llm_time": 450.444,
+      "tool_time": 66.356,
+      "tool_usage": {
+        "execute_bash": 45,
+        "str_replace_editor": 25,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hyundai-kia-connect_hyundai_kia_connect_api_pr492",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 274.6455301758833,
+      "steps": 45,
+      "llm_time": 247.228,
+      "tool_time": 6.565,
+      "tool_usage": {
+        "execute_bash": 19,
+        "str_replace_editor": 25,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_pr7719",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 470.4880621470511,
+      "steps": 66,
+      "llm_time": 340.274,
+      "tool_time": 52.385,
+      "tool_usage": {
+        "str_replace_editor": 29,
+        "execute_bash": 36,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "diamondlightsource_python-zocalo_pr124",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 216.33645756635815,
+      "steps": 43,
+      "llm_time": 185.85,
+      "tool_time": 11.964,
+      "tool_usage": {
+        "execute_bash": 29,
+        "str_replace_editor": 13,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_pr9301",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 611.7291680490598,
+      "steps": 71,
+      "llm_time": 455.8,
+      "tool_time": 78.141,
+      "tool_usage": {
+        "execute_bash": 47,
+        "str_replace_editor": 23,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_pyramid_pr2500",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 612.5739726787433,
+      "steps": 92,
+      "llm_time": 549.509,
+      "tool_time": 22.124,
+      "tool_usage": {
+        "str_replace_editor": 50,
+        "execute_bash": 41,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_pr8522",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 413.4592927051708,
+      "steps": 48,
+      "llm_time": 289.475,
+      "tool_time": 51.467,
+      "tool_usage": {
+        "execute_bash": 39,
+        "str_replace_editor": 8,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "neuralensemble_python-neo_pr1753",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 441.313941151835,
+      "steps": 56,
+      "llm_time": 362.398,
+      "tool_time": 8.626,
+      "tool_usage": {
+        "execute_bash": 33,
+        "str_replace_editor": 22,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_pr10156",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 614.3770699510351,
+      "steps": 67,
+      "llm_time": 364.986,
+      "tool_time": 141.782,
+      "tool_usage": {
+        "str_replace_editor": 21,
+        "execute_bash": 45,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "ouranosinc_xclim_pr467",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 700.8619825760834,
+      "steps": 81,
+      "llm_time": 456.539,
+      "tool_time": 124.635,
+      "tool_usage": {
+        "execute_bash": 50,
+        "str_replace_editor": 30,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "unidata_siphon_pr234",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 774.4516422552988,
+      "steps": 99,
+      "llm_time": 464.785,
+      "tool_time": 263.34,
+      "tool_usage": {
+        "str_replace_editor": 24,
+        "execute_bash": 74,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "neuralensemble_python-neo_pr954",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 655.9864909979515,
+      "steps": 74,
+      "llm_time": 573.856,
+      "tool_time": 30.615,
+      "tool_usage": {
+        "execute_bash": 39,
+        "str_replace_editor": 34,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "neuralensemble_python-neo_pr1204",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 726.9942237697542,
+      "steps": 66,
+      "llm_time": 661.056,
+      "tool_time": 21.875,
+      "tool_usage": {
+        "execute_bash": 38,
+        "str_replace_editor": 27,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aio-libs_aiohttp_pr8292",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 692.8508218880743,
+      "steps": 70,
+      "llm_time": 552.831,
+      "tool_time": 65.379,
+      "tool_usage": {
+        "str_replace_editor": 24,
+        "execute_bash": 45,
+        "finish": 1
+      }
+    }
+  ],
+  "domain_fix": [
+    {
+      "instance_id": "cclib_cclib_pr1360",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 521.3141648280434,
+      "steps": 71,
+      "llm_time": 431.884,
+      "tool_time": 50.387,
+      "tool_usage": {
+        "execute_bash": 51,
+        "str_replace_editor": 19,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cvxpy_cvxpy_pr1830",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 705.3082022671588,
+      "steps": 95,
+      "llm_time": 636.413,
+      "tool_time": 31.464,
+      "tool_usage": {
+        "execute_bash": 67,
+        "str_replace_editor": 27,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "obspy_obspy_pr2949",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 562.4188908329234,
+      "steps": 78,
+      "llm_time": 447.224,
+      "tool_time": 61.498,
+      "tool_usage": {
+        "str_replace_editor": 21,
+        "execute_bash": 56,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "plasmapy_plasmapy_pr2068",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 687.7722180788405,
+      "steps": 115,
+      "llm_time": 574.179,
+      "tool_time": 70.838,
+      "tool_usage": {
+        "execute_bash": 97,
+        "str_replace_editor": 17,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cvxpy_cvxpy_pr2945",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 668.3399598123506,
+      "steps": 71,
+      "llm_time": 590.484,
+      "tool_time": 31.867,
+      "tool_usage": {
+        "str_replace_editor": 29,
+        "execute_bash": 41,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cvxpy_cvxpy_pr2542",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 436.5744825596921,
+      "steps": 64,
+      "llm_time": 359.96,
+      "tool_time": 34.654,
+      "tool_usage": {
+        "str_replace_editor": 20,
+        "execute_bash": 43,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr2072",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 423.84361247718334,
+      "steps": 71,
+      "llm_time": 378.447,
+      "tool_time": 22.961,
+      "tool_usage": {
+        "execute_bash": 39,
+        "str_replace_editor": 31,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr1785",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 316.9772625560872,
+      "steps": 48,
+      "llm_time": 267.631,
+      "tool_time": 23.745,
+      "tool_usage": {
+        "str_replace_editor": 24,
+        "execute_bash": 23,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "obspy_obspy_pr3322",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 304.76086375908926,
+      "steps": 43,
+      "llm_time": 178.706,
+      "tool_time": 69.572,
+      "tool_usage": {
+        "str_replace_editor": 15,
+        "execute_bash": 27,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cvxpy_cvxpy_pr2125",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1245.4403468691744,
+      "steps": 143,
+      "llm_time": 1177.124,
+      "tool_time": 32.597,
+      "tool_usage": {
+        "execute_bash": 101,
+        "str_replace_editor": 41,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "biotite-dev_biotite_pr145",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 591.9386452161707,
+      "steps": 68,
+      "llm_time": 525.789,
+      "tool_time": 28.138,
+      "tool_usage": {
+        "str_replace_editor": 31,
+        "execute_bash": 36,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cvxpy_cvxpy_pr1888",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 869.1030590482987,
+      "steps": 120,
+      "llm_time": 815.152,
+      "tool_time": 32.148,
+      "tool_usage": {
+        "execute_bash": 75,
+        "str_replace_editor": 44,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cclib_cclib_pr1084",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 391.70055246772245,
+      "steps": 63,
+      "llm_time": 349.65,
+      "tool_time": 21.053,
+      "tool_usage": {
+        "str_replace_editor": 11,
+        "execute_bash": 51,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "astropy_astroplan_pr315",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 665.7589573208243,
+      "steps": 82,
+      "llm_time": 627.995,
+      "tool_time": 12.973,
+      "tool_usage": {
+        "execute_bash": 53,
+        "str_replace_editor": 28,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "mdanalysis_mdanalysis_pr4745",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 1087.2164367269725,
+      "steps": 75,
+      "llm_time": 822.002,
+      "tool_time": 61.381,
+      "tool_usage": {
+        "execute_bash": 37,
+        "str_replace_editor": 37,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr2685",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 554.6214068098925,
+      "steps": 69,
+      "llm_time": 436.92,
+      "tool_time": 64.783,
+      "tool_usage": {
+        "execute_bash": 49,
+        "str_replace_editor": 19,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr3301",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 712.1340932929888,
+      "steps": 93,
+      "llm_time": 616.021,
+      "tool_time": 55.772,
+      "tool_usage": {
+        "str_replace_editor": 41,
+        "execute_bash": 51,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "biotite-dev_biotite_pr84",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 344.89964463422075,
+      "steps": 30,
+      "llm_time": 212.752,
+      "tool_time": 63.027,
+      "tool_usage": {
+        "execute_bash": 18,
+        "str_replace_editor": 11,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "obspy_obspy_pr3095",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1458.0906976195984,
+      "steps": 129,
+      "llm_time": 1272.347,
+      "tool_time": 119.447,
+      "tool_usage": {
+        "execute_bash": 69,
+        "str_replace_editor": 59,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cclib_cclib_pr787",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 507.4492967980914,
+      "steps": 69,
+      "llm_time": 427.907,
+      "tool_time": 52.26,
+      "tool_usage": {
+        "str_replace_editor": 25,
+        "execute_bash": 43,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cvxpy_cvxpy_pr2126",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 430.28487020684406,
+      "steps": 60,
+      "llm_time": 370.504,
+      "tool_time": 18.202,
+      "tool_usage": {
+        "str_replace_editor": 21,
+        "execute_bash": 38,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr2275",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 706.6184406368993,
+      "steps": 90,
+      "llm_time": 623.799,
+      "tool_time": 43.101,
+      "tool_usage": {
+        "str_replace_editor": 33,
+        "execute_bash": 56,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr3254",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 524.0441465550102,
+      "steps": 73,
+      "llm_time": 458.257,
+      "tool_time": 42.537,
+      "tool_usage": {
+        "str_replace_editor": 33,
+        "execute_bash": 39,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr2243",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 335.8679048717022,
+      "steps": 46,
+      "llm_time": 213.328,
+      "tool_time": 84.913,
+      "tool_usage": {
+        "str_replace_editor": 13,
+        "execute_bash": 32,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cvxpy_cvxpy_pr2119",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 624.7725172219798,
+      "steps": 76,
+      "llm_time": 574.594,
+      "tool_time": 22.799,
+      "tool_usage": {
+        "execute_bash": 43,
+        "str_replace_editor": 32,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "plasmapy_plasmapy_pr1665",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 627.3245989270508,
+      "steps": 68,
+      "llm_time": 482.096,
+      "tool_time": 76.031,
+      "tool_usage": {
+        "str_replace_editor": 20,
+        "execute_bash": 47,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "obspy_obspy_pr3117",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 662.0526726036333,
+      "steps": 111,
+      "llm_time": 543.826,
+      "tool_time": 68.335,
+      "tool_usage": {
+        "str_replace_editor": 20,
+        "execute_bash": 90,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "mdanalysis_mdanalysis_pr4524",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 803.3547007823363,
+      "steps": 86,
+      "llm_time": 547.949,
+      "tool_time": 99.529,
+      "tool_usage": {
+        "str_replace_editor": 25,
+        "execute_bash": 60,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr3148",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 445.72227190062404,
+      "steps": 67,
+      "llm_time": 314.799,
+      "tool_time": 100.017,
+      "tool_usage": {
+        "execute_bash": 40,
+        "str_replace_editor": 26,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "plasmapy_plasmapy_pr2206",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 602.8462387206964,
+      "steps": 83,
+      "llm_time": 463.953,
+      "tool_time": 72.518,
+      "tool_usage": {
+        "execute_bash": 57,
+        "str_replace_editor": 25,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr1248",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 737.8841995759867,
+      "steps": 83,
+      "llm_time": 663.709,
+      "tool_time": 51.704,
+      "tool_usage": {
+        "execute_bash": 51,
+        "str_replace_editor": 31,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "mdanalysis_mdanalysis_pr2916",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 442.50133185693994,
+      "steps": 62,
+      "llm_time": 313.622,
+      "tool_time": 22.102,
+      "tool_usage": {
+        "execute_bash": 35,
+        "str_replace_editor": 26,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cvxpy_cvxpy_pr2797",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 454.2815379658714,
+      "steps": 61,
+      "llm_time": 371.94,
+      "tool_time": 27.608,
+      "tool_usage": {
+        "str_replace_editor": 20,
+        "execute_bash": 40,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "mdanalysis_mdanalysis_pr5071",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1219.577489242889,
+      "steps": 65,
+      "llm_time": 971.465,
+      "tool_time": 30.206,
+      "tool_usage": {
+        "str_replace_editor": 25,
+        "execute_bash": 39,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "qutip_qutip_pr2497",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 693.91981563624,
+      "steps": 60,
+      "llm_time": 339.345,
+      "tool_time": 31.917,
+      "tool_usage": {
+        "str_replace_editor": 21,
+        "execute_bash": 38,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "mdanalysis_mdanalysis_pr4734",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 783.6668262337334,
+      "steps": 62,
+      "llm_time": 476.299,
+      "tool_time": 91.82,
+      "tool_usage": {
+        "str_replace_editor": 32,
+        "execute_bash": 29,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "obspy_obspy_pr2962",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 751.8576443409547,
+      "steps": 80,
+      "llm_time": 687.213,
+      "tool_time": 22.29,
+      "tool_usage": {
+        "execute_bash": 44,
+        "str_replace_editor": 35,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr1290",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 522.0082243559882,
+      "steps": 59,
+      "llm_time": 449.022,
+      "tool_time": 47.758,
+      "tool_usage": {
+        "str_replace_editor": 22,
+        "execute_bash": 36,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr2986",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 424.1896448121406,
+      "steps": 74,
+      "llm_time": 357.728,
+      "tool_time": 27.952,
+      "tool_usage": {
+        "str_replace_editor": 25,
+        "execute_bash": 48,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr2049",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 418.46425788104534,
+      "steps": 62,
+      "llm_time": 371.409,
+      "tool_time": 24.043,
+      "tool_usage": {
+        "str_replace_editor": 23,
+        "execute_bash": 38,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cclib_cclib_pr1219",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 777.8164851781912,
+      "steps": 96,
+      "llm_time": 728.15,
+      "tool_time": 25.808,
+      "tool_usage": {
+        "execute_bash": 71,
+        "str_replace_editor": 24,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "biopython_biopython_pr12",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 360.0273721460253,
+      "steps": 55,
+      "llm_time": 326.149,
+      "tool_time": 17.13,
+      "tool_usage": {
+        "execute_bash": 35,
+        "str_replace_editor": 19,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr3235",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 437.60495082009584,
+      "steps": 59,
+      "llm_time": 340.536,
+      "tool_time": 39.445,
+      "tool_usage": {
+        "str_replace_editor": 15,
+        "execute_bash": 43,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "materialsproject_pymatgen_pr3149",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1055.6258912649937,
+      "steps": 76,
+      "llm_time": 596.929,
+      "tool_time": 142.882,
+      "tool_usage": {
+        "str_replace_editor": 27,
+        "execute_bash": 48,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr1658",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 448.7784165851772,
+      "steps": 62,
+      "llm_time": 351.872,
+      "tool_time": 37.631,
+      "tool_usage": {
+        "execute_bash": 43,
+        "str_replace_editor": 18,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr3128",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 372.75801708130166,
+      "steps": 43,
+      "llm_time": 257.631,
+      "tool_time": 73.941,
+      "tool_usage": {
+        "str_replace_editor": 17,
+        "execute_bash": 25,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cvxpy_cvxpy_pr2872",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 418.3831818080507,
+      "steps": 66,
+      "llm_time": 366.908,
+      "tool_time": 13.906,
+      "tool_usage": {
+        "str_replace_editor": 29,
+        "execute_bash": 36,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cvxpy_cvxpy_pr2190",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 678.5732214460149,
+      "steps": 106,
+      "llm_time": 612.094,
+      "tool_time": 31.059,
+      "tool_usage": {
+        "str_replace_editor": 36,
+        "execute_bash": 69,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr3010",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 487.3636897620745,
+      "steps": 82,
+      "llm_time": 352.241,
+      "tool_time": 104.707,
+      "tool_usage": {
+        "str_replace_editor": 33,
+        "execute_bash": 48,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "obspy_obspy_pr3070",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 369.5518301273696,
+      "steps": 34,
+      "llm_time": 248.086,
+      "tool_time": 52.532,
+      "tool_usage": {
+        "str_replace_editor": 17,
+        "execute_bash": 16,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "biotite-dev_biotite_pr126",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 550.8802644559182,
+      "steps": 71,
+      "llm_time": 437.463,
+      "tool_time": 64.579,
+      "tool_usage": {
+        "str_replace_editor": 33,
+        "execute_bash": 37,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "biotite-dev_biotite_pr165",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 703.8757294300012,
+      "steps": 52,
+      "llm_time": 268.803,
+      "tool_time": 356.339,
+      "tool_usage": {
+        "str_replace_editor": 24,
+        "execute_bash": 27,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cvxpy_cvxpy_pr2425",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 370.13609038991854,
+      "steps": 63,
+      "llm_time": 332.669,
+      "tool_time": 12.057,
+      "tool_usage": {
+        "execute_bash": 46,
+        "str_replace_editor": 16,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cvxpy_cvxpy_pr2989",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 549.1668671192601,
+      "steps": 67,
+      "llm_time": 497.793,
+      "tool_time": 17.696,
+      "tool_usage": {
+        "execute_bash": 44,
+        "str_replace_editor": 22,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "gdsfactory_gdsfactory_pr4081",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 395.3504319200292,
+      "steps": 55,
+      "llm_time": 290.263,
+      "tool_time": 57.81,
+      "tool_usage": {
+        "execute_bash": 29,
+        "str_replace_editor": 25,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cvxpy_cvxpy_pr3024",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 518.4477216969244,
+      "steps": 65,
+      "llm_time": 459.506,
+      "tool_time": 28.768,
+      "tool_usage": {
+        "str_replace_editor": 30,
+        "execute_bash": 34,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cclib_cclib_pr744",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 463.88727064896375,
+      "steps": 72,
+      "llm_time": 414.114,
+      "tool_time": 19.219,
+      "tool_usage": {
+        "execute_bash": 58,
+        "str_replace_editor": 13,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr2475",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 587.3312177071348,
+      "steps": 71,
+      "llm_time": 491.249,
+      "tool_time": 60.42,
+      "tool_usage": {
+        "execute_bash": 51,
+        "str_replace_editor": 19,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "mdanalysis_mdanalysis_pr5001",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 413.63160016713664,
+      "steps": 30,
+      "llm_time": 185.017,
+      "tool_time": 35.622,
+      "tool_usage": {
+        "str_replace_editor": 12,
+        "execute_bash": 17,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "mdanalysis_mdanalysis_pr4482",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 531.4664210318588,
+      "steps": 71,
+      "llm_time": 347.675,
+      "tool_time": 20.806,
+      "tool_usage": {
+        "str_replace_editor": 38,
+        "execute_bash": 32,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cvxpy_cvxpy_pr2873",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 546.5602015927434,
+      "steps": 71,
+      "llm_time": 469.136,
+      "tool_time": 38.82,
+      "tool_usage": {
+        "str_replace_editor": 34,
+        "execute_bash": 36,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cvxpy_cvxpy_pr2726",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 734.1991296317428,
+      "steps": 94,
+      "llm_time": 660.726,
+      "tool_time": 29.915,
+      "tool_usage": {
+        "execute_bash": 66,
+        "str_replace_editor": 27,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr1535",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 484.70495913317427,
+      "steps": 62,
+      "llm_time": 407.686,
+      "tool_time": 41.173,
+      "tool_usage": {
+        "str_replace_editor": 21,
+        "execute_bash": 40,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cclib_cclib_pr1415",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1317.2276063747704,
+      "steps": 165,
+      "llm_time": 1167.02,
+      "tool_time": 96.276,
+      "tool_usage": {
+        "str_replace_editor": 31,
+        "execute_bash": 133,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr3232",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1129.6644857297651,
+      "steps": 103,
+      "llm_time": 1006.586,
+      "tool_time": 96.147,
+      "tool_usage": {
+        "str_replace_editor": 29,
+        "execute_bash": 73,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr1646",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 466.1881779637188,
+      "steps": 88,
+      "llm_time": 413.343,
+      "tool_time": 32.37,
+      "tool_usage": {
+        "execute_bash": 70,
+        "str_replace_editor": 17,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cvxpy_cvxpy_pr2508",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 342.787046154961,
+      "steps": 58,
+      "llm_time": 220.009,
+      "tool_time": 70.158,
+      "tool_usage": {
+        "str_replace_editor": 17,
+        "execute_bash": 40,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr3683",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1154.8325902856886,
+      "steps": 123,
+      "llm_time": 1050.216,
+      "tool_time": 83.693,
+      "tool_usage": {
+        "str_replace_editor": 31,
+        "execute_bash": 91,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cvxpy_cvxpy_pr2157",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 510.2404952077195,
+      "steps": 62,
+      "llm_time": 437.596,
+      "tool_time": 26.065,
+      "tool_usage": {
+        "str_replace_editor": 18,
+        "execute_bash": 43,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cvxpy_cvxpy_pr2411",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 728.8517599203624,
+      "steps": 100,
+      "llm_time": 577.121,
+      "tool_time": 85.556,
+      "tool_usage": {
+        "execute_bash": 61,
+        "str_replace_editor": 38,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "plasmapy_plasmapy_pr2554",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 2037.6315399976447,
+      "steps": 77,
+      "llm_time": 441.695,
+      "tool_time": 1530.995,
+      "tool_usage": {
+        "str_replace_editor": 21,
+        "execute_bash": 55,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "obspy_obspy_pr3100",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1102.274518149905,
+      "steps": 151,
+      "llm_time": 963.146,
+      "tool_time": 94.809,
+      "tool_usage": {
+        "str_replace_editor": 46,
+        "execute_bash": 104,
+        "finish": 1
+      }
+    }
+  ],
+  "dep_migrate": [
+    {
+      "instance_id": "simonw_llm_pr775",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 462.94593673804775,
+      "steps": 67,
+      "llm_time": 358.564,
+      "tool_time": 78.828,
+      "tool_usage": {
+        "execute_bash": 41,
+        "str_replace_editor": 25,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "ariebovenberg_slotscheck_pr227",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 495.4145569242537,
+      "steps": 75,
+      "llm_time": 466.102,
+      "tool_time": 11.366,
+      "tool_usage": {
+        "execute_bash": 58,
+        "str_replace_editor": 16,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "tiangolo_fastapi_pr13639",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 369.2473454689607,
+      "steps": 45,
+      "llm_time": 262.775,
+      "tool_time": 51.751,
+      "tool_usage": {
+        "str_replace_editor": 12,
+        "execute_bash": 32,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "stanfordnlp_dsp_pr403",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 844.686140992213,
+      "steps": 74,
+      "llm_time": 759.389,
+      "tool_time": 53.644,
+      "tool_usage": {
+        "str_replace_editor": 26,
+        "execute_bash": 47,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "camel-ai_camel_pr393",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 790.2372069908306,
+      "steps": 70,
+      "llm_time": 595.2,
+      "tool_time": 60.614,
+      "tool_usage": {
+        "str_replace_editor": 27,
+        "execute_bash": 42,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "dapper91_pydantic-xml_pr297",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 953.0133325848728,
+      "steps": 109,
+      "llm_time": 887.819,
+      "tool_time": 46.254,
+      "tool_usage": {
+        "str_replace_editor": 27,
+        "execute_bash": 81,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "fastapi_fastapi_pr14036",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 539.0442720828578,
+      "steps": 64,
+      "llm_time": 448.026,
+      "tool_time": 36.955,
+      "tool_usage": {
+        "str_replace_editor": 14,
+        "execute_bash": 49,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "fastapi_sqlmodel_pr1340",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 802.4827130073681,
+      "steps": 110,
+      "llm_time": 680.794,
+      "tool_time": 91.798,
+      "tool_usage": {
+        "execute_bash": 71,
+        "str_replace_editor": 38,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "simonw_llm_pr400",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1115.1503705237992,
+      "steps": 119,
+      "llm_time": 961.556,
+      "tool_time": 135.37,
+      "tool_usage": {
+        "execute_bash": 69,
+        "str_replace_editor": 49,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "sinaptik-ai_pandas-ai_pr761",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 622.8977052480914,
+      "steps": 71,
+      "llm_time": 485.026,
+      "tool_time": 77.833,
+      "tool_usage": {
+        "execute_bash": 37,
+        "str_replace_editor": 33,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "tiangolo_fastapi_pr14186",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 762.0899365679361,
+      "steps": 93,
+      "llm_time": 650.257,
+      "tool_time": 45.062,
+      "tool_usage": {
+        "str_replace_editor": 23,
+        "execute_bash": 69,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "wemake-services_django-test-migrations_pr348",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 552.6142131760716,
+      "steps": 74,
+      "llm_time": 472.834,
+      "tool_time": 55.045,
+      "tool_usage": {
+        "str_replace_editor": 39,
+        "execute_bash": 34,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "koxudaxi_datamodel-code-generator_pr2423",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 586.2524328990839,
+      "steps": 55,
+      "llm_time": 350.365,
+      "tool_time": 195.522,
+      "tool_usage": {
+        "execute_bash": 38,
+        "str_replace_editor": 16,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pydantic_pydantic-settings_pr55",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 731.8217019755393,
+      "steps": 98,
+      "llm_time": 692.741,
+      "tool_time": 23.183,
+      "tool_usage": {
+        "str_replace_editor": 33,
+        "execute_bash": 64,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "data-apis_array-api-compat_pr79",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 278.0949068060145,
+      "steps": 46,
+      "llm_time": 239.081,
+      "tool_time": 19.88,
+      "tool_usage": {
+        "str_replace_editor": 16,
+        "execute_bash": 29,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "explosion_confection_pr67",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 779.8437947100028,
+      "steps": 101,
+      "llm_time": 733.826,
+      "tool_time": 25.586,
+      "tool_usage": {
+        "str_replace_editor": 53,
+        "execute_bash": 47,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "jxnl_instructor_pr644",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 530.0671638259664,
+      "steps": 72,
+      "llm_time": 467.155,
+      "tool_time": 29.373,
+      "tool_usage": {
+        "execute_bash": 43,
+        "str_replace_editor": 28,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "koxudaxi_datamodel-code-generator_pr2389",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 920.6999671556987,
+      "steps": 128,
+      "llm_time": 743.329,
+      "tool_time": 140.801,
+      "tool_usage": {
+        "str_replace_editor": 34,
+        "execute_bash": 93,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "narwhals-dev_narwhals_pr2680",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 703.0394072406925,
+      "steps": 66,
+      "llm_time": 536.423,
+      "tool_time": 95.816,
+      "tool_usage": {
+        "execute_bash": 41,
+        "str_replace_editor": 24,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "narwhals-dev_narwhals_pr2958",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1283.3365390482359,
+      "steps": 77,
+      "llm_time": 485.139,
+      "tool_time": 734.455,
+      "tool_usage": {
+        "str_replace_editor": 20,
+        "execute_bash": 56,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "fastapi-users_fastapi-users_pr1249",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 822.8448692951351,
+      "steps": 83,
+      "llm_time": 490.437,
+      "tool_time": 285.503,
+      "tool_usage": {
+        "execute_bash": 47,
+        "str_replace_editor": 35,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "python-scim_scim2-models_pr94",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 443.43200850719586,
+      "steps": 55,
+      "llm_time": 404.888,
+      "tool_time": 18.4,
+      "tool_usage": {
+        "str_replace_editor": 19,
+        "execute_bash": 35,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "koxudaxi_datamodel-code-generator_pr1498",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 794.4211400290951,
+      "steps": 90,
+      "llm_time": 673.594,
+      "tool_time": 75.853,
+      "tool_usage": {
+        "str_replace_editor": 48,
+        "execute_bash": 41,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "explosion_confection_pr65",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 690.4531119880266,
+      "steps": 90,
+      "llm_time": 651.296,
+      "tool_time": 21.693,
+      "tool_usage": {
+        "execute_bash": 48,
+        "str_replace_editor": 41,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "posthog_posthog-python_pr177",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 528.966064627748,
+      "steps": 53,
+      "llm_time": 343.162,
+      "tool_time": 136.113,
+      "tool_usage": {
+        "execute_bash": 39,
+        "str_replace_editor": 13,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "fastapi_fastapi_pr13639",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 361.2795658367686,
+      "steps": 45,
+      "llm_time": 246.208,
+      "tool_time": 54.566,
+      "tool_usage": {
+        "execute_bash": 35,
+        "str_replace_editor": 9,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "gventuri_pandas-ai_pr755",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 588.4525165208615,
+      "steps": 74,
+      "llm_time": 484.903,
+      "tool_time": 76.516,
+      "tool_usage": {
+        "str_replace_editor": 38,
+        "execute_bash": 35,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "utiasdsl_safe-control-gym_pr209",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 1292.3141404646449,
+      "steps": 110,
+      "llm_time": 569.547,
+      "tool_time": 555.387,
+      "tool_usage": {
+        "execute_bash": 60,
+        "str_replace_editor": 49,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "arize-ai_openinference_pr1719",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 333.5063605327159,
+      "steps": 62,
+      "llm_time": 292.454,
+      "tool_time": 4.724,
+      "tool_usage": {
+        "execute_bash": 52,
+        "str_replace_editor": 9,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "drivendataorg_cloudpathlib_pr349",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 541.1131208650768,
+      "steps": 55,
+      "llm_time": 374.73,
+      "tool_time": 123.279,
+      "tool_usage": {
+        "str_replace_editor": 20,
+        "execute_bash": 34,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cogeotiff_rio-cogeo_pr267",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 395.1206191210076,
+      "steps": 64,
+      "llm_time": 301.037,
+      "tool_time": 67.492,
+      "tool_usage": {
+        "execute_bash": 45,
+        "str_replace_editor": 18,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pvlib_pvlib-python_pr1294",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 353.0851400960237,
+      "steps": 59,
+      "llm_time": 252.426,
+      "tool_time": 34.675,
+      "tool_usage": {
+        "execute_bash": 49,
+        "str_replace_editor": 9,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "instructor-ai_instructor_pr955",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 816.8519041691907,
+      "steps": 86,
+      "llm_time": 526.338,
+      "tool_time": 237.128,
+      "tool_usage": {
+        "execute_bash": 54,
+        "str_replace_editor": 31,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pydantic_pydantic-settings_pr22",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 393.4328319099732,
+      "steps": 47,
+      "llm_time": 369.633,
+      "tool_time": 9.318,
+      "tool_usage": {
+        "str_replace_editor": 17,
+        "execute_bash": 29,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "vitalik_django-ninja_pr1380",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 460.5046757161617,
+      "steps": 61,
+      "llm_time": 410.943,
+      "tool_time": 28.939,
+      "tool_usage": {
+        "execute_bash": 40,
+        "str_replace_editor": 20,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "fastapi_fastapi_pr14186",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 539.2384235500358,
+      "steps": 72,
+      "llm_time": 404.685,
+      "tool_time": 69.531,
+      "tool_usage": {
+        "str_replace_editor": 24,
+        "execute_bash": 47,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "turner-townsend_flask-pydantic-spec_pr78",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 474.7278289766982,
+      "steps": 69,
+      "llm_time": 438.057,
+      "tool_time": 15.209,
+      "tool_usage": {
+        "str_replace_editor": 38,
+        "execute_bash": 30,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "tiangolo_fastapi_pr13698",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 396.83921198919415,
+      "steps": 48,
+      "llm_time": 267.808,
+      "tool_time": 55.336,
+      "tool_usage": {
+        "str_replace_editor": 17,
+        "execute_bash": 30,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "brianpugh_cyclopts_pr94",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 255.40988247096539,
+      "steps": 37,
+      "llm_time": 210.836,
+      "tool_time": 25.937,
+      "tool_usage": {
+        "str_replace_editor": 16,
+        "execute_bash": 20,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "mhallsmoore_qstrader_pr386",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 423.9667388368398,
+      "steps": 63,
+      "llm_time": 385.825,
+      "tool_time": 19.931,
+      "tool_usage": {
+        "execute_bash": 46,
+        "str_replace_editor": 16,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "biopragmatics_bioregistry_pr1600",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 650.4620317448862,
+      "steps": 39,
+      "llm_time": 231.027,
+      "tool_time": 150.007,
+      "tool_usage": {
+        "str_replace_editor": 16,
+        "execute_bash": 22,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "jxnl_instructor_pr1180",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 600.4167447127402,
+      "steps": 73,
+      "llm_time": 439.46,
+      "tool_time": 120.28,
+      "tool_usage": {
+        "execute_bash": 56,
+        "str_replace_editor": 16,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "argoproj-labs_hera_pr950",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1010.5582777620293,
+      "steps": 102,
+      "llm_time": 764.935,
+      "tool_time": 186.219,
+      "tool_usage": {
+        "str_replace_editor": 28,
+        "execute_bash": 73,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "fastapi_fastapi_pr12534",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 962.9869336700067,
+      "steps": 102,
+      "llm_time": 874.452,
+      "tool_time": 34.828,
+      "tool_usage": {
+        "execute_bash": 72,
+        "str_replace_editor": 29,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "surenkov_django-pydantic-field_pr45",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 393.998913327232,
+      "steps": 54,
+      "llm_time": 355.953,
+      "tool_time": 21.116,
+      "tool_usage": {
+        "execute_bash": 36,
+        "str_replace_editor": 17,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "scrapy_itemadapter_pr101",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 467.2557919938117,
+      "steps": 61,
+      "llm_time": 431.599,
+      "tool_time": 14.841,
+      "tool_usage": {
+        "str_replace_editor": 33,
+        "execute_bash": 27,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "data-apis_array-api-strict_pr162",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 455.42584125790745,
+      "steps": 64,
+      "llm_time": 387.022,
+      "tool_time": 40.873,
+      "tool_usage": {
+        "execute_bash": 47,
+        "str_replace_editor": 16,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "fastapi_fastapi_pr12971",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 508.8222393277101,
+      "steps": 70,
+      "llm_time": 369.75,
+      "tool_time": 85.825,
+      "tool_usage": {
+        "str_replace_editor": 18,
+        "execute_bash": 51,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "guardrails-ai_guardrails_pr420",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 746.2291614650749,
+      "steps": 77,
+      "llm_time": 607.197,
+      "tool_time": 106.862,
+      "tool_usage": {
+        "execute_bash": 41,
+        "str_replace_editor": 35,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "fastapi_fastapi_pr13698",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 431.3537723701447,
+      "steps": 60,
+      "llm_time": 338.433,
+      "tool_time": 33.154,
+      "tool_usage": {
+        "str_replace_editor": 18,
+        "execute_bash": 41,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "mushroommaula_fastapi_login_pr114",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 379.38270872365683,
+      "steps": 57,
+      "llm_time": 315.834,
+      "tool_time": 40.773,
+      "tool_usage": {
+        "execute_bash": 39,
+        "str_replace_editor": 17,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "edornd_argdantic_pr36",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 702.106233835686,
+      "steps": 99,
+      "llm_time": 666.927,
+      "tool_time": 18.43,
+      "tool_usage": {
+        "execute_bash": 55,
+        "str_replace_editor": 43,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "azure-samples_azure-search-openai-demo_pr2787",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 741.6199707649648,
+      "steps": 118,
+      "llm_time": 542.943,
+      "tool_time": 79.371,
+      "tool_usage": {
+        "str_replace_editor": 47,
+        "execute_bash": 70,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "sphinx-contrib_openapi_pr143",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 502.0718021597713,
+      "steps": 59,
+      "llm_time": 419.171,
+      "tool_time": 61.173,
+      "tool_usage": {
+        "str_replace_editor": 28,
+        "execute_bash": 30,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "koxudaxi_datamodel-code-generator_pr1391",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 485.7139452151023,
+      "steps": 69,
+      "llm_time": 398.737,
+      "tool_time": 58.097,
+      "tool_usage": {
+        "execute_bash": 34,
+        "str_replace_editor": 34,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "groq_openbench_pr181",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 985.2453056867234,
+      "steps": 105,
+      "llm_time": 842.547,
+      "tool_time": 92.243,
+      "tool_usage": {
+        "execute_bash": 72,
+        "str_replace_editor": 32,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "brentyi_tyro_pr322",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 702.2550559318624,
+      "steps": 66,
+      "llm_time": 378.206,
+      "tool_time": 215.233,
+      "tool_usage": {
+        "str_replace_editor": 28,
+        "execute_bash": 37,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "sigstore_sigstore-python_pr1382",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 382.1965853869915,
+      "steps": 43,
+      "llm_time": 233.717,
+      "tool_time": 118.089,
+      "tool_usage": {
+        "execute_bash": 27,
+        "str_replace_editor": 15,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "azure-samples_azure-search-openai-demo_pr1851",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 471.42183277523145,
+      "steps": 50,
+      "llm_time": 326.097,
+      "tool_time": 63.19,
+      "tool_usage": {
+        "str_replace_editor": 20,
+        "execute_bash": 29,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "graphql-python_graphene-pydantic_pr99",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 295.74629253707826,
+      "steps": 41,
+      "llm_time": 242.963,
+      "tool_time": 37.968,
+      "tool_usage": {
+        "str_replace_editor": 11,
+        "execute_bash": 29,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "koxudaxi_datamodel-code-generator_pr1945",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1697.9268884933554,
+      "steps": 192,
+      "llm_time": 1556.065,
+      "tool_time": 106.592,
+      "tool_usage": {
+        "execute_bash": 120,
+        "str_replace_editor": 71,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "rednafi_fastapi-nano_pr274",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 575.7522395029664,
+      "steps": 93,
+      "llm_time": 542.109,
+      "tool_time": 18.607,
+      "tool_usage": {
+        "str_replace_editor": 35,
+        "execute_bash": 57,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "posthog_posthog-python_pr367",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 831.8063355199993,
+      "steps": 71,
+      "llm_time": 523.852,
+      "tool_time": 191.83,
+      "tool_usage": {
+        "execute_bash": 47,
+        "str_replace_editor": 23,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "data-apis_array-api-strict_pr87",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 563.2305454201996,
+      "steps": 73,
+      "llm_time": 505.252,
+      "tool_time": 37.807,
+      "tool_usage": {
+        "str_replace_editor": 31,
+        "execute_bash": 41,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "gdsfactory_gdsfactory_pr2033",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 720.0590034620836,
+      "steps": 74,
+      "llm_time": 577.482,
+      "tool_time": 95.785,
+      "tool_usage": {
+        "str_replace_editor": 27,
+        "execute_bash": 46,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "fastapi_fastapi_pr14168",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 750.1326142740436,
+      "steps": 100,
+      "llm_time": 652.684,
+      "tool_time": 43.079,
+      "tool_usage": {
+        "str_replace_editor": 32,
+        "execute_bash": 67,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "openlawlibrary_pygls_pr273",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 358.1553164809011,
+      "steps": 53,
+      "llm_time": 271.034,
+      "tool_time": 70.503,
+      "tool_usage": {
+        "str_replace_editor": 18,
+        "execute_bash": 34,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "feature-engine_feature_engine_pr625",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 1779.0789482211694,
+      "steps": 110,
+      "llm_time": 610.551,
+      "tool_time": 1096.944,
+      "tool_usage": {
+        "str_replace_editor": 44,
+        "execute_bash": 65,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "yukinarit_pyserde_pr649",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 399.86261738836765,
+      "steps": 57,
+      "llm_time": 333.347,
+      "tool_time": 44.014,
+      "tool_usage": {
+        "str_replace_editor": 16,
+        "execute_bash": 40,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "tiangolo_fastapi_pr14036",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1589.6802626899444,
+      "steps": 197,
+      "llm_time": 1472.705,
+      "tool_time": 63.563,
+      "tool_usage": {
+        "str_replace_editor": 47,
+        "execute_bash": 149,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "fastapi_fastapi_pr10773",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 621.3835901431739,
+      "steps": 76,
+      "llm_time": 565.789,
+      "tool_time": 22.558,
+      "tool_usage": {
+        "str_replace_editor": 32,
+        "execute_bash": 43,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "tiangolo_fastapi_pr13314",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 566.667235285975,
+      "steps": 73,
+      "llm_time": 469.1,
+      "tool_time": 49.286,
+      "tool_usage": {
+        "str_replace_editor": 29,
+        "execute_bash": 43,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "durandtibo_batcharray_pr107",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 528.0089880293235,
+      "steps": 80,
+      "llm_time": 474.248,
+      "tool_time": 37.089,
+      "tool_usage": {
+        "execute_bash": 45,
+        "str_replace_editor": 34,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "koxudaxi_datamodel-code-generator_pr2469",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 610.0742132379673,
+      "steps": 66,
+      "llm_time": 460.552,
+      "tool_time": 110.833,
+      "tool_usage": {
+        "str_replace_editor": 16,
+        "execute_bash": 49,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "567-labs_instructor_pr630",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1068.2216935008764,
+      "steps": 140,
+      "llm_time": 950.703,
+      "tool_time": 84.656,
+      "tool_usage": {
+        "str_replace_editor": 104,
+        "execute_bash": 35,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "koxudaxi_datamodel-code-generator_pr1778",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1228.892037261743,
+      "steps": 133,
+      "llm_time": 1149.764,
+      "tool_time": 46.945,
+      "tool_usage": {
+        "execute_bash": 74,
+        "str_replace_editor": 58,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "bluesky_event-model_pr281",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 505.03326784912497,
+      "steps": 81,
+      "llm_time": 414.198,
+      "tool_time": 65.862,
+      "tool_usage": {
+        "str_replace_editor": 22,
+        "execute_bash": 58,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "vitalik_django-ninja_pr1453",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 534.8404620103538,
+      "steps": 77,
+      "llm_time": 495.38,
+      "tool_time": 20.13,
+      "tool_usage": {
+        "str_replace_editor": 42,
+        "execute_bash": 34,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "matthewwardrop_formulaic_pr261",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 377.7806295491755,
+      "steps": 58,
+      "llm_time": 322.76,
+      "tool_time": 38.557,
+      "tool_usage": {
+        "str_replace_editor": 19,
+        "execute_bash": 38,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "scikit-learn-contrib_forest-confidence-interval_pr110",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 246.18550727469847,
+      "steps": 41,
+      "llm_time": 207.891,
+      "tool_time": 13.642,
+      "tool_usage": {
+        "execute_bash": 24,
+        "str_replace_editor": 16,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "data-apis_array-api-strict_pr15",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 387.271778435912,
+      "steps": 49,
+      "llm_time": 339.706,
+      "tool_time": 26.416,
+      "tool_usage": {
+        "execute_bash": 34,
+        "str_replace_editor": 14,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "snok_flake8-type-checking_pr179",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 564.2038315581158,
+      "steps": 93,
+      "llm_time": 528.548,
+      "tool_time": 21.59,
+      "tool_usage": {
+        "str_replace_editor": 47,
+        "execute_bash": 45,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "vitalik_django-ninja_pr1261",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 316.03394772624597,
+      "steps": 62,
+      "llm_time": 269.319,
+      "tool_time": 19.143,
+      "tool_usage": {
+        "str_replace_editor": 21,
+        "execute_bash": 40,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "vidartf_ipydatawidgets_pr39",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 412.29587002890185,
+      "steps": 74,
+      "llm_time": 368.99,
+      "tool_time": 26.816,
+      "tool_usage": {
+        "str_replace_editor": 25,
+        "execute_bash": 48,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "googleapis_python-bigquery-dataframes_pr931",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 393.3888824330643,
+      "steps": 77,
+      "llm_time": 304.296,
+      "tool_time": 45.351,
+      "tool_usage": {
+        "str_replace_editor": 28,
+        "execute_bash": 48,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "kvesteri_sqlalchemy-continuum_pr369",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 883.6262047071941,
+      "steps": 75,
+      "llm_time": 347.113,
+      "tool_time": 512.004,
+      "tool_usage": {
+        "execute_bash": 47,
+        "str_replace_editor": 27,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "python-control_python-control_pr913",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 858.0942855169997,
+      "steps": 155,
+      "llm_time": 652.272,
+      "tool_time": 145.037,
+      "tool_usage": {
+        "str_replace_editor": 89,
+        "execute_bash": 65,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "beda-software_drf-writable-nested_pr108",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 367.36711581610143,
+      "steps": 64,
+      "llm_time": 327.21,
+      "tool_time": 20.06,
+      "tool_usage": {
+        "execute_bash": 45,
+        "str_replace_editor": 18,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hyperspy_rosettasciio_pr230",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 639.6298767100088,
+      "steps": 78,
+      "llm_time": 413.86,
+      "tool_time": 144.419,
+      "tool_usage": {
+        "str_replace_editor": 34,
+        "execute_bash": 43,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pallets-eco_flask-sqlalchemy_pr467",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 410.88992053316906,
+      "steps": 65,
+      "llm_time": 382.25,
+      "tool_time": 12.896,
+      "tool_usage": {
+        "str_replace_editor": 26,
+        "execute_bash": 38,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pylons_colander_pr352",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 396.8016671901569,
+      "steps": 67,
+      "llm_time": 365.869,
+      "tool_time": 11.655,
+      "tool_usage": {
+        "str_replace_editor": 14,
+        "execute_bash": 52,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "agentops-ai_agentops_pr181",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 509.9264464741573,
+      "steps": 58,
+      "llm_time": 457.117,
+      "tool_time": 30.774,
+      "tool_usage": {
+        "execute_bash": 37,
+        "str_replace_editor": 20,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "holoviz_holoviews_pr6571",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 619.9686260470189,
+      "steps": 62,
+      "llm_time": 366.34,
+      "tool_time": 85.044,
+      "tool_usage": {
+        "str_replace_editor": 21,
+        "execute_bash": 40,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr3159",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1048.853001568932,
+      "steps": 145,
+      "llm_time": 886.674,
+      "tool_time": 105.184,
+      "tool_usage": {
+        "str_replace_editor": 22,
+        "execute_bash": 122,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pysal_giddy_pr219",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 892.2548796208575,
+      "steps": 97,
+      "llm_time": 405.127,
+      "tool_time": 410.703,
+      "tool_usage": {
+        "str_replace_editor": 49,
+        "execute_bash": 47,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "dimagi_django-cte_pr116",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 397.63572677085176,
+      "steps": 54,
+      "llm_time": 373.041,
+      "tool_time": 10.046,
+      "tool_usage": {
+        "execute_bash": 35,
+        "str_replace_editor": 18,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "jazzband_django-axes_pr825",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 416.6220330996439,
+      "steps": 49,
+      "llm_time": 196.988,
+      "tool_time": 201.836,
+      "tool_usage": {
+        "execute_bash": 32,
+        "str_replace_editor": 16,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "narwhals-dev_narwhals_pr3193",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 664.5417533251457,
+      "steps": 82,
+      "llm_time": 481.177,
+      "tool_time": 138.658,
+      "tool_usage": {
+        "execute_bash": 57,
+        "str_replace_editor": 24,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "behave_behave-django_pr162",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 429.29255334008485,
+      "steps": 78,
+      "llm_time": 377.972,
+      "tool_time": 28.073,
+      "tool_usage": {
+        "str_replace_editor": 29,
+        "execute_bash": 48,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "dimagi_django-cte_pr127",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 998.8240444781259,
+      "steps": 115,
+      "llm_time": 949.27,
+      "tool_time": 30.522,
+      "tool_usage": {
+        "str_replace_editor": 36,
+        "execute_bash": 78,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "ajbosco_dag-factory_pr485",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 468.52159832790494,
+      "steps": 63,
+      "llm_time": 372.482,
+      "tool_time": 59.766,
+      "tool_usage": {
+        "str_replace_editor": 26,
+        "execute_bash": 36,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "joblib_joblib_pr1136",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 479.1197762032971,
+      "steps": 59,
+      "llm_time": 420.574,
+      "tool_time": 19.18,
+      "tool_usage": {
+        "str_replace_editor": 16,
+        "execute_bash": 42,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "openedx_code-annotations_pr92",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 306.2653154381551,
+      "steps": 66,
+      "llm_time": 256.214,
+      "tool_time": 35.081,
+      "tool_usage": {
+        "str_replace_editor": 18,
+        "execute_bash": 47,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hgrecco_pint-pandas_pr186",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 351.1208063173108,
+      "steps": 41,
+      "llm_time": 245.461,
+      "tool_time": 43.466,
+      "tool_usage": {
+        "str_replace_editor": 17,
+        "execute_bash": 23,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "django-money_django-money_pr786",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 326.4101508818567,
+      "steps": 52,
+      "llm_time": 261.69,
+      "tool_time": 34.97,
+      "tool_usage": {
+        "str_replace_editor": 19,
+        "execute_bash": 32,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "typeddjango_django-stubs_pr1751",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 1006.9604706768878,
+      "steps": 44,
+      "llm_time": 206.841,
+      "tool_time": 705.474,
+      "tool_usage": {
+        "str_replace_editor": 11,
+        "execute_bash": 32,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "openedx_edx-django-release-util_pr78",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 269.4336078679189,
+      "steps": 53,
+      "llm_time": 222.917,
+      "tool_time": 26.838,
+      "tool_usage": {
+        "execute_bash": 37,
+        "str_replace_editor": 15,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "django-money_django-money_pr605",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 352.8974519423209,
+      "steps": 50,
+      "llm_time": 270.712,
+      "tool_time": 58.613,
+      "tool_usage": {
+        "str_replace_editor": 15,
+        "execute_bash": 34,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "encode_django-rest-framework_pr6789",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 470.5110405040905,
+      "steps": 64,
+      "llm_time": 408.933,
+      "tool_time": 27.12,
+      "tool_usage": {
+        "str_replace_editor": 27,
+        "execute_bash": 36,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr3080",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 2282.318847506307,
+      "steps": 170,
+      "llm_time": 1067.29,
+      "tool_time": 1159.68,
+      "tool_usage": {
+        "str_replace_editor": 30,
+        "execute_bash": 139,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "treasure-data_pytd_pr72",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 426.4013976682909,
+      "steps": 52,
+      "llm_time": 366.142,
+      "tool_time": 15.493,
+      "tool_usage": {
+        "str_replace_editor": 23,
+        "execute_bash": 28,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "bennylope_django-organizations_pr278",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 268.29853142332286,
+      "steps": 48,
+      "llm_time": 198.012,
+      "tool_time": 49.062,
+      "tool_usage": {
+        "execute_bash": 28,
+        "str_replace_editor": 19,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "scikit-learn-contrib_mapie_pr144",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 812.9928939016536,
+      "steps": 153,
+      "llm_time": 714.101,
+      "tool_time": 78.712,
+      "tool_usage": {
+        "str_replace_editor": 104,
+        "execute_bash": 48,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "jazzband_dj-database-url_pr183",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 299.09349416801706,
+      "steps": 48,
+      "llm_time": 274.853,
+      "tool_time": 7.127,
+      "tool_usage": {
+        "str_replace_editor": 22,
+        "execute_bash": 25,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "encode_django-rest-framework_pr8419",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 561.9636965789832,
+      "steps": 81,
+      "llm_time": 464.197,
+      "tool_time": 58.463,
+      "tool_usage": {
+        "str_replace_editor": 31,
+        "execute_bash": 49,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "silx-kit_silx_pr4330",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1150.7020041183569,
+      "steps": 151,
+      "llm_time": 1010.415,
+      "tool_time": 29.858,
+      "tool_usage": {
+        "execute_bash": 117,
+        "str_replace_editor": 33,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "korfuri_django-prometheus_pr376",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 492.9813202661462,
+      "steps": 71,
+      "llm_time": 454.246,
+      "tool_time": 22.705,
+      "tool_usage": {
+        "str_replace_editor": 32,
+        "execute_bash": 38,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "joblib_joblib_pr1714",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 728.0814325441606,
+      "steps": 84,
+      "llm_time": 669.256,
+      "tool_time": 26.186,
+      "tool_usage": {
+        "str_replace_editor": 20,
+        "execute_bash": 63,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "python-control_python-control_pr994",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 350.9356234082952,
+      "steps": 39,
+      "llm_time": 208.895,
+      "tool_time": 88.117,
+      "tool_usage": {
+        "str_replace_editor": 9,
+        "execute_bash": 29,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "durandtibo_feu_pr443",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 544.5028722300194,
+      "steps": 55,
+      "llm_time": 493.058,
+      "tool_time": 9.019,
+      "tool_usage": {
+        "str_replace_editor": 28,
+        "execute_bash": 26,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "openedx_help-tokens_pr36",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 183.57706351904199,
+      "steps": 33,
+      "llm_time": 159.543,
+      "tool_time": 6.857,
+      "tool_usage": {
+        "str_replace_editor": 11,
+        "execute_bash": 21,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "openedx_edx-ace_pr47",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 328.9873018679209,
+      "steps": 57,
+      "llm_time": 271.932,
+      "tool_time": 38.965,
+      "tool_usage": {
+        "execute_bash": 36,
+        "str_replace_editor": 20,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "aminalaee_sqladmin_pr411",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 1071.5205252878368,
+      "steps": 82,
+      "llm_time": 403.628,
+      "tool_time": 649.408,
+      "tool_usage": {
+        "str_replace_editor": 35,
+        "execute_bash": 46,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "astronomer_dag-factory_pr388",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 513.2609064509161,
+      "steps": 66,
+      "llm_time": 454.843,
+      "tool_time": 41.317,
+      "tool_usage": {
+        "execute_bash": 33,
+        "str_replace_editor": 32,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "nipy_nipype_pr3685",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 658.3846515160985,
+      "steps": 93,
+      "llm_time": 499.591,
+      "tool_time": 61.75,
+      "tool_usage": {
+        "str_replace_editor": 23,
+        "execute_bash": 69,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "openedx_edx-submissions_pr206",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 337.5145683558658,
+      "steps": 63,
+      "llm_time": 269.663,
+      "tool_time": 48.391,
+      "tool_usage": {
+        "str_replace_editor": 23,
+        "execute_bash": 39,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "cunla_fakeredis-py_pr19",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 626.0126852910034,
+      "steps": 48,
+      "llm_time": 429.414,
+      "tool_time": 135.608,
+      "tool_usage": {
+        "str_replace_editor": 20,
+        "execute_bash": 27,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "kvesteri_sqlalchemy-continuum_pr370",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "max_steps",
+      "duration": 2175.111950754188,
+      "steps": 200,
+      "llm_time": 1102.317,
+      "tool_time": 1032.539,
+      "tool_usage": {
+        "execute_bash": 123,
+        "str_replace_editor": 77
+      }
+    },
+    {
+      "instance_id": "typeddjango_django-stubs_pr1583",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1263.1725777513348,
+      "steps": 124,
+      "llm_time": 573.204,
+      "tool_time": 650.175,
+      "tool_usage": {
+        "str_replace_editor": 34,
+        "execute_bash": 89,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "getpelican_feedgenerator_pr44",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 435.49381450004876,
+      "steps": 69,
+      "llm_time": 408.572,
+      "tool_time": 13.293,
+      "tool_usage": {
+        "str_replace_editor": 20,
+        "execute_bash": 48,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "rasterio_affine_pr126",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 321.43183044018224,
+      "steps": 46,
+      "llm_time": 299.417,
+      "tool_time": 9.288,
+      "tool_usage": {
+        "str_replace_editor": 20,
+        "execute_bash": 25,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "dimagi_django-cte_pr114",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 400.8204546859488,
+      "steps": 62,
+      "llm_time": 362.205,
+      "tool_time": 19.251,
+      "tool_usage": {
+        "str_replace_editor": 14,
+        "execute_bash": 47,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "jertel_elastalert2_pr731",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 453.09172661509365,
+      "steps": 49,
+      "llm_time": 320.066,
+      "tool_time": 96.149,
+      "tool_usage": {
+        "execute_bash": 32,
+        "str_replace_editor": 16,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "elyra-ai_elyra_pr3167",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 867.446364976,
+      "steps": 75,
+      "llm_time": 574.602,
+      "tool_time": 136.468,
+      "tool_usage": {
+        "str_replace_editor": 24,
+        "execute_bash": 50,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "deschler_django-modeltranslation_pr671",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 630.0141450460069,
+      "steps": 84,
+      "llm_time": 578.074,
+      "tool_time": 30.434,
+      "tool_usage": {
+        "str_replace_editor": 38,
+        "execute_bash": 45,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "ajbosco_dag-factory_pr533",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 655.0978468912654,
+      "steps": 88,
+      "llm_time": 544.002,
+      "tool_time": 75.888,
+      "tool_usage": {
+        "str_replace_editor": 38,
+        "execute_bash": 49,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "friedelwolff_django-compression-middleware_pr16",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 1005.6873252200894,
+      "steps": 135,
+      "llm_time": 835.248,
+      "tool_time": 151.009,
+      "tool_usage": {
+        "str_replace_editor": 9,
+        "execute_bash": 125,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "jrief_django-sass-processor_pr173",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 517.4037275249138,
+      "steps": 71,
+      "llm_time": 472.115,
+      "tool_time": 25.73,
+      "tool_usage": {
+        "str_replace_editor": 21,
+        "execute_bash": 49,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "encode_django-rest-framework_pr9514",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 474.67823268380016,
+      "steps": 70,
+      "llm_time": 419.107,
+      "tool_time": 23.608,
+      "tool_usage": {
+        "execute_bash": 40,
+        "str_replace_editor": 29,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "jazzband_django-redshift-backend_pr90",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 595.4233106439933,
+      "steps": 65,
+      "llm_time": 557.868,
+      "tool_time": 17.416,
+      "tool_usage": {
+        "str_replace_editor": 26,
+        "execute_bash": 38,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "maxcountryman_flask-seasurf_pr132",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 334.14542061882094,
+      "steps": 63,
+      "llm_time": 308.038,
+      "tool_time": 10.601,
+      "tool_usage": {
+        "execute_bash": 40,
+        "str_replace_editor": 22,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "vimalloc_flask-jwt-extended_pr493",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 658.5790778649971,
+      "steps": 85,
+      "llm_time": 613.988,
+      "tool_time": 13.809,
+      "tool_usage": {
+        "str_replace_editor": 40,
+        "execute_bash": 44,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "openedx_edx-django-utils_pr28",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 556.4421880571172,
+      "steps": 70,
+      "llm_time": 515.623,
+      "tool_time": 26.622,
+      "tool_usage": {
+        "execute_bash": 46,
+        "str_replace_editor": 23,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "django-commons_django-fsm-2_pr50",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 341.41761927260086,
+      "steps": 56,
+      "llm_time": 309.856,
+      "tool_time": 14.72,
+      "tool_usage": {
+        "execute_bash": 47,
+        "str_replace_editor": 8,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "brack3t_django-braces_pr305",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 365.99585110507905,
+      "steps": 60,
+      "llm_time": 292.907,
+      "tool_time": 52.155,
+      "tool_usage": {
+        "str_replace_editor": 16,
+        "execute_bash": 43,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pinterest_pymemcache_pr179",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 579.7058475450613,
+      "steps": 103,
+      "llm_time": 542.204,
+      "tool_time": 20.227,
+      "tool_usage": {
+        "str_replace_editor": 44,
+        "execute_bash": 58,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "django-crispy-forms_django-crispy-forms_pr1184",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 451.47182459011674,
+      "steps": 76,
+      "llm_time": 403.502,
+      "tool_time": 29.419,
+      "tool_usage": {
+        "execute_bash": 45,
+        "str_replace_editor": 30,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "django-cms_djangocms-link_pr246",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 743.1510927281342,
+      "steps": 62,
+      "llm_time": 596.616,
+      "tool_time": 124.598,
+      "tool_usage": {
+        "execute_bash": 36,
+        "str_replace_editor": 25,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "openedx_edx-val_pr577",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 641.7236526743509,
+      "steps": 69,
+      "llm_time": 484.363,
+      "tool_time": 123.578,
+      "tool_usage": {
+        "execute_bash": 45,
+        "str_replace_editor": 23,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "openedx_openedx-filters_pr287",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 456.08213382633403,
+      "steps": 68,
+      "llm_time": 353.955,
+      "tool_time": 82.632,
+      "tool_usage": {
+        "execute_bash": 49,
+        "str_replace_editor": 18,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "disqus_django-bitfield_pr106",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 877.7840222888626,
+      "steps": 79,
+      "llm_time": 836.616,
+      "tool_time": 17.636,
+      "tool_usage": {
+        "str_replace_editor": 27,
+        "execute_bash": 51,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "django-treebeard_django-treebeard_pr263",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 724.9993380242959,
+      "steps": 64,
+      "llm_time": 615.538,
+      "tool_time": 77.392,
+      "tool_usage": {
+        "str_replace_editor": 23,
+        "execute_bash": 40,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "typeddjango_django-stubs_pr2587",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1199.239813526161,
+      "steps": 75,
+      "llm_time": 481.743,
+      "tool_time": 687.338,
+      "tool_usage": {
+        "str_replace_editor": 24,
+        "execute_bash": 50,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "strawberry-graphql_strawberry-django_pr540",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1451.9357274351642,
+      "steps": 157,
+      "llm_time": 1126.356,
+      "tool_time": 264.839,
+      "tool_usage": {
+        "str_replace_editor": 51,
+        "execute_bash": 105,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "beda-software_drf-writable-nested_pr186",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 390.1181731130928,
+      "steps": 49,
+      "llm_time": 354.921,
+      "tool_time": 20.278,
+      "tool_usage": {
+        "execute_bash": 31,
+        "str_replace_editor": 17,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "openedx_edx-django-utils_pr186",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 409.8949165432714,
+      "steps": 52,
+      "llm_time": 341.493,
+      "tool_time": 35.378,
+      "tool_usage": {
+        "str_replace_editor": 18,
+        "execute_bash": 33,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "joshspeagle_dynesty_pr292",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1440.4676852747798,
+      "steps": 113,
+      "llm_time": 883.114,
+      "tool_time": 428.253,
+      "tool_usage": {
+        "execute_bash": 42,
+        "str_replace_editor": 70,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "graphql-python_graphene-sqlalchemy_pr120",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 705.8245580699295,
+      "steps": 83,
+      "llm_time": 664.776,
+      "tool_time": 22.586,
+      "tool_usage": {
+        "execute_bash": 48,
+        "str_replace_editor": 34,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "bennylope_django-organizations_pr236",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 734.6265537510626,
+      "steps": 87,
+      "llm_time": 677.096,
+      "tool_time": 37.504,
+      "tool_usage": {
+        "execute_bash": 62,
+        "str_replace_editor": 24,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "openedx_code-annotations_pr161",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 359.2014422970824,
+      "steps": 54,
+      "llm_time": 297.618,
+      "tool_time": 43.106,
+      "tool_usage": {
+        "execute_bash": 33,
+        "str_replace_editor": 20,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "jerryjliu_llama_index_pr7523",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 620.0501287514344,
+      "steps": 64,
+      "llm_time": 483.496,
+      "tool_time": 79.397,
+      "tool_usage": {
+        "str_replace_editor": 31,
+        "execute_bash": 32,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "encode_django-rest-framework_pr9766",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 881.5929647642188,
+      "steps": 96,
+      "llm_time": 812.506,
+      "tool_time": 34.897,
+      "tool_usage": {
+        "str_replace_editor": 42,
+        "execute_bash": 53,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "openedx_edx-django-utils_pr496",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 484.0851320018992,
+      "steps": 80,
+      "llm_time": 392.707,
+      "tool_time": 72.207,
+      "tool_usage": {
+        "str_replace_editor": 28,
+        "execute_bash": 51,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hgrecco_pint-pandas_pr196",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 576.1635934021324,
+      "steps": 61,
+      "llm_time": 493.92,
+      "tool_time": 60.696,
+      "tool_usage": {
+        "str_replace_editor": 24,
+        "execute_bash": 36,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "openedx_edx-drf-extensions_pr230",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 413.04852712666616,
+      "steps": 50,
+      "llm_time": 348.603,
+      "tool_time": 43.905,
+      "tool_usage": {
+        "str_replace_editor": 15,
+        "execute_bash": 34,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "jerryjliu_llama_index_pr7316",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 920.4440261460841,
+      "steps": 87,
+      "llm_time": 718.347,
+      "tool_time": 130.364,
+      "tool_usage": {
+        "execute_bash": 47,
+        "str_replace_editor": 39,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "elastic_elasticsearch-py_pr2873",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 827.1327469106764,
+      "steps": 96,
+      "llm_time": 755.86,
+      "tool_time": 42.56,
+      "tool_usage": {
+        "str_replace_editor": 21,
+        "execute_bash": 74,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pysal_spaghetti_pr769",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 660.6344365309924,
+      "steps": 73,
+      "llm_time": 489.886,
+      "tool_time": 85.825,
+      "tool_usage": {
+        "str_replace_editor": 36,
+        "execute_bash": 36,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "openedx_edx-val_pr443",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1085.0769144087099,
+      "steps": 86,
+      "llm_time": 555.296,
+      "tool_time": 487.581,
+      "tool_usage": {
+        "str_replace_editor": 19,
+        "execute_bash": 66,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "shapely_shapely_pr1174",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 879.8670177320018,
+      "steps": 95,
+      "llm_time": 843.754,
+      "tool_time": 19.476,
+      "tool_usage": {
+        "execute_bash": 62,
+        "str_replace_editor": 32,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "korfuri_django-prometheus_pr329",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 779.0635018590838,
+      "steps": 68,
+      "llm_time": 743.287,
+      "tool_time": 21.809,
+      "tool_usage": {
+        "str_replace_editor": 23,
+        "execute_bash": 44,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "geopandas_geopandas_pr3290",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 719.3822387382388,
+      "steps": 79,
+      "llm_time": 654.372,
+      "tool_time": 32.974,
+      "tool_usage": {
+        "execute_bash": 54,
+        "str_replace_editor": 24,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "coderedcorp_coderedcms_pr702",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 742.3345442963764,
+      "steps": 45,
+      "llm_time": 327.918,
+      "tool_time": 312.57,
+      "tool_usage": {
+        "str_replace_editor": 12,
+        "execute_bash": 32,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "scverse_mudata_pr43",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1292.9829268082976,
+      "steps": 93,
+      "llm_time": 1234.073,
+      "tool_time": 41.339,
+      "tool_usage": {
+        "execute_bash": 62,
+        "str_replace_editor": 30,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "hackingmaterials_matminer_pr925",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1021.9496680269949,
+      "steps": 69,
+      "llm_time": 715.025,
+      "tool_time": 258.606,
+      "tool_usage": {
+        "str_replace_editor": 27,
+        "execute_bash": 41,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "jerryjliu_llama_index_pr7289",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 984.321166398935,
+      "steps": 93,
+      "llm_time": 888.636,
+      "tool_time": 59.9,
+      "tool_usage": {
+        "execute_bash": 45,
+        "str_replace_editor": 47,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "pyqtgraph_pyqtgraph_pr2970",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1157.028151562903,
+      "steps": 87,
+      "llm_time": 1086.144,
+      "tool_time": 44.662,
+      "tool_usage": {
+        "str_replace_editor": 42,
+        "execute_bash": 44,
+        "finish": 1
+      }
+    },
+    {
+      "instance_id": "apiflask_apiflask_pr392",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "max_steps",
+      "duration": 3687.7085029887967,
+      "steps": 200,
+      "llm_time": 3593.162,
+      "tool_time": 75.888,
+      "tool_usage": {
+        "str_replace_editor": 97,
+        "execute_bash": 103
+      }
+    }
+  ],
+  "doc2repo": [
+    {
+      "instance_id": "datanomy_f152406daca4353ca0553c94a3f160ad7dc70448",
+      "resolved": false,
+      "score": 0.5185,
+      "finish_reason": "finish",
+      "duration": 356.9182521281764,
+      "steps": 35,
+      "llm_time": 315.561,
+      "tool_time": 11.626,
+      "tool_usage": {
+        "execute_bash": 20,
+        "str_replace_editor": 18,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "soundcalc_67dfe7b8c1f1bf8747d6668d559467bb6489c235",
+      "resolved": false,
+      "score": 0.3333,
+      "finish_reason": "finish",
+      "duration": 487.53545525390655,
+      "steps": 46,
+      "llm_time": 464.528,
+      "tool_time": 4.302,
+      "tool_usage": {
+        "execute_bash": 20,
+        "str_replace_editor": 25,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "PXMeter_7283384f03718625c13ee447b16db5206b45596b",
+      "resolved": false,
+      "score": 0.125,
+      "finish_reason": "finish",
+      "duration": 612.9593859789893,
+      "steps": 55,
+      "llm_time": 573.449,
+      "tool_time": 15.246,
+      "tool_usage": {
+        "execute_bash": 25,
+        "str_replace_editor": 29,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "pmultiqc_f4d7134744cd7e11e91e439230794a7b06e91902",
+      "resolved": false,
+      "score": 0.9,
+      "finish_reason": "finish",
+      "duration": 575.3263558433391,
+      "steps": 48,
+      "llm_time": 510.715,
+      "tool_time": 23.681,
+      "tool_usage": {
+        "execute_bash": 28,
+        "str_replace_editor": 35,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "spectrum_utils_b6e5d488e20619ae0eef3ecfb508b84036793154",
+      "resolved": false,
+      "score": 0.6724,
+      "finish_reason": "finish",
+      "duration": 710.9687495417893,
+      "steps": 47,
+      "llm_time": 592.512,
+      "tool_time": 52.585,
+      "tool_usage": {
+        "execute_bash": 29,
+        "str_replace_editor": 18,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "ordnung_fd1d6b1714d5d7a12bed49106909f3babf8fe488",
+      "resolved": false,
+      "score": 0.8571,
+      "finish_reason": "finish",
+      "duration": 474.87856933288276,
+      "steps": 53,
+      "llm_time": 450.055,
+      "tool_time": 6.436,
+      "tool_usage": {
+        "execute_bash": 29,
+        "str_replace_editor": 23,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "gerrit-code-review-mcp_e476b3004c4523f7823299a38425ffa282e61a21",
+      "resolved": false,
+      "score": 0.6667,
+      "finish_reason": "finish",
+      "duration": 274.9905374390073,
+      "steps": 29,
+      "llm_time": 246.16,
+      "tool_time": 7.258,
+      "tool_usage": {
+        "execute_bash": 13,
+        "str_replace_editor": 17,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "bhopengraph_1e2ed8d19c8fc26f874250df92b114b9e90a9dd6",
+      "resolved": false,
+      "score": 0.8961,
+      "finish_reason": "finish",
+      "duration": 302.2609769119881,
+      "steps": 33,
+      "llm_time": 277.979,
+      "tool_time": 5.003,
+      "tool_usage": {
+        "execute_bash": 19,
+        "str_replace_editor": 13,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "pysqlscribe_09ee67cad3269daa7774c6102b04328328a7791a",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 487.88527365913615,
+      "steps": 57,
+      "llm_time": 465.639,
+      "tool_time": 6.247,
+      "tool_usage": {
+        "execute_bash": 32,
+        "str_replace_editor": 25,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "kmoe-manga-downloader_6dfe6fb549fd9678dec69d22d4b8065be63feab1",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 240.59433641796932,
+      "steps": 35,
+      "llm_time": 217.044,
+      "tool_time": 5.686,
+      "tool_usage": {
+        "execute_bash": 10,
+        "str_replace_editor": 24,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "pyMC_core_099e6c2a6573aabf5ec3062ecc3be4d1b26a5323",
+      "resolved": false,
+      "score": 0.6,
+      "finish_reason": "finish",
+      "duration": 441.5838939603418,
+      "steps": 39,
+      "llm_time": 404.643,
+      "tool_time": 16.967,
+      "tool_usage": {
+        "execute_bash": 19,
+        "str_replace_editor": 22,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "textual-plot_ddf9bfd88599a6d905605ded877df40034d42737",
+      "resolved": false,
+      "score": 0.8667,
+      "finish_reason": "finish",
+      "duration": 342.75064487662166,
+      "steps": 41,
+      "llm_time": 316.476,
+      "tool_time": 10.92,
+      "tool_usage": {
+        "execute_bash": 26,
+        "str_replace_editor": 14,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "absorb_e8c046fe7cd5b074ac3f3fd413ee3537651de2b9",
+      "resolved": false,
+      "score": 0.9048,
+      "finish_reason": "finish",
+      "duration": 440.5192241901532,
+      "steps": 65,
+      "llm_time": 414.913,
+      "tool_time": 7.551,
+      "tool_usage": {
+        "execute_bash": 23,
+        "str_replace_editor": 41,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "jvm-mcp-server_d7314f42be13669c29b050b4b6dc384c4574e8b1",
+      "resolved": false,
+      "score": 0.0814,
+      "finish_reason": "finish",
+      "duration": 392.4101673969999,
+      "steps": 42,
+      "llm_time": 354.614,
+      "tool_time": 14.404,
+      "tool_usage": {
+        "execute_bash": 27,
+        "str_replace_editor": 18,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "sws_3e62c9572f6fe629fc4473cc645bce89626b4081",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 568.2954707671888,
+      "steps": 58,
+      "llm_time": 547.337,
+      "tool_time": 4.406,
+      "tool_usage": {
+        "execute_bash": 25,
+        "str_replace_editor": 35,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "pwnkit_0f48b670a8f051d22c9305e73ef4220082c6cfe8",
+      "resolved": false,
+      "score": 0.4545,
+      "finish_reason": "finish",
+      "duration": 521.2131293099374,
+      "steps": 52,
+      "llm_time": 490.494,
+      "tool_time": 10.177,
+      "tool_usage": {
+        "execute_bash": 41,
+        "str_replace_editor": 23,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "zor_8c0545f8f76a5c5c7edbe7f1dc6124c88fbf3281",
+      "resolved": false,
+      "score": 0.4286,
+      "finish_reason": "finish",
+      "duration": 325.13563529215753,
+      "steps": 39,
+      "llm_time": 289.839,
+      "tool_time": 12.249,
+      "tool_usage": {
+        "execute_bash": 22,
+        "str_replace_editor": 17,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "encypher-ai_26d52fadef79287d453b928efe2f0797e7a798d8",
+      "resolved": false,
+      "score": 0.6364,
+      "finish_reason": "finish",
+      "duration": 407.3777686194517,
+      "steps": 40,
+      "llm_time": 385.581,
+      "tool_time": 4.044,
+      "tool_usage": {
+        "execute_bash": 21,
+        "str_replace_editor": 19,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "llm-agents-from-scratch_712f35062538a2afac854ec8bb4cc83c4e8d6a9a",
+      "resolved": false,
+      "score": 0.6047,
+      "finish_reason": "finish",
+      "duration": 390.8308619130403,
+      "steps": 35,
+      "llm_time": 356.142,
+      "tool_time": 13.304,
+      "tool_usage": {
+        "execute_bash": 24,
+        "str_replace_editor": 22,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "i2rt_cbe48976b44aae45af856c62545be00ea2feed11",
+      "resolved": false,
+      "score": 0.7778,
+      "finish_reason": "finish",
+      "duration": 503.3823041142896,
+      "steps": 26,
+      "llm_time": 475.032,
+      "tool_time": 6.483,
+      "tool_usage": {
+        "execute_bash": 15,
+        "str_replace_editor": 19,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "mcp-interviewer_8ad00641dddd3ab5c7d9890c9057d74558a341b1",
+      "resolved": false,
+      "score": 0.5769,
+      "finish_reason": "finish",
+      "duration": 408.02377710072324,
+      "steps": 35,
+      "llm_time": 376.902,
+      "tool_time": 9.131,
+      "tool_usage": {
+        "execute_bash": 18,
+        "str_replace_editor": 17,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "mcp-server-whisper_8d28760b019a8dce066af8aa7b4e75077c0ed873",
+      "resolved": false,
+      "score": 0.7083,
+      "finish_reason": "finish",
+      "duration": 482.83548100525513,
+      "steps": 57,
+      "llm_time": 457.289,
+      "tool_time": 10.431,
+      "tool_usage": {
+        "execute_bash": 22,
+        "str_replace_editor": 36,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "akta_a6c89985e5ec029950c858e6b5801f21673a6614",
+      "resolved": false,
+      "score": 0.6429,
+      "finish_reason": "finish",
+      "duration": 445.5935972039588,
+      "steps": 49,
+      "llm_time": 387.878,
+      "tool_time": 34.266,
+      "tool_usage": {
+        "execute_bash": 24,
+        "str_replace_editor": 25,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "observe_7a40b9fdd110e864be1d23b732b87f706b83bbfd",
+      "resolved": false,
+      "score": 0.7857,
+      "finish_reason": "finish",
+      "duration": 323.0833328287117,
+      "steps": 34,
+      "llm_time": 281.229,
+      "tool_time": 11.213,
+      "tool_usage": {
+        "execute_bash": 16,
+        "str_replace_editor": 20,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "audiolab_08c2255997902632d5892727075b88797d7cdc51",
+      "resolved": false,
+      "score": 0.4286,
+      "finish_reason": "finish",
+      "duration": 632.0026743020862,
+      "steps": 87,
+      "llm_time": 599.298,
+      "tool_time": 16.361,
+      "tool_usage": {
+        "execute_bash": 45,
+        "str_replace_editor": 42,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "doc2mark_031eaf3987798c713f9c65c82331a717bb5d5c44",
+      "resolved": false,
+      "score": 0.2,
+      "finish_reason": "finish",
+      "duration": 487.1264275251888,
+      "steps": 33,
+      "llm_time": 462.597,
+      "tool_time": 3.804,
+      "tool_usage": {
+        "execute_bash": 15,
+        "str_replace_editor": 19,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "podcast-creator_fd31ae37ed3d0a4f80cd17ab939407506eb7ba3e",
+      "resolved": false,
+      "score": 0.439,
+      "finish_reason": "finish",
+      "duration": 382.25640910258517,
+      "steps": 45,
+      "llm_time": 344.578,
+      "tool_time": 12.857,
+      "tool_usage": {
+        "execute_bash": 27,
+        "str_replace_editor": 19,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "claude-statusline_eaaf96053c26d97eb71be83666a2dd15c81d80b5",
+      "resolved": true,
+      "score": 1.0,
+      "finish_reason": "finish",
+      "duration": 514.6445214902051,
+      "steps": 42,
+      "llm_time": 493.028,
+      "tool_time": 4.267,
+      "tool_usage": {
+        "execute_bash": 36,
+        "str_replace_editor": 6,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "base-repository_8c0a7e0f37d469b7f9eda5e5bcbb8c62b3103693",
+      "resolved": false,
+      "score": 0.5294,
+      "finish_reason": "finish",
+      "duration": 373.6023717173375,
+      "steps": 53,
+      "llm_time": 342.283,
+      "tool_time": 8.929,
+      "tool_usage": {
+        "execute_bash": 22,
+        "str_replace_editor": 36,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "python-toon_cae50e8cab71e8f0a1e1f39954c9dfc74be9b772",
+      "resolved": false,
+      "score": 0.7802,
+      "finish_reason": "finish",
+      "duration": 485.7460739421658,
+      "steps": 55,
+      "llm_time": 460.633,
+      "tool_time": 6.986,
+      "tool_usage": {
+        "execute_bash": 32,
+        "str_replace_editor": 23,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "geopandas-ai_8a0fb57181ad5560a87a2e5034b14ce944b8d156",
+      "resolved": false,
+      "score": 0.75,
+      "finish_reason": "finish",
+      "duration": 522.587030032184,
+      "steps": 51,
+      "llm_time": 482.113,
+      "tool_time": 17.197,
+      "tool_usage": {
+        "execute_bash": 19,
+        "str_replace_editor": 31,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "baml-agents_50d6191290ac6d186fac617ac3b1f77b34cd70c1",
+      "resolved": false,
+      "score": 0.8571,
+      "finish_reason": "finish",
+      "duration": 420.424077861011,
+      "steps": 44,
+      "llm_time": 393.443,
+      "tool_time": 7.999,
+      "tool_usage": {
+        "execute_bash": 20,
+        "str_replace_editor": 31,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "persistent-mind-model-v1.0_b6328595f6afc2587926833a452aeb257d802dec",
+      "resolved": false,
+      "score": 0.7,
+      "finish_reason": "finish",
+      "duration": 393.2486309730448,
+      "steps": 24,
+      "llm_time": 371.318,
+      "tool_time": 3.001,
+      "tool_usage": {
+        "execute_bash": 9,
+        "str_replace_editor": 21,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "dspy-micro-agent_0886aa353fbd5b15f4c9cc621bef516bf5e730dd",
+      "resolved": false,
+      "score": 0.4839,
+      "finish_reason": "finish",
+      "duration": 450.41300788056105,
+      "steps": 37,
+      "llm_time": 337.229,
+      "tool_time": 40.305,
+      "tool_usage": {
+        "execute_bash": 17,
+        "str_replace_editor": 19,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "codetoprompt_9bc13d8d4a7f6eac109b53a586e4d4b2344df31b",
+      "resolved": false,
+      "score": 0.5556,
+      "finish_reason": "finish",
+      "duration": 978.1025158939883,
+      "steps": 81,
+      "llm_time": 934.951,
+      "tool_time": 20.783,
+      "tool_usage": {
+        "execute_bash": 44,
+        "str_replace_editor": 38,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "telegram-mcp_24a07d1f4fcef74a598bb2af0bca6c527ce6f4f4",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "error",
+      "duration": 1837.4762556799687,
+      "steps": null,
+      "llm_time": null,
+      "tool_time": null,
+      "tool_usage": {}
+    },
+    {
+      "instance_id": "heracles-ql_660a797e08c900cbd6efdf69a744393fb2e24d84",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 476.80928353220224,
+      "steps": 38,
+      "llm_time": 456.716,
+      "tool_time": 4.505,
+      "tool_usage": {
+        "execute_bash": 20,
+        "str_replace_editor": 19,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "cognitive-dissonance-dspy_04ba70fe90de141273ed6c4d7b69704edb1736d0",
+      "resolved": false,
+      "score": 0.6207,
+      "finish_reason": "finish",
+      "duration": 464.8904557749629,
+      "steps": 24,
+      "llm_time": 416.351,
+      "tool_time": 17.734,
+      "tool_usage": {
+        "execute_bash": 12,
+        "str_replace_editor": 19,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "themefinder_252f4b085a450b418550a28ccc66c418444d0559",
+      "resolved": false,
+      "score": 0.2468,
+      "finish_reason": "finish",
+      "duration": 582.6190831363201,
+      "steps": 46,
+      "llm_time": 538.477,
+      "tool_time": 15.845,
+      "tool_usage": {
+        "execute_bash": 16,
+        "str_replace_editor": 31,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "pocketeer_6cbef3b5f374bed9e1d46c748b682fa1b26d13ec",
+      "resolved": false,
+      "score": 0.64,
+      "finish_reason": "finish",
+      "duration": 476.7663550931029,
+      "steps": 45,
+      "llm_time": 434.652,
+      "tool_time": 15.961,
+      "tool_usage": {
+        "execute_bash": 27,
+        "str_replace_editor": 22,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "anymap_e5f379c8d62cb0505e7e76f37784234491272059",
+      "resolved": false,
+      "score": 0.6897,
+      "finish_reason": "finish",
+      "duration": 426.3591491780244,
+      "steps": 24,
+      "llm_time": 389.383,
+      "tool_time": 7.407,
+      "tool_usage": {
+        "execute_bash": 9,
+        "str_replace_editor": 14,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "pyleak_fa3a5d510446851adea7520b54c467587435fae1",
+      "resolved": false,
+      "score": 0.5246,
+      "finish_reason": "finish",
+      "duration": 606.4578960919753,
+      "steps": 50,
+      "llm_time": 516.325,
+      "tool_time": 34.548,
+      "tool_usage": {
+        "execute_bash": 22,
+        "str_replace_editor": 28,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "asyncmcp_0aa074942a9622201a254ca86c351601a55c926e",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1305.750749795232,
+      "steps": 67,
+      "llm_time": 550.95,
+      "tool_time": 732.718,
+      "tool_usage": {
+        "execute_bash": 25,
+        "str_replace_editor": 41,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "fastapi-crons_9b87014afa8a4c4dc31f8423a263d84db9c1a2b2",
+      "resolved": false,
+      "score": 0.8387,
+      "finish_reason": "finish",
+      "duration": 371.24300330504775,
+      "steps": 37,
+      "llm_time": 334.921,
+      "tool_time": 16.354,
+      "tool_usage": {
+        "execute_bash": 20,
+        "str_replace_editor": 17,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "langvio_0d9b98d561d00c324258e824b737dfe96df9c259",
+      "resolved": false,
+      "score": 0.28,
+      "finish_reason": "finish",
+      "duration": 530.2891347091645,
+      "steps": 32,
+      "llm_time": 455.182,
+      "tool_time": 23.929,
+      "tool_usage": {
+        "execute_bash": 15,
+        "str_replace_editor": 24,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "skillport_5e41fb2b6302a672f16b81b0e0ca2da35485bffe",
+      "resolved": false,
+      "score": 0.2353,
+      "finish_reason": "finish",
+      "duration": 865.0751992659643,
+      "steps": 65,
+      "llm_time": 770.819,
+      "tool_time": 64.658,
+      "tool_usage": {
+        "execute_bash": 48,
+        "str_replace_editor": 18,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "fieldflow_a2e2377097adc18c1686921a87446e37f5ba8d93",
+      "resolved": false,
+      "score": 0.5455,
+      "finish_reason": "finish",
+      "duration": 691.7293173032813,
+      "steps": 50,
+      "llm_time": 656.693,
+      "tool_time": 13.128,
+      "tool_usage": {
+        "execute_bash": 30,
+        "str_replace_editor": 19,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "mcp-server-code-execution-mode_27d23b8e2c7666c442708d02dbe4e838e9a63038",
+      "resolved": false,
+      "score": 0.4444,
+      "finish_reason": "finish",
+      "duration": 759.1085904338397,
+      "steps": 37,
+      "llm_time": 734.542,
+      "tool_time": 3.823,
+      "tool_usage": {
+        "execute_bash": 22,
+        "str_replace_editor": 14,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "package-sampling_e402a67703d3b4255e49e3554d4af95047e4bb5a",
+      "resolved": false,
+      "score": 0.8523,
+      "finish_reason": "finish",
+      "duration": 1665.969133886043,
+      "steps": 37,
+      "llm_time": 1415.776,
+      "tool_time": 14.522,
+      "tool_usage": {
+        "execute_bash": 19,
+        "str_replace_editor": 20,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": 0,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    },
+    {
+      "instance_id": "bubus_7c09342724feabee7785f99e60e583d54bf6882c",
+      "resolved": false,
+      "score": 0.0,
+      "finish_reason": "finish",
+      "duration": 1852.9605583492666,
+      "steps": 63,
+      "llm_time": 532.582,
+      "tool_time": 702.262,
+      "tool_usage": {
+        "execute_bash": 33,
+        "str_replace_editor": 32,
+        "finish": 1
+      },
+      "pytest_details": {
+        "marker": null,
+        "exit_code": null,
+        "f2p_count": null,
+        "p2p_count": null
+      }
+    }
+  ]
+}
